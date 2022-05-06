@@ -15,6 +15,9 @@
 Route::get('/', function () {
     return view('pages.index');
 });
+Route::get('/portfolio-details.html', function () {
+    return view('pages.portfolio-details');
+});
 
 Auth::routes();
 
