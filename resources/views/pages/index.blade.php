@@ -1,98 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.layout1')
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portal Rumah Sakit PKU Muhammadiyah Sukoharjo</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="76x76" href="img/logo/pku/pku_ico.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/logo/pku/pku_ico.png">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  {{-- Font Awesome --}}
-  <link rel="stylesheet" href="modules/fontawesome/css/all.min.css">
-
-  <!-- Vendor CSS Files -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Scaffold - v2.0.0
-  * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex">
-
-      <div class="logo mr-auto">
-        <h1 class="text-light">
-          {{-- <a href="index.html"><span>Scaffold</span></a> --}}
-          <img src="img/logo/pku/logo-1-sm-green.png" style="margin-top: -5px" alt="">
-          {{-- <img src="img/logo/pku/logo-admin.png" alt=""> --}}
-        </h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#hero">Beranda</a></li>
-          <li class="drop-down"><a href="">Profil</a>
-            <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#pelayanan">Pelayanan</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-
-          <li><a href="#contact">Contact</a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <div class="header-social-links">
-        <a type="button" class="btn btn-danger btn-sm text-white mx-2" href="tel:0271593979">&nbsp;<i class="fas fa-phone"></i>&nbsp;&nbsp;IGD 24 JAM&nbsp;&nbsp;</a>
-        {{-- <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a> --}}
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
+@section('content')
   <!-- ======= Hero Section ======= -->
   <section id="hero">
 
@@ -486,7 +394,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Testimonials</h2>
+          <h2>Testimoni</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -552,7 +460,7 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Team Section ======= -->
+    {{-- <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container">
 
@@ -614,14 +522,14 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section><!-- End Team Section --> --}}
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <section id="clients" class="clients section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Clients</h2>
+          <h2>Kerja Sama</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -680,7 +588,7 @@
       </div>
     </section><!-- End Clients Section -->
 
-    <!-- ======= Pricing Section ======= -->
+    {{-- <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container">
 
@@ -763,14 +671,14 @@
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section><!-- End Pricing Section --> --}}
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Frequently Asked Questions</h2>
+          <h2>Pertanyaan Terkait Pelayanan</h2>
         </div>
 
         <ul class="faq-list">
@@ -839,7 +747,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
+          <h2>Kontak Kami</h2>
         </div>
 
         <div class="row">
@@ -848,23 +756,22 @@
             <div class="info">
               <div class="address">
                 <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h4>Lokasi:</h4>
+                <p>Jl. Mayor Sunaryo No. 37 Sukoharjo, JT (57512)</p>
               </div>
 
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>pku.sukoharjo@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <h4>Telp:</h4>
+                <p>(0271) 593979</p>
               </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26600.063032559498!2d110.85186661334393!3d-7.6699205791820555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda883f7a08b44f3e!2sRumah%20Sakit%20PKU%20Muhammadiyah%20Sukoharjo!5e0!3m2!1sid!2sid!4v1651924615607!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -873,32 +780,32 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
+                  <label for="name">Nama Lengkap</label>
                   <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="name">Email</label>
                   <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="name">Judul</label>
                 <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
+                <label for="name">Pesan</label>
                 <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Memproses Pesan</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Pesan anda berhasil terkirim. Terima Kasih!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
             </form>
           </div>
 
@@ -908,96 +815,4 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Scaffold</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Scaffold</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="vendor/venobox/venobox.min.js"></script>
-  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="js/main.js"></script>
-
-</body>
-
-</html>
+@endsection

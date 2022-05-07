@@ -45,13 +45,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #009cea;
+  background: #047D3E;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #14b1ff;
+  background: #047D3E;
   color: #fff;
 }
 
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #009cea;
+  color: #047D3E;
   text-decoration: none;
 }
 
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #009cea;
+  color: #047D3E;
 }
 
 .nav-menu .drop-down > a:after {
@@ -349,6 +349,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   background-image: url("../img/hero-bg.png");
+  /* background-image: url("../img/gedung-pku/bg-gedung.png"); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right top;
@@ -769,7 +770,8 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta-bg.jpg") center center;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta-bg.jpg") center center; */
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/gedung-pku/bg-gedung-full.png") center center;
   background-size: cover;
   padding: 80px 0;
 }
