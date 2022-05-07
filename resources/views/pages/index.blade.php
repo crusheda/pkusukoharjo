@@ -56,7 +56,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Beranda</a></li>
+          <li class="active"><a href="#hero">Beranda</a></li>
           <li class="drop-down"><a href="">Profil</a>
             <ul>
               <li><a href="#about">About Us</a></li>
@@ -73,7 +73,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#pelayanan">Pelayanan</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#pricing">Pricing</a></li>
 
@@ -118,11 +118,11 @@
   <main id="main">
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section id="pelayanan" class="services section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
+          <h2>Pelayanan Kami</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -169,8 +169,8 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Galeri</h2>
+          <p>Berikut adalah foto-foto kegiatan kami di kawasan internal maupun eksternal Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
         </div>
 
         <div class="row">
