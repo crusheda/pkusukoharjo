@@ -44,6 +44,8 @@
   @include('inc.header')
 
   @yield('content')
+  <br><br><center><h3 data-aos="fade-up">Berita Terkini</h3></center>
+  @include('inc.footnews')
 
   @include('inc.footer')
 

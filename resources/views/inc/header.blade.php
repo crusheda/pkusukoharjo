@@ -14,11 +14,21 @@
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#hero">Beranda</a></li>
+        <li><a href="{{ route('portal') }}">Beranda</a></li>
         <li class="drop-down"><a href="">Profil</a>
           <ul>
-            <li><a href="#about">Rumah Sakit</a></li>
-            <li><a href="#team">Direksi</a></li>
+            <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
+            <li><a href="{{ route('visimisi') }}">Visi & Misi</a></li>
+            <li class="drop-down"><a href="#">Struktur Organisasi</a>
+              <ul>
+                <li><a href="#">Struktur Organisasi</a></li>
+                <li><a href="#">Direksi</a></li>
+                <li><a href="#">Satuan Pengawas Internal</a></li>
+                <li><a href="#">Supervisor</a></li>
+                <li><a href="#">Komite</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">Sumber Daya Manusia</a></li>
           </ul>
         </li>
         <li class="drop-down"><a href="">Informasi</a>
@@ -49,7 +59,7 @@
           </ul>
         </li>
         <li><a href="#pricing">Lowongan Kerja</a></li>
-        <li><a href="#contact">Kontak</a></li>
+        <li><a href="{{ route('kontak') }}">Kontak</a></li>
 
       </ul>
     </nav><!-- .nav-menu -->

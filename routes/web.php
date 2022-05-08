@@ -11,10 +11,12 @@
 |
 */
 
-// Route::get('/', function () { return view('welcome'); });
 Route::get('/', function () {
     return view('pages.index');
-});
+})->name('portal');
+Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
+Route::get('/sejarah', function () { return view('pages.sejarah'); })->name('sejarah');
+Route::get('/visimisi', function () { return view('pages.visimisi'); })->name('visimisi');
 Route::get('/portfolio-details.html', function () {
     return view('pages.portfolio-details');
 });

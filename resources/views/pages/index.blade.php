@@ -389,76 +389,74 @@
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Testimoni</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Pertanyaan Terkait Pelayanan</h2>
         </div>
 
-        <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="100">
+        <ul class="faq-list">
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
+          <li data-aos="fade-up">
+            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
+            <div id="faq1" class="collapse show" data-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
+          <li data-aos="fade-up" data-aos-delay="100">
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
+            <div id="faq2" class="collapse" data-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
+          <li data-aos="fade-up" data-aos-delay="200">
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
+            <div id="faq3" class="collapse" data-parent=".faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
+            <div id="faq4" class="collapse" data-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
+          <li data-aos="fade-up" data-aos-delay="400">
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
+            <div id="faq5" class="collapse" data-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
 
-        </div>
+          <li data-aos="fade-up" data-aos-delay="500">
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
+            <div id="faq6" class="collapse" data-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+
+        </ul>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section><!-- End Frequently Asked Questions Section -->
 
     {{-- <!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -524,69 +522,75 @@
       </div>
     </section><!-- End Team Section --> --}}
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
+    <!-- ======= Healthy Section ======= -->
+    <section id="berita" class="section-bg">
       <div class="container">
-
         <div class="section-title" data-aos="fade-up">
-          <h2>Kerja Sama</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Artikel Kesehatan</h2>
+          <p>Tetap sehat bersama Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
         </div>
-
-        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo" data-aos="zoom-in">
-              <img src="img/clients/client-1.png" class="img-fluid" alt="">
+        <div class="row">
+          <div class="col">
+            <div class="card" data-aos="fade-up">
+              <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="margin-bottom: 0px">RS PKU Muhammadiyah Sukoharjo Jalin Mou Dengan BPJS Ketenagakerjaan</h5>
+                <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
+                <p style="margin-top: 10px" class="card-text">KBRN Sukoharjo : Rumah Sakit PKU Muhammadiyah Sukoharjo dipastikan menjadi Pusat Layanan Kecelakaan Kerja (PLKK). 
+                  Kepastian bagi salah satu rumah sakit swasta terbesar...
+                </p>
+                <a href="#" class="btn btn-warning text-white">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo" data-aos="zoom-in" data-aos-delay="100">
-              <img src="img/clients/client-2.png" class="img-fluid" alt="">
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="100">
+                  <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
+                  <div class="card-body">
+                    <a>Survei Akreditasi KARS</a><br>
+                    <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
+                    <a style="margin-top: 10px" href="#" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="200">
+                  <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
+                  <div class="card-body">
+                    <a>RS PKU Sukoharjo, Klinik Sederhana Menjadi Rumah Sakit Luar Biasa</a><br>
+                    <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
+                    <a style="margin-top: 10px" href="#" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="300">
+                  <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
+                  <div class="card-body">
+                    <a>Pemberian Imunisasi MR Gratis</a><br>
+                    <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
+                    <a style="margin-top: 10px" href="#" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="400">
+                  <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
+                  <div class="card-body">
+                    <a>Visitasi dan Kredensial BPJS</a><br>
+                    <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
+                    <a style="margin-top: 10px" href="#" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo" data-aos="zoom-in" data-aos-delay="150">
-              <img src="img/clients/client-3.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo" data-aos="zoom-in" data-aos-delay="200">
-              <img src="img/clients/client-4.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo" data-aos="zoom-in" data-aos-delay="250">
-              <img src="img/clients/client-5.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo" data-aos="zoom-in" data-aos-delay="300">
-              <img src="img/clients/client-6.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo" data-aos="zoom-in" data-aos-delay="350">
-              <img src="img/clients/client-7.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="client-logo">
-              <img src="img/clients/client-8.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
         </div>
-
+        <center><button class="btn btn-light btn-sm float-right" data-aos="zoomin" data-aos-delay="500"><i class="fas fa-newspaper"></i>&nbsp;&nbsp;Lihat Semua Berita</button></center>
       </div>
-    </section><!-- End Clients Section -->
+    </section><!-- End News Section -->
 
     {{-- <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
@@ -673,146 +677,140 @@
       </div>
     </section><!-- End Pricing Section --> --}}
 
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq">
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Pertanyaan Terkait Pelayanan</h2>
+          <h2>Testimoni</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <ul class="faq-list">
+        <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="100">
 
-          <li data-aos="fade-up">
-            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
-            <div id="faq1" class="collapse show" data-parent=".faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="100">
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
-            <div id="faq2" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="200">
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
-            <div id="faq3" class="collapse" data-parent=".faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="300">
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
-            <div id="faq4" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="400">
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
-            <div id="faq5" class="collapse" data-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li data-aos="fade-up" data-aos-delay="500">
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
-            <div id="faq6" class="collapse" data-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Kontak Kami</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Lokasi:</h4>
-                <p>Jl. Mayor Sunaryo No. 37 Sukoharjo, JT (57512)</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>pku.sukoharjo@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Telp:</h4>
-                <p>(0271) 593979</p>
-              </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26600.063032559498!2d110.85186661334393!3d-7.6699205791820555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda883f7a08b44f3e!2sRumah%20Sakit%20PKU%20Muhammadiyah%20Sukoharjo!5e0!3m2!1sid!2sid!4v1651924615607!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="name">Nama Lengkap</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Judul</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Pesan</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Memproses Pesan</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Pesan anda berhasil terkirim. Terima Kasih!</div>
-              </div>
-              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
-            </form>
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Kerja Sama</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo" data-aos="zoom-in">
+              <img src="img/clients/client-1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo" data-aos="zoom-in" data-aos-delay="100">
+              <img src="img/clients/client-2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo" data-aos="zoom-in" data-aos-delay="150">
+              <img src="img/clients/client-3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo" data-aos="zoom-in" data-aos-delay="200">
+              <img src="img/clients/client-4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo" data-aos="zoom-in" data-aos-delay="250">
+              <img src="img/clients/client-5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo" data-aos="zoom-in" data-aos-delay="300">
+              <img src="img/clients/client-6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo" data-aos="zoom-in" data-aos-delay="350">
+              <img src="img/clients/client-7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="client-logo">
+              <img src="img/clients/client-8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
 
   </main><!-- End #main -->
 @endsection

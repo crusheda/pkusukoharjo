@@ -66,7 +66,7 @@
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/ -->
-      Develop by <a href="javascript:void(0)">Yussuf Faisal</a>
+      Develop by <a href="javascript:void(0)" style="color: #047D3E">Yussuf Faisal</a>
     </div>
   </div>
 </footer><!-- End Footer -->
