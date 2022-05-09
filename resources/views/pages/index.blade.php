@@ -16,7 +16,33 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
-          <img src="img/hero-img.png" class="img-fluid" alt="">
+          {{-- <img src="img/hero-img.png" class="img-fluid" alt=""> --}}
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <center><img class="d-block" src="img/hero-img.png" alt="First slide"></center>
+              </div>
+              <div class="carousel-item">
+                <center><img class="d-block" src="img/hero-img.png" alt="Second slide"></center>
+              </div>
+              <div class="carousel-item">
+                <center><img class="d-block" src="img/hero-img.png" alt="Third slide"></center>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -81,7 +107,7 @@
           <p>Berikut adalah foto-foto kegiatan kami di kawasan internal maupun eksternal Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
         </div>
 
-        <div class="row">
+        {{-- <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -90,11 +116,11 @@
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> --}}
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -108,7 +134,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -122,7 +148,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -136,7 +162,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -150,7 +176,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -164,7 +190,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -178,7 +204,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -192,7 +218,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -206,7 +232,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-2 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -215,6 +241,48 @@
               </div>
               <div class="portfolio-links">
                 <a href="img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -683,7 +751,7 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Testimoni</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Penilaian Anda sangat berharga bagi kami</p>
         </div>
 
         <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="100">
@@ -691,56 +759,91 @@
           <div class="testimonial-item">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              Menjadi alternatif untuk pelayanan kesehatan bernuansa islami
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
-            <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Muthi'ah Amra Rabbiha</h3>
+          </div>
+          
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              gedung baru bersih, pelayanannya bagus, bisa memakai BPJS. semoga bermanfaat bagi warga Sukoharjo dan sekitarnya..
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Ninik Indriyani</h3>
           </div>
 
           <div class="testimonial-item">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              Rumah sakit islami yg bagus di pusat Kota Sukoharjo
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
-            <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Ahmad H Machsuni</h3>
           </div>
 
           <div class="testimonial-item">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              Mantaap tingkatkan, jaya pku muhammadiyah sukoharjo
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
-            <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Qoi Ruli</h3>
           </div>
 
           <div class="testimonial-item">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              pelayanan cukup memuaskan, tersedia mesin atm, gedung bersih, dan antrian tertata
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
-            <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Ahmad Rafiiq</h3>
           </div>
 
           <div class="testimonial-item">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              Terimakasih saya dilayani dengan ramah, semoga bisa ditingkatkan dan dipertahankan
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
-            <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Ferdi Mustofa</h3>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Tindakannya cepat, anak saya langsung ditangani dan alurnya cepat dan tanggap. terima kasih rspkuskh
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Muh Mirza K</h3>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              lokasi strategis, dapat dengan cepat menangani pasien-pasien darurat. perawatnya juga ramah-ramah. sipp
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Adi Saputra</h3>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Pendaftaran profesional ramah santun tidak berbelit" Cepat dan mudah.. Alhamdulillah sangat puas untuk saya yang baru pertama kali periksa ke rumah sakit ini.. Termakasih pku semoga layanan seperti ini tersedia di seluruh rumah sakit
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="img/user.png" class="testimonial-img" alt="">
+            <h3>Lilis Setianingsih</h3>
           </div>
 
         </div>
@@ -753,8 +856,8 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Kerja Sama</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Link</h2>
+          <p>Daftar Link pendukung Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
         </div>
 
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
