@@ -7,7 +7,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="footer-info">
             <h3>
-              <img src="img/logo/pku/logo-admin.png" alt="">
+              <img src="{{ asset('img/logo/pku/logo-admin.png') }}" alt="">
             </h3>
             <p>
               Jl. Mayor Sunaryo No. 37 <br>
@@ -50,7 +50,7 @@
         <div class="col-lg-4 col-md-6 footer-newsletter">
           <h4>Akreditasi</h4>
           {{-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> --}}
-          <img src="img/logo/kars.png" alt="">
+          <img src="{{ asset('img/logo/kars.png') }}" alt="">
         </div>
 
       </div>

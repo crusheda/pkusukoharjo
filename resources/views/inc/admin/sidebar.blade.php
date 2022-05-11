@@ -10,7 +10,7 @@
                 <li class="menu-title" data-key="t-menu">Menu</li>
 
                 <li>
-                    <a href="{{ route('home') }}">
+                    <a href="{{ route('admin.home') }}">
                         <i data-feather="home"></i>
                         <span data-key="t-dashboard">Dashboard</span>
                     </a>
@@ -32,7 +32,7 @@
                                 <span data-key="t-email">Artikel</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="#" data-key="t-inbox">Berita Terkini</a></li>
+                                <li><a href="{{ route('admin.berita.index') }}" data-key="t-inbox">Berita Terkini</a></li>
                                 <li><a href="#" data-key="t-read-email">Info Kesehatan</a></li>
                             </ul>
                         </li>

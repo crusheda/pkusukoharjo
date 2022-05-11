@@ -22,5 +22,9 @@ Route::get('/portfolio-details.html', function () {
 });
 
 Auth::routes();
+// Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::resource('posting/berita', 'posting\beritaController');
+});

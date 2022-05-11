@@ -5,7 +5,7 @@
     <div class="logo mr-auto">
       <h1 class="text-light">
         {{-- <a href="index.html"><span>Scaffold</span></a> --}}
-        <img src="img/logo/pku/logo-1-sm-green.png" style="margin-top: -5px" alt="">
+        <img src="{{ asset('img/logo/pku/logo-1-sm-green.png') }}" style="margin-top: -5px" alt="">
         {{-- <img src="img/logo/pku/logo-admin.png" alt=""> --}}
       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->

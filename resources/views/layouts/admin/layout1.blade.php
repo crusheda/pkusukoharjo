@@ -7,21 +7,28 @@
       <meta content="Portal Admin Rumah Sakit PKU Muhammadiyah Sukoharjo" name="description" />
       <meta content="Yussuf Faisal" name="author" />
       <!-- App favicon -->
-      <link rel="apple-touch-icon" sizes="76x76" href="img/logo/pku/pku_ico.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="img/logo/pku/pku_ico.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/logo/pku/pku_ico.png') }}">
+      <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('img/logo/pku/pku_ico.png') }}">
 
       <!-- plugin css -->
-      <link href="admin/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+      <link href="{{ asset('admin/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css') }}" rel="stylesheet" type="text/css" />
+
+      <!-- DataTables -->
+      <link href="{{ asset('admin/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
+      <link href="{{ asset('admin/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
+
+      <!-- Responsive datatable examples -->
+      <link href="{{ asset('admin/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" /> 
 
       <!-- preloader css -->
-      <link rel="stylesheet" href="admin/css/preloader.min.css" type="text/css" />
+      <link rel="stylesheet" href="{{ asset('admin/css/preloader.min.css') }}" type="text/css" />
 
       <!-- Bootstrap Css -->
-      <link href="admin/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+      <link href="{{ asset('admin/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
       <!-- Icons Css -->
-      <link href="admin/css/icons.min.css" rel="stylesheet" type="text/css" />
+      <link href="{{ asset('admin/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
       <!-- App Css-->
-      <link href="admin/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+      <link href="{{ asset('admin/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -202,28 +209,57 @@
         <div class="rightbar-overlay"></div>
 
         <!-- JAVASCRIPT -->
-        <script src="admin/libs/jquery/jquery.min.js"></script>
-        <script src="admin/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="admin/libs/metismenu/metisMenu.min.js"></script>
-        <script src="admin/libs/simplebar/simplebar.min.js"></script>
-        <script src="admin/libs/node-waves/waves.min.js"></script>
-        <script src="admin/libs/feather-icons/feather.min.js"></script>
+        <script src="{{ asset('admin/libs/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/metismenu/metisMenu.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/simplebar/simplebar.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/node-waves/waves.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/feather-icons/feather.min.js') }}"></script>
+
         <!-- pace js -->
-        <script src="admin/libs/pace-js/pace.min.js"></script>
+        <script src="{{ asset('admin/libs/pace-js/pace.min.js') }}"></script>
+
+        <!-- Required datatable js -->
+        <script src="{{ asset('admin/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+
+        <!-- Buttons examples -->
+        <script src="{{ asset('admin/libs/datatables.net-buttons/js/dataTables.buttons.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/jszip/jszip.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/pdfmake/build/pdfmake.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/pdfmake/build/vfs_fonts.js') }}"></script>
+        <script src="{{ asset('admin/libs/datatables.net-buttons/js/buttons.html5.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/datatables.net-buttons/js/buttons.print.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/datatables.net-buttons/js/buttons.colVis.min.js') }}"></script>
 
         <!-- apexcharts -->
-        <script src="admin/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="{{ asset('admin/libs/apexcharts/apexcharts.min.js') }}"></script>
 
         <!-- Plugins js-->
-        <script src="admin/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="admin/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
-        <!-- dashboard init -->
-        <script src="admin/js/pages/dashboard.init.js"></script>
+        <script src="{{ asset('admin/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js') }}"></script>
+        <script src="{{ asset('admin/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js') }}"></script>
+        
+        <!-- OTHER JS -->
+        <script src="{{ asset('admin/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script>
 
-        <script src="admin/js/app.js"></script>
+        {{-- Script Author --}}
+        <script src="{{ asset('admin/js/app.js') }}"></script>
+
+        <script>
+            $(document).ready(function(){
+                // DATATABLE
+                    $(".datatableku").DataTable({responsive:!1});
+                // CKEDITOR
+                    ClassicEditor
+                    .create(document.querySelector(".ckeditor"))
+                    .then(function(e) {
+                        e.ui.view.editable.element.style.height = "200px"
+                    }).catch(function(e) {
+                        console.error(e)
+                    });
+            });
+        </script>
 
     </body>
-
-
-<!-- Mirrored from themesbrand.com/minia/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2022 10:25:55 GMT -->
 </html>

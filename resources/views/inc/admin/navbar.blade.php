@@ -3,21 +3,21 @@
         <div class="d-flex">
             <!-- LOGO -->
             <div class="navbar-brand-box">
-                <a href="{{ route('home') }}" class="logo logo-dark">
+                <a href="{{ route('admin.home') }}" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="img/logo/pku/pku_ico.png" alt="">
+                        <img src="{{ asset('img/logo/pku/pku_ico.png') }}" alt="">
                     </span>
                     <span class="logo-lg">
-                        <img src="img/logo/pku/logo-admin.png" alt="">
+                        <img src="{{ asset('img/logo/pku/logo-admin.png') }}" alt="">
                     </span>
                 </a>
 
-                <a href="{{ route('home') }}" class="logo logo-light">
+                <a href="{{ route('admin.home') }}" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="img/logo/pku/pku_ico.png" alt="">
+                        <img src="{{ asset('img/logo/pku/pku_ico.png') }}" alt="">
                     </span>
                     <span class="logo-lg">
-                        <img src="img/logo/pku/logo-admin-white.png" alt="">
+                        <img src="{{ asset('img/logo/pku/logo-admin-white.png') }}" alt="">
                     </span>
                 </a>
             </div>
@@ -107,19 +107,19 @@
                         <div class="row g-0">
                             <div class="col">
                                 <a class="dropdown-icon-item" href="#">
-                                    <img src="admin/images/brands/github.png" alt="Github">
+                                    <img src="{{ asset('admin/images/brands/github.png') }}" alt="Github">
                                     <span>GitHub</span>
                                 </a>
                             </div>
                             <div class="col">
                                 <a class="dropdown-icon-item" href="#">
-                                    <img src="admin/images/brands/bitbucket.png" alt="bitbucket">
+                                    <img src="{{ asset('admin/images/brands/bitbucket.png') }}" alt="bitbucket">
                                     <span>Bitbucket</span>
                                 </a>
                             </div>
                             <div class="col">
                                 <a class="dropdown-icon-item" href="#">
-                                    <img src="admin/images/brands/dribbble.png" alt="dribbble">
+                                    <img src="{{ asset('admin/images/brands/dribbble.png') }}" alt="dribbble">
                                     <span>Dribbble</span>
                                 </a>
                             </div>
@@ -128,19 +128,19 @@
                         <div class="row g-0">
                             <div class="col">
                                 <a class="dropdown-icon-item" href="#">
-                                    <img src="admin/images/brands/dropbox.png" alt="dropbox">
+                                    <img src="{{ asset('admin/images/brands/dropbox.png') }}" alt="dropbox">
                                     <span>Dropbox</span>
                                 </a>
                             </div>
                             <div class="col">
                                 <a class="dropdown-icon-item" href="#">
-                                    <img src="admin/images/brands/mail_chimp.png" alt="mail_chimp">
+                                    <img src="{{ asset('admin/images/brands/mail_chimp.png') }}" alt="mail_chimp">
                                     <span>Mail Chimp</span>
                                 </a>
                             </div>
                             <div class="col">
                                 <a class="dropdown-icon-item" href="#">
-                                    <img src="admin/images/brands/slack.png" alt="slack">
+                                    <img src="{{ asset('admin/images/brands/slack.png') }}" alt="slack">
                                     <span>Slack</span>
                                 </a>
                             </div>
@@ -171,7 +171,7 @@
                         <a href="#!" class="text-reset notification-item">
                             <div class="d-flex">
                                 <div class="flex-shrink-0 me-3">
-                                    <img src="admin/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="{{ asset('admin/images/users/avatar-3.jpg') }}" class="rounded-circle avatar-sm" alt="user-pic">
                                 </div>
                                 <div class="flex-grow-1">
                                     <h6 class="mb-1">James Lemire</h6>
@@ -218,7 +218,7 @@
                         <a href="#!" class="text-reset notification-item">
                             <div class="d-flex">
                                 <div class="flex-shrink-0 me-3">
-                                    <img src="admin/images/users/avatar-6.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="{{ asset('admin/images/users/avatar-6.jpg') }}" class="rounded-circle avatar-sm" alt="user-pic">
                                 </div>
                                 <div class="flex-grow-1">
                                     <h6 class="mb-1">Salena Layfield</h6>
@@ -247,7 +247,7 @@
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item bg-soft-light border-start border-end" id="page-header-user-dropdown"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="rounded-circle header-profile-user" src="img/user.png"
+                    <img class="rounded-circle header-profile-user" src="{{ asset('img/user.png') }}"
                         alt="Header Avatar">
                     <span class="d-none d-xl-inline-block ms-1 fw-medium">{{ Auth::user()->name }}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
