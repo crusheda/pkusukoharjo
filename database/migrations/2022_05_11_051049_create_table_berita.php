@@ -13,9 +13,18 @@ class CreateTableBerita extends Migration
      */
     public function up()
     {
-        Schema::create('table_berita', function (Blueprint $table) {
+        Schema::create('berita', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('id_user');
+            $table->string('judul');
+            $table->date('tgl');
+            $table->string('nama');
+            $table->longText('deskripsi');
+                // Thumbnail
+                $table->string('title')->nullable();
+                $table->string('filename')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -26,6 +35,6 @@ class CreateTableBerita extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_berita');
+        Schema::dropIfExists('berita');
     }
 }

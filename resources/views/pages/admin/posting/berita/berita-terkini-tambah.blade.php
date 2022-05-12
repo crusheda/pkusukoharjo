@@ -33,43 +33,44 @@
                             <button type="button" class="btn btn-dark" onclick="window.location='{{ route('admin.berita.index') }}'"><i class="mdi mdi-chevron-left"></i> Kembali</button>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div>
+                    <form class="form-auth-small" action="{{ route('admin.berita.store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
                                     <div class="mb-3">
                                         <label class="form-label">Judul</label>
-                                        <input class="form-control" type="text" placeholder="Tuliskan Judul">
+                                        <input class="form-control" type="text" name="judul" placeholder="Tuliskan Judul" autofocus required>
                                     </div>
+                                </div>
+                                <div class="col">
                                     <div class="mb-3">
                                         <label class="form-label">Nama Penulis</label>
-                                        <input class="form-control" type="text" placeholder="Tuliskan Nama Lengkap Penulis">
-                                    </div>                                    
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="mt-3 mt-lg-0">
-                                    <div class="mb-3">
-                                        <label class="form-label">Tanggal Upload</label>
-                                        <input class="form-control" type="date" value="2019-08-19">
+                                        <input class="form-control" type="text" name="nama" placeholder="Nama Lengkap Penulis" required>
                                     </div>
+                                </div>
+                                <div class="col">
                                     <div class="mb-3">
                                         <label class="form-label">Upload Thumbnail</label><br>
-                                        <input type="file" class="form-control-file">
+                                        <input type="file" name="file" class="form-control-file" required>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <label class="form-label">Deskripsi Berita</label>
-                                <textarea class="ckeditor" name="deskripsi"></textarea>
+                                {{-- <div class="col-md-12">
+                                    <label class="form-label">Deskripsi Berita</label>
+                                    <textarea class="ckeditor" name="deskripsi"></textarea>
+                                </div> --}}
+                                <hr>
+                                <div class="col-md-12">
+                                    <center><label class="form-label">Deskripsi Artikel Berita</label></center>
+                                    <textarea class="textarea" name="deskripsi"></textarea>
+                                    {{-- <textarea class="form-control" name="summernote" id="summernote"></textarea> --}}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-success float-end" type="submit"><i class="mdi mdi-content-save"></i> Simpan</button>
-                    </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success float-end mb-3" type="submit"><i class="mdi mdi-content-save"></i> Simpan</button>
+                        </div>
+                    </form>
                 </div>
             </div> <!-- end col -->
         </div> <!-- end row -->

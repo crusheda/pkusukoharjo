@@ -26,5 +26,9 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
+
+    // BERITA
+    Route::get('posting/berita/api/data', 'posting\beritaController@apiData')->name('berita.api.data');
+    Route::get('posting/berita/api/data/hapus/{id}', 'posting\beritaController@apiHapus')->name('berita.api.hapus');
     Route::resource('posting/berita', 'posting\beritaController');
 });

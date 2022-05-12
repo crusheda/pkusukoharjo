@@ -23,12 +23,23 @@
       <!-- preloader css -->
       <link rel="stylesheet" href="{{ asset('admin/css/preloader.min.css') }}" type="text/css" />
 
+      <!-- Alert CSS-->
+      <link href="{{ asset('admin/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="{{ asset('modules/izitoast/css/iziToast.min.css') }}">
+
+      <!-- summernote css -->
+      {{-- <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet"> --}}
+      {{-- <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet"> --}}
+
       <!-- Bootstrap Css -->
       <link href="{{ asset('admin/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
       <!-- Icons Css -->
       <link href="{{ asset('admin/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
       <!-- App Css-->
       <link href="{{ asset('admin/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+      
+      <!-- JSS For Document Ajx -->
+    <script src="{{ asset('admin/libs/jquery/jquery.min.js') }}"></script>
 
     </head>
 
@@ -47,22 +58,22 @@
             <!-- ============================================================== -->
             <div class="main-content">
 
-              @yield('content')
+                @yield('content')
 
-              <footer class="footer">
-                  <div class="container-fluid">
-                      <div class="row">
-                          <div class="col-sm-6">
-                            2022 @ Lakon WEB.
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="text-sm-end d-none d-sm-block">
-                              Develop by Yussuf Faisal
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                2022 @ Lakon WEB.
                             </div>
-                          </div>
-                      </div>
-                  </div>
-              </footer>
+                            <div class="col-sm-6">
+                                <div class="text-sm-end d-none d-sm-block">
+                                Develop by Yussuf Faisal
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
             <!-- end main content-->
 
@@ -233,6 +244,10 @@
         <script src="{{ asset('admin/libs/datatables.net-buttons/js/buttons.print.min.js') }}"></script>
         <script src="{{ asset('admin/libs/datatables.net-buttons/js/buttons.colVis.min.js') }}"></script>
 
+        <!-- Alerts js -->
+        <script src="{{ asset('admin/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+        <script src="{{ asset('modules/izitoast/js/iziToast.min.js') }}"></script>
+
         <!-- apexcharts -->
         <script src="{{ asset('admin/libs/apexcharts/apexcharts.min.js') }}"></script>
 
@@ -241,7 +256,15 @@
         <script src="{{ asset('admin/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js') }}"></script>
         
         <!-- OTHER JS -->
-        <script src="{{ asset('admin/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script>
+        {{-- <script src="{{ asset('admin/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script> --}}
+
+        <!-- TinyMCE css -->
+        {{-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> --}}
+        <script src="{{ asset('admin/libs/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
+
+        <!-- summernote css/js -->
+        {{-- <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script> --}}
+        {{-- <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"> --}}
 
         {{-- Script Author --}}
         <script src="{{ asset('admin/js/app.js') }}"></script>
@@ -251,12 +274,31 @@
                 // DATATABLE
                     $(".datatableku").DataTable({responsive:!1});
                 // CKEDITOR
-                    ClassicEditor
-                    .create(document.querySelector(".ckeditor"))
-                    .then(function(e) {
-                        e.ui.view.editable.element.style.height = "200px"
-                    }).catch(function(e) {
-                        console.error(e)
+                    // ClassicEditor
+                    // .create(document.querySelector(".ckeditor"))
+                    // .then(function(e) {
+                    //     e.ui.view.editable.element.style.height = "200px"
+                    // }).catch(function(e) {
+                    //     console.error(e)
+                    // });
+                // TINYMCE
+                    tinymce.init({
+                        selector: '.textarea',
+                        // width: 600,
+                        // height: 300,
+                        plugins: [
+                            'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+                            'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media',
+                            'table', 'emoticons', 'template', 'help'
+                        ],
+                        toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | ' +
+                            'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+                            'forecolor backcolor emoticons | help',
+                        menu: {
+                            favs: { title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons' }
+                        },
+                        menubar: 'favs file edit view insert format tools table help',
+                        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
                     });
             });
         </script>
