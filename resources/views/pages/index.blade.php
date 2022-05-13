@@ -293,7 +293,7 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= News Section ======= -->
+    <!-- ======= Berita Section ======= -->
     <section id="berita" class="section-bg">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
@@ -301,9 +301,9 @@
           <p>Ikuti berita-berita terbaru dari kami. Berikut ini merupakan berita terkini Rumah Sakit PKU Muhammadiyah Sukoharjo<br>yang dapat anda lihat di bawah ini</p>
         </div>
         <div class="row">
-          <div class="col">
-            <div class="card" data-aos="fade-up">
-              <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
+          <div class="col-md-6">
+            <div class="card mb-4" data-aos="fade-up" id="berita-utama">
+              {{-- <img src="img/news1.jpg" class="card-img-top" style="height: 100%">
               <div class="card-body">
                 <h5 class="card-title" style="margin-bottom: 0px">RS PKU Muhammadiyah Sukoharjo Jalin Mou Dengan BPJS Ketenagakerjaan</h5>
                 <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
@@ -311,49 +311,25 @@
                   Kepastian bagi salah satu rumah sakit swasta terbesar...
                 </p>
                 <a href="#" class="btn btn-warning text-white">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
-              </div>
+              </div> --}}
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <div class="row row-cols-1 row-cols-md-2 g-4">
-              <div class="col">
-                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="100">
-                  <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
-                  <div class="card-body">
-                    <a>Survei Akreditasi KARS</a><br>
-                    <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
-                    <a style="margin-top: 10px" href="#" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
-                  </div>
+              <div class="col-md-6">
+                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="100" id="berita1">
                 </div>
               </div>
-              <div class="col">
-                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="200">
-                  <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
-                  <div class="card-body">
-                    <a>RS PKU Sukoharjo, Klinik Sederhana Menjadi Rumah Sakit Luar Biasa</a><br>
-                    <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
-                    <a style="margin-top: 10px" href="#" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
-                  </div>
+              <div class="col-md-6">
+                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="200" id="berita2">
                 </div>
               </div>
-              <div class="col">
-                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="300">
-                  <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
-                  <div class="card-body">
-                    <a>Pemberian Imunisasi MR Gratis</a><br>
-                    <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
-                    <a style="margin-top: 10px" href="#" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
-                  </div>
+              <div class="col-md-6">
+                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="300" id="berita3">
                 </div>
               </div>
-              <div class="col">
-                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="400">
-                  <img src="img/news1.jpg" class="card-img-top" style="height: 100%" alt="...">
-                  <div class="card-body">
-                    <a>Visitasi dan Kredensial BPJS</a><br>
-                    <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;Dian Sastro &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;6 Mei 2022</sub>
-                    <a style="margin-top: 10px" href="#" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
-                  </div>
+              <div class="col-md-6">
+                <div class="card mb-4" style="" data-aos="fade-up" data-aos-delay="400" id="berita4">
                 </div>
               </div>
             </div>
@@ -916,4 +892,47 @@
     </section><!-- End Clients Section -->
 
   </main><!-- End #main -->
+  {{-- {{ url('storage/'.substr(${res.beritaUtama.filename},7,1000)) }} --}}
+
+{{-- SCRIPT AJAX API --}}
+<script>
+  $(document).ready( function () {
+    $.ajax(
+      {
+        url: "./api/show",
+        type: 'GET',
+        dataType: 'json', // added data type
+        success: function(res) {
+          $("#berita-utama").empty();
+          console.log(res.berita.length);
+          if(res.berita.length == 0){
+            $("#berita-utama").append(``);
+          } else {
+            $("#berita-utama").append(`
+              <img src="storage/${(res.berita[0].filename).substring(7,1000)}" class="card-img-top" style="height: 300px">
+              <div class="card-body">
+                <h5 class="card-title" style="margin-bottom: 0px">${res.berita[0].judul}</h5>
+                <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;${res.berita[0].nama} &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;${res.berita[0].tgl}</sub>
+                <p style="margin-top: 10px" class="card-text">${res.berita[0].deskripsi.substring(0,150)}...</p>
+                <a href="artikel/berita/${res.berita[0].id}" class="btn btn-warning text-white">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
+              </div>
+            `);
+            for (let i = 1; i < res.berita.length; i++) {
+              console.log(i);
+              $("#berita"+i).empty();
+              $("#berita"+i).append(`
+                <img src="storage/${(res.berita[i].filename).substring(7,1000)}" class="card-img-top" style="height: 140px">
+                <div class="card-body d-flex flex-column">
+                  <a>${res.berita[i].judul}</a><br>
+                  <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;${res.berita[i].nama} &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;${res.berita[i].tgl}</sub>
+                  <a style="margin-top: 10px" href="artikel/berita/${res.berita[i].id}" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
+                </div>
+              `);
+            }
+          }
+        }
+      }
+    );
+  });
+</script>
 @endsection

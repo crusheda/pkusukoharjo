@@ -3,13 +3,22 @@
 @section('content')
 
   <main id="main" style="margin-top: 40px">
-    <!-- ======= Sejarah Section ======= -->
-    <section id="sejarah" class="sejarah section-bg">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-down">
-          <h3>Sejarah Singkat</h3>
-        </div>
+        <ol>
+          <li>Profil</li>
+          <li>Sejarah</li>
+        </ol>
+        <h2>Sejarah Singkat</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Sejarah Section ======= -->
+    <section id="sejarah" class="sejarah">
+      <div class="container">
 
         <div class="card" data-aos="fade-up">
           <div class="card-header">

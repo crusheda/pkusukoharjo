@@ -46,7 +46,7 @@ class beritaController extends Controller
         $this->validate($request,[
             'judul' => 'required',
             'nama' => 'required',
-            'file' => 'nullable|image|mimes:jpg,png,jpeg,gif|max:10000',
+            'file' => 'nullable|mimes:jpg,png,jpeg,gif|max:10000',
             ]);
 
         // tampung berkas yang sudah diunggah ke variabel baru
@@ -120,6 +120,7 @@ class beritaController extends Controller
         $this->validate($request,[
             'judul' => 'required',
             'nama' => 'required',
+            'file' => 'nullable|mimes:jpg,png,jpeg,gif|max:10000',
             ]);
 
         $uploadedFile = $request->file('file');

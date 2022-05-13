@@ -32,7 +32,7 @@
                             <button type="button" class="btn btn-primary" onclick="window.location='{{ route('admin.berita.create') }}'"><i class="mdi mdi-plus-thick"></i> Tambah</button>
                             <div class="vr"></div>
                             <div class="btn-group">
-                                <button type="reset" class="btn btn-info"><i class="mdi mdi-information-outline"></i> Informasi</button>
+                                <button type="reset" class="btn btn-info" disabled><i class="mdi mdi-information-outline"></i> Informasi</button>
                                 <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="REFRESH TABEL" onclick="refresh()"><i class="fa-fw fas fa-sync nav-icon text-white"></i> Refresh</button>
                             </div>
                         </div>
