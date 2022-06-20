@@ -26,7 +26,7 @@ Route::get('/portfolio-details.html', function () { return view('pages.portfolio
 
 // API PORTAL
 Route::get('/api/show', 'portalController@show')->name('api.show');
-Route::get('artikel/berita/api/show', 'portalController@showArtikel')->name('api.showArtikel');
+Route::get('/artikel/berita/api/show', 'portalController@showArtikel')->name('api.showArtikel');
 
 // ADMIN
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
