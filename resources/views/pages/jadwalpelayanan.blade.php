@@ -23,7 +23,7 @@
             <table id="table" class="table table-bordered dt-responsive nowrap w-100">
               <thead>
               <tr>
-                  <th>Nama</th>
+                  <th>Dokter</th>
                   <th>Poliklinik</th>
                   <th>Waktu</th>
               </tr>
@@ -70,6 +70,8 @@
                             searching: true,
                             dom: 'Bfrtip',
                             order: [[ 1, "desc" ]],
+                            responsive: true,
+                            scrollX: true,
                         }
                     ).columns.adjust();
                 }
