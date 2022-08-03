@@ -13,9 +13,8 @@ class portalController extends Controller
 {
     public function index()
     {
-        // return view('pages.index');
-        return view('pages.maintenance');
-        // return view('pages.home-photography');
+        return view('pages.index');
+        // return view('pages.maintenance');
     }
 
     // API

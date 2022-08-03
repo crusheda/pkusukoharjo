@@ -23,6 +23,11 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li>
+                            <a href="{{ route('admin.jadwal.index') }}">
+                                <span data-key="t-calendar">Jadwal Pelayanan</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="#">
                                 <span data-key="t-calendar">Lowongan Pekerjaan</span>
                             </a>

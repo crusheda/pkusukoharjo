@@ -18,7 +18,14 @@ Auth::routes();
 
 // PORTAL
 Route::get('/', 'portalController@index')->name('portal');
+
+// BERITA
 Route::get('/artikel/berita/{id}', 'artikelController@showBerita')->name('artikel.berita');
+
+// JADWAL PELAYANAN
+Route::get('/jadwalpelayanan/api/data', 'jadwalPelayananController@apiData')->name('jadwalpelayanan.api');
+Route::get('/jadwalpelayanan', 'jadwalPelayananController@index')->name('jadwalpelayanan');
+
 Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
 Route::get('/sejarah', function () { return view('pages.sejarah'); })->name('sejarah');
 Route::get('/visimisi', function () { return view('pages.visimisi'); })->name('visimisi');
@@ -36,4 +43,9 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
     Route::get('posting/berita/api/data', 'posting\beritaController@apiData')->name('berita.api.data');
     Route::get('posting/berita/api/data/hapus/{id}', 'posting\beritaController@apiHapus')->name('berita.api.hapus');
     Route::resource('posting/berita', 'posting\beritaController');
+
+    // JADWAL PELAYANAN
+    Route::get('posting/jadwal/api/data', 'posting\jadwalController@apiData')->name('jadwal.api.data');
+    Route::get('posting/jadwal/api/data/hapus/{id}', 'posting\jadwalController@apiHapus')->name('jadwal.api.hapus');
+    Route::resource('posting/jadwal', 'posting\jadwalController');
 });

@@ -28,22 +28,22 @@
         <div class="col-lg-2 col-md-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
           </ul>
         </div>
 
@@ -59,14 +59,14 @@
 
   <div class="container">
     <div class="copyright">
-      2022 &copy; Copyright <strong><span>Lakon Web</span></strong>. All Rights Reserved
+      2022 &copy; All Rights Reserved
     </div>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/ -->
-      Develop by <a href="javascript:void(0)" style="color: #047D3E">Yussuf Faisal</a>
+      Develop by <a href="https://www.instagram.com/hiyussuf/" target="_blank" style="color: #047D3E">Yussuf Faisal</a>
     </div>
   </div>
 </footer><!-- End Footer -->

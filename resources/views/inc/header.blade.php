@@ -33,7 +33,7 @@
         </li>
         <li class="drop-down"><a href="">Informasi</a>
           <ul>
-            <li><a href="#about">Jadwal Pelayanan</a></li>
+            <li><a href="#about">Lowongan Kerja</a></li>
             <li><a href="#team">Dokter Spesialis</a></li>
             <li><a href="#testimonials">Indikator Mutu</a></li>
             <li><a href="#testimonials">PPI</a></li>
@@ -58,7 +58,7 @@
             </li>
           </ul>
         </li>
-        <li><a href="#pricing">Lowongan Kerja</a></li>
+        <li><a href="{{ route('jadwalpelayanan') }}">Jadwal Pelayanan</a></li>
         <li><a href="{{ route('kontak') }}">Kontak</a></li>
 
       </ul>
