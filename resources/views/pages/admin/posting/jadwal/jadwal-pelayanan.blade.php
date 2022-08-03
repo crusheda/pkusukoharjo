@@ -60,7 +60,6 @@
     </div>
     <!-- container-fluid -->
 </div>
-
 <script>
     $(document).ready( function () {
         $.ajax(
@@ -80,7 +79,7 @@
                                 <td>
                                     <center>
                                         <div class="btn-group" role="group">
-                                            <button type="button" class="btn btn-success btn-sm text-white" onclick="showJadwal(${item.id})"><i class="fa-fw fas fa-image nav-icon text-white"></i></button>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#showJadwal"></button>
                                             <button type="button" class="btn btn-warning btn-sm" onclick="window.location='{{ url('admin/posting/jadwal/${item.id}/edit') }}'"><i class="fa-fw fas fa-edit nav-icon text-white"></i></button>
                                             <button type="button" class="btn btn-danger btn-sm" onclick="hapus(${item.id})"><i class="fa-fw fas fa-trash nav-icon"></i></button>                                        
                                         </div>
@@ -123,6 +122,8 @@
                                 },
                             ],
                             order: [[ 3, "desc" ]],
+                            responsive: true,
+                            scrollX: true,
                             pageLength: 10
                         }
                     ).columns.adjust();
