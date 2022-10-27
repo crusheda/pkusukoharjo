@@ -1,72 +1,91 @@
-<!-- ======= Footer ======= -->
-<footer id="footer">
-  <div class="footer-top">
+<!-- Start Footer Area -->
+<section class="footer-area">
     <div class="container">
-      <div class="row">
+        <div class="subscribe-area">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="newsletter-content">
+                        <h2>Join Our Newsletter</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="footer-info">
-            <h3>
-              <img src="{{ asset('img/logo/pku/logo-admin.png') }}" alt="">
-            </h3>
-            <p>
-              Jl. Mayor Sunaryo No. 37 <br>
-              Sukoharjo, JT (57512)<br><br>
-              <strong>Telp:</strong> (0271) 593979<br>
-              <strong>Email:</strong> pku.sukoharjo@gmail.com<br>
-            </p>
-            <div class="social-links mt-3">
-              <a href="https://twitter.com/rspkusukoharjo" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-              <a href="https://www.facebook.com/rspkusukoharjo" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/rspkusukoharjo/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.youtube.com/channel/UChgodAUFt7N3Hfcs6RPlOTQ" class="google-plus" target="_blank"><i class="bx bxl-youtube"></i></a>
-              <a href="https://www.tiktok.com/@rspkusukoharjo" class="linkedin" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <div class="col-lg-6 col-md-12">
+                    <form class="newsletter-form" data-toggle="validator">
+                        <input type="email" class="input-newsletter" placeholder="Enter your email" name="EMAIL" required autocomplete="off">
+
+                        <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+                        <div id="validator-newsletter" class="form-result"></div>
+                    </form>
+                </div>
             </div>
-          </div>
         </div>
 
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-          </ul>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <div class="logo">
+                        <a href="#"><img src="{{ asset('assets/img/white-logo.png') }}" alt="image"></a>
+                        <p>Powerfully flexible html template for medical & health related organizations, institutes, clinics and businesses.</p>
+                    </div>
+
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget pl-5">
+                    <h3>Departments</h3>
+
+                    <ul class="departments-list">
+                        <li><a href="#">Surgery and Radiology</a></li>
+                        <li><a href="#">Departments</a></li>
+                        <li><a href="#">Family</a></li>
+                        <li><a href="#">Our Doctors</a></li>
+                        <li><a href="#">Woman's Health</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget pl-5">
+                    <h3>Links</h3>
+
+                    <ul class="links-list">
+                        <li><a href="#">Optician</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Pediatrics</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Dermatology</a></li>
+                        <li><a href="#">Doctors</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h3>Opening Hours</h3>
+
+                    <ul class="opening-hours">
+                        <li>Mon - Tues <span>9.00AM - 17.00PM</span></li>
+                        <li>Wednesday <span>9.00AM - 17.00PM</span></li>
+                        <li>Thursday <span>9.00AM - 17.00PM</span></li>
+                        <li>Friday <span>9.00AM - 17.00PM</span></li>
+                        <li>Saturday <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Unknown</a></li>
-          </ul>
+        <div class="copyright-area">
+            <p>Copyright <i class="far fa-copyright"></i> 2021 Fovia. Design & Developed by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
         </div>
-
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Akreditasi</h4>
-          {{-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> --}}
-          <img src="{{ asset('img/logo/kars.png') }}" alt="">
-        </div>
-
-      </div>
     </div>
-  </div>
-
-  <div class="container">
-    <div class="copyright">
-      2022 &copy; All Rights Reserved
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/ -->
-      Develop by <a href="https://www.instagram.com/hiyussuf/" target="_blank" style="color: #047D3E">Yussuf Faisal</a>
-    </div>
-  </div>
-</footer><!-- End Footer -->
+</section>
+<!-- End Footer Area -->

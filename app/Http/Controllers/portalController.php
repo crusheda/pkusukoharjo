@@ -24,7 +24,7 @@ class portalController extends Controller
         // $beritaUtama = DB::table('berita')->where('id', \DB::raw("(select max(`id`) from berita)"))->get();
         // print_r($berita);
         // die();
-        
+
         $data = [
             'berita' => $berita,
         ];
@@ -35,7 +35,7 @@ class portalController extends Controller
     public function showArtikel()
     {
         $berita = berita::take(4)->orderBy('id', 'desc')->get();
-        
+
         $data = [
             'berita' => $berita,
         ];
