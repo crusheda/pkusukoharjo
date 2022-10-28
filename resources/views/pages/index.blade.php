@@ -1,21 +1,20 @@
 @extends('layouts.fovia')
 
 @section('content')
-
 <!-- Start Main Banner Area -->
 <div class="home-slides owl-carousel owl-theme">
-    <div class="main-banner item-bg1">
+    <div class="main-banner" style="background-image: url(img/gedung-pku/bg-gedung.png)">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
                     <div class="main-banner-content">
-                        <span>Best Healing Service</span>
-                        <h1>Fovia is the No. 1 Hospital</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Quis ipsumpsum dolor sit amet consectetur.</p>
+                        <span>Portal Resmi</span>
+                        <h1>Rumah Sakit PKU Muhammadiyah Sukoharjo</h1>
+                        <p>Amanah, Santun, Ramah, Ikhlas (ASRI)</p>
 
                         <div class="btn-box">
-                            <a href="#" class="btn btn-primary">Make appointment <i class="fas fa-bell"></i></a>
-                            <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="btn btn-light popup-youtube">Play Now <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary">Antrian Online <i class="fas fa-user"></i></a>
+                            <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="btn btn-light popup-youtube">Jadwal Dokter <i class="fas fa-calendar"></i></a>
                         </div>
                     </div>
                 </div>
@@ -27,7 +26,7 @@
         <div class="shape1"><img src="{{ asset('assets/img/shape/1.png') }}" alt="image"></div>
     </div>
 
-    <div class="main-banner item-bg2">
+    {{-- <div class="main-banner item-bg2">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
@@ -71,7 +70,7 @@
         <div class="circle-shape1"><img src="{{ asset('assets/img/circle-shape1.png') }}" alt="image"></div>
         <div class="circle-shape2"><img src="{{ asset('assets/img/circle-shape2.png') }}" alt="image"></div>
         <div class="shape1"><img src="{{ asset('assets/img/shape/1.png') }}" alt="image"></div>
-    </div>
+    </div> --}}
 </div>
 <!-- End Main Banner Area -->
 

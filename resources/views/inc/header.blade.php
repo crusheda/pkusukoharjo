@@ -5,8 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <ul class="header-contact-info">
-                        <li><i class="far fa-clock"></i> 24 Jam</li>
-                        <li><i class="fas fa-phone"></i> Call Us: <a href="tel:0271593979">IGD : 0271-593-979</a></li>
+                        <li><i class="fas fa-phone"></i> IGD : <a href="tel:0271593979">0271-593-979</a></li>
                         <li><i class="far fa-paper-plane"></i> <a href="mailto:pku.sukoharjo@gmail.com">pku.sukoharjo@gmail.com</a></li>
                     </ul>
                 </div>
