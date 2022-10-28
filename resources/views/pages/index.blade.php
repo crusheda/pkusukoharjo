@@ -13,8 +13,8 @@
                         <p>Amanah, Santun, Ramah, Ikhlas (ASRI)</p>
 
                         <div class="btn-box">
-                            <a href="#" class="btn btn-primary">Antrian Online <i class="fas fa-user"></i></a>
-                            <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="btn btn-light popup-youtube">Jadwal Dokter <i class="fas fa-calendar"></i></a>
+                            <a href="#" class="btn btn-primary">Antrian Online <i class="flaticon-doctor-1"></i></a>
+                            <a href="{{ route('jadwaldokter') }}" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a>
                         </div>
                     </div>
                 </div>
@@ -375,8 +375,87 @@
 </section>
 <!-- End Services Area -->
 
+<!-- Start Blog Area -->
+<section class="blog-area ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <h2>Artikel Kesehatan</h2>
+            <p>Tetap sehat bersama Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="post-image">
+                        <a href="#"><img src="{{ asset('assets/img/blog/1.jpg') }}" alt="image"></a>
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <ul>
+                                <li>By: <a href="#">John Smith</a></li>
+                                <li>June 19, 2021</li>
+                            </ul>
+                        </div>
+
+                        <h3><a href="#">250+ Medical Tips We Just Had to Share</a></h3>
+                        <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="post-image">
+                        <a href="#"><img src="{{ asset('assets/img/blog/2.jpg') }}" alt="image"></a>
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <ul>
+                                <li>By: <a href="#">Steven Hobb</a></li>
+                                <li>June 10, 2021</li>
+                            </ul>
+                        </div>
+
+                        <h3><a href="#">12 Ways You Can Cut Your Prescription Costs</a></h3>
+                        <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="post-image">
+                        <a href="#"><img src="{{ asset('assets/img/blog/3.jpg') }}" alt="image"></a>
+                    </div>
+
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <ul>
+                                <li>By: <a href="#">Sarah Taylor</a></li>
+                                <li>June 24, 2021</li>
+                            </ul>
+                        </div>
+
+                        <h3><a href="#">10 Tips to Live Better With Psoriatic Arthritis</a></h3>
+                        <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="more-services-btn">
+                    <a href="#" class="btn btn-primary">More Services <i class="flaticon-right-chevron"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Blog Area -->
+
 <!-- Start Doctor Area -->
-<section class="doctor-area ptb-100 bg-fefefe">
+{{-- <section class="doctor-area ptb-100 bg-fefefe">
     <div class="container">
         <div class="section-title">
             <span>Doctors</span>
@@ -486,7 +565,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 <!-- End Doctor Area -->
 
 <!-- Start Appointment Area -->
@@ -566,43 +645,43 @@
     <div class="container">
         <div class="section-title">
             <span>Feedback</span>
-            <h2>Our Happy Clients Says About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Testimoni</h2>
+            <p>Penilaian Anda sangat berharga bagi kami</p>
         </div>
 
         <div class="feedback-slides">
             <div class="client-thumbnails">
                 <div>
                     <div class="item">
-                        <div class="img-fill"><img src="{{ asset('assets/img/client-image/2.jpg') }}" alt="client"></div>
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
 
                     <div class="item">
-                        <div class="img-fill"><img src="{{ asset('assets/img/client-image/4.jpg') }}" alt="client"></div>
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
 
                     <div class="item">
-                        <div class="img-fill"><img src="{{ asset('assets/img/client-image/1.jpg') }}" alt="client"></div>
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
 
                     <div class="item">
-                        <div class="img-fill"><img src="{{ asset('assets/img/client-image/5.jpg') }}" alt="client"></div>
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
 
                     <div class="item">
-                        <div class="img-fill"><img src="{{ asset('assets/img/client-image/1.jpg') }}" alt="client"></div>
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
 
                     <div class="item">
-                        <div class="img-fill"><img src="{{ asset('assets/img/client-image/3.jpg') }}" alt="client"></div>
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
 
                     <div class="item">
-                        <div class="img-fill"><img src="{{ asset('assets/img/client-image/5.jpg') }}" alt="client"></div>
-                    </div>
-
-                    <div class="item">
-                        <div class="img-fill"><img src="{{ asset('assets/img/client-image/3.jpg') }}" alt="client"></div>
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
                 </div>
             </div>
@@ -611,65 +690,65 @@
                 <div>
                     <div class="item">
                         <div class="single-feedback">
-                            <h3>John Lucy</h3>
-                            <span>Founding Partner</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Muthi'ah Amra Rabbiha</h3>
+                            <span>6 Mei 2022</span>
+                            <p>Menjadi alternatif untuk pelayanan kesehatan bernuansa islami</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="single-feedback">
-                            <h3>John Smith</h3>
-                            <span>Web Developer</span>
-                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                            <h3>Ninik Indriyani</h3>
+                            <span>22 Juni 2022</span>
+                            <p>gedung baru bersih, pelayanannya bagus, bisa memakai BPJS. semoga bermanfaat bagi warga Sukoharjo dan sekitarnya..</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="single-feedback">
-                            <h3>Maxwel Warner</h3>
-                            <span>Web Designer</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Ahmad H Machsuni</h3>
+                            <span>26 Juni 2022</span>
+                            <p>Rumah sakit islami yg bagus di pusat Kota Sukoharjo</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="single-feedback">
-                            <h3>Ross Taylor</h3>
-                            <span>Patient</span>
-                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                            <h3>Qoi Ruli</h3>
+                            <span>5 Juli 2022</span>
+                            <p>Mantaap tingkatkan, jaya pku muhammadiyah sukoharjo</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="single-feedback">
-                            <h3>James Anderson</h3>
-                            <span>CEO</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Ahmad Rafiiq</h3>
+                            <span>13 Agustus 2022</span>
+                            <p>pelayanan cukup memuaskan, tersedia mesin atm, gedung bersih, dan antrian tertata</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="single-feedback">
-                            <h3>Steven Smith</h3>
-                            <span>Manager</span>
-                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                            <h3>Ferdi Mustofa</h3>
+                            <span>2 September 2022</span>
+                            <p>Terimakasih saya dilayani dengan ramah, semoga bisa ditingkatkan dan dipertahankan</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="single-feedback">
-                            <h3>Steven Lucy</h3>
-                            <span>Patient</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h3>Muh Mirza K</h3>
+                            <span>10 September 2022</span>
+                            <p>Tindakannya cepat, anak saya langsung ditangani dan alurnya cepat dan tanggap. terima kasih rspkuskh</p>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="single-feedback">
-                            <h3>John Terry</h3>
-                            <span>Patient</span>
-                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                            <h3>Lilis Setianingsih</h3>
+                            <span>21 Oktober 2022</span>
+                            <p>Pendaftaran profesional ramah santun tidak berbelit" Cepat dan mudah.. Alhamdulillah sangat puas untuk saya yang baru pertama kali periksa ke rumah sakit ini.. Termakasih pku semoga layanan seperti ini tersedia di seluruh rumah sakit</p>
                         </div>
                     </div>
                 </div>
@@ -699,8 +778,8 @@
 
             <div class="col-lg-6 col-md-12 p-0">
                 <div class="faq-accordion">
-                    <span class="sub-title">Frequently Asked Questions</span>
-                    <h2>Get Every Single Answers There if you want</h2>
+                    <span class="sub-title">Jawaban dari Kami</span>
+                    <h2>Pertanyaan yang sering ditanyakan</h2>
 
                     <ul class="accordion">
                         <li class="accordion-item">
@@ -759,8 +838,8 @@
 <section class="partner-area ptb-100 bg-f4f9fd">
     <div class="container">
         <div class="section-title">
-            <h2>Featured Customers & Partners</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Mitra Kami</h2>
+            <p>Daftar link kerjasama Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
         </div>
 
         <div class="customers-partner-list">
@@ -826,9 +905,9 @@
 <section class="blog-area ptb-100">
     <div class="container">
         <div class="section-title">
-            <span>News & Blog</span>
-            <h2>The News from Our Blog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <span>Berita Terkini</span>
+            <h2>Ikuti berita terbaru kami</h2>
+            <p>Berikut ini merupakan berita terkini Rumah Sakit PKU Muhammadiyah Sukoharjo yang dapat anda lihat di bawah ini</p>
         </div>
 
         <div class="row">
@@ -889,6 +968,12 @@
                         <h3><a href="#">10 Tips to Live Better With Psoriatic Arthritis</a></h3>
                         <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="more-services-btn">
+                    <a href="#" class="btn btn-primary">More Services <i class="flaticon-right-chevron"></i></a>
                 </div>
             </div>
         </div>

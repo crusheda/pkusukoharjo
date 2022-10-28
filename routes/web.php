@@ -19,8 +19,15 @@ Auth::routes();
 // PORTAL
 Route::get('/', 'portalController@index')->name('portal');
 
+// JADWAL DOKTER
+Route::get('/jadwal', function () { return view('pages.jadwal-dokter'); })->name('jadwaldokter');
+
+
+// --------------------------------------------  OLD  --------------------------------------------
+
 // BERITA
 Route::get('/artikel/berita/{id}', 'artikelController@showBerita')->name('artikel.berita');
+
 
 // JADWAL PELAYANAN
 Route::get('/jadwalpelayanan/api/data', 'jadwalPelayananController@apiData')->name('jadwalpelayanan.api');
@@ -34,6 +41,8 @@ Route::get('/portfolio-details.html', function () { return view('pages.portfolio
 // API PORTAL
 Route::get('/api/show', 'portalController@show')->name('api.show');
 Route::get('/artikel/berita/api/show', 'portalController@showArtikel')->name('api.showArtikel');
+
+// ----------------------------------------  ADMIN AREA  -----------------------------------------
 
 // ADMIN
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
