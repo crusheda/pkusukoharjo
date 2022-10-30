@@ -23,149 +23,62 @@
     <section class="doctor-calendar-area ptb-100">
         <div class="container">
             <div class="section-title">
-                <span>Update 5 menit yang lalu</span>
+                <span>Terupdate oleh Sistem</span>
                 <h2>Tabel Waktu</h2>
-                <p>Pendaftaran ditutup <strong>30 menit</strong> sebelum poli dimulai, harap datang lebih awal. Jadwal Sewaktu-waktu bisa berubah.</p>
+                <p>Pendaftaran ditutup <strong>30 menit</strong> sebelum poli dimulai, harap datang lebih awal.</p>
             </div>
 
             <div class="doctor-calendar-table table-responsive">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Time</th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
+                            <th>Dokter</th>
+                            <th>Senin</th>
+                            <th>Selasa</th>
+                            <th>Rabu</th>
+                            <th>Kamis</th>
+                            <th>Jum'at</th>
+                            <th>Sabtu</th>
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr>
-                            <td><span class="time">9.00</span></td>
-                            <td>
-                                <h3>Dr. Tanner</h3>
-                                <span>Dermatologists</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Kwak</h3>
-                                <span>Ear, Nose</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Slaughter</h3>
-                                <span>Neurologist</span>
-                            </td>
-                            <td></td>
-                            <td>
-                                <h3>Dr. Foley</h3>
-                                <span>Oncologist</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Palmer</h3>
-                                <span>Maxine lowe</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><span class="time">12.00</span></td>
-                            <td></td>
-                            <td>
-                                <h3>Dr. Megahead</h3>
-                                <span>Orthopedics</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Neupane</h3>
-                                <span>Pain Management</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Breidin</h3>
-                                <span>Radiologist</span>
-                            </td>
-                            <td></td>
-                            <td>
-                                <h3>Dr. Pipe</h3>
-                                <span>Surgeons</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><span class="time">15.00</span></td>
-                            <td>
-                                <h3>Dr. Tanner</h3>
-                                <span>Dermatologists</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Kwak</h3>
-                                <span>Ear, Nose</span>
-                            </td>
-                            <td></td>
-                            <td>
-                                <h3>Dr. Slaughter</h3>
-                                <span>Neurologist</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Foley</h3>
-                                <span>Oncologist</span>
-                            </td>
-                            <td></td>
-                        </tr>
-
-                        <tr>
-                            <td><span class="time">18.00</span></td>
-                            <td>
-                                <h3>Dr. Slaughter</h3>
-                                <span>Neurologist</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Megahead</h3>
-                                <span>Orthopedics</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Neupane</h3>
-                                <span>Pain Management</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Breidin</h3>
-                                <span>Radiologist</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Kwak</h3>
-                                <span>Ear, Nose</span>
-                            </td>
-                            <td>
-                                <h3>Dr. Pipe</h3>
-                                <span>Surgeons</span>
-                            </td>
-                        </tr>
-                    </tbody>
+                    <tbody id="tampil-tbody"><tr><center><td colspan="7"><i class="fa fa-spinner fa-spin fa-fw"></i> Memproses data...</td></center></tr></tbody>
                 </table>
             </div>
+            <h6 class="mt-3">Jadwal sewaktu-waktu bisa berubah</h6>
         </div>
     </section>
     <!-- End Doctor Calendar Area -->
-    
-    {{-- $.ajax({
-        url: "http://103.155.246.25:8000/api/all/"+this.value,
-        // url: "http://192.168.1.3:8000/api/all/"+this.value,
-        type: 'GET',
-        dataType: 'json', // added data type
-        success: function(res) {
-            // console.log(res);
-            $("#nama1").val(res.NAMAPASIEN);
-            $("#nama2").val(res.NAMAPASIEN);
-            $("#jns_kelamin1").val(res.JNSKELAMIN);
-            $("#jns_kelamin2").val(res.JNSKELAMIN);
-            $("#umur1").val(res.UMUR);
-            $("#umur2").val(res.UMUR);
-            $("#alamat1").val(res.ALAMAT);
-            $("#alamat2").val(res.ALAMAT);
 
-            $("#des").val(res.DESA);
-            $("#kec").val(res.KECAMATAN);
-            $("#kab").val(res.NAMA_KABKOTA);
-            // $('#jumlah20').attr('required', true);
-        }
-    }); --}}
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "http://103.155.246.25:8000/api/jadwaldokter/",
+                // url: "http://192.168.1.3:8000/api/all/"+this.value,
+                type: 'GET',
+                dataType: 'json',
+                success: function(res) {
+                    $("#tampil-tbody").empty();
+                    if(res.length == 0){
+                        $("#tampil-tbody").append(`<tr><td colspan="7"><center>Gagal memuat data</center></td></tr>`);
+                    } else {
+                        // Array.from(res, item => {
+                        console.log(res);
+                        // Object.keys(res).forEach(item => {
+                        res.forEach(item => {
+                            content = "<tr id='data"+ item.id +"'>" 
+                                    + "<td style='text-align:left'><h3>" + item.NAMA + "</h3><span>" + item.SUBINSTALASI + " ("+item.REF_POLIBPJS+")</span></td>";
+                                    if (item.SENIN != null) { content += "<td>" + item.SENIN + "</td>" ; } else { content += "<td>-</td>"; }
+                                    if (item.SELASA != null) { content += "<td>" + item.SELASA + "</td>" ; } else { content += "<td>-</td>"; }
+                                    if (item.RABU != null) { content += "<td>" + item.RABU + "</td>" ; } else { content += "<td>-</td>"; }
+                                    if (item.KAMIS != null) { content += "<td>" + item.KAMIS + "</td>" ; } else { content += "<td>-</td>"; }
+                                    if (item.JUMAT != null) { content += "<td>" + item.JUMAT + "</td>" ; } else { content += "<td>-</td>"; }
+                                    if (item.SABTU != null) { content += "<td>" + item.SABTU + "</td>" ; } else { content += "<td>-</td>"; }
+                            $('#tampil-tbody').append(content);
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 @endsection

@@ -35,6 +35,8 @@
 
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/logo/pku/pku_ico.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('img/logo/pku/pku_ico.png') }}">
+    
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 </head>
 
 <body>
