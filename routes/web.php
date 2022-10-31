@@ -21,26 +21,27 @@ Route::get('/', 'portalController@index')->name('portal');
 
 // JADWAL DOKTER
 Route::get('/jadwal', function () { return view('pages.jadwal-dokter'); })->name('jadwaldokter');
+Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
 
 
 // --------------------------------------------  OLD  --------------------------------------------
 
 // BERITA
-Route::get('/artikel/berita/{id}', 'artikelController@showBerita')->name('artikel.berita');
+// Route::get('/artikel/berita/{id}', 'artikelController@showBerita')->name('artikel.berita');
 
 
 // JADWAL PELAYANAN
-Route::get('/jadwalpelayanan/api/data', 'jadwalPelayananController@apiData')->name('jadwalpelayanan.api');
-Route::get('/jadwalpelayanan', 'jadwalPelayananController@index')->name('jadwalpelayanan');
+// Route::get('/jadwalpelayanan/api/data', 'jadwalPelayananController@apiData')->name('jadwalpelayanan.api');
+// Route::get('/jadwalpelayanan', 'jadwalPelayananController@index')->name('jadwalpelayanan');
 
-Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
-Route::get('/sejarah', function () { return view('pages.sejarah'); })->name('sejarah');
-Route::get('/visimisi', function () { return view('pages.visimisi'); })->name('visimisi');
-Route::get('/portfolio-details.html', function () { return view('pages.portfolio-details'); });
+// Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
+// Route::get('/sejarah', function () { return view('pages.sejarah'); })->name('sejarah');
+// Route::get('/visimisi', function () { return view('pages.visimisi'); })->name('visimisi');
+// Route::get('/portfolio-details.html', function () { return view('pages.portfolio-details'); });
 
 // API PORTAL
-Route::get('/api/show', 'portalController@show')->name('api.show');
-Route::get('/artikel/berita/api/show', 'portalController@showArtikel')->name('api.showArtikel');
+// Route::get('/api/show', 'portalController@show')->name('api.show');
+// Route::get('/artikel/berita/api/show', 'portalController@showArtikel')->name('api.showArtikel');
 
 // ----------------------------------------  ADMIN AREA  -----------------------------------------
 

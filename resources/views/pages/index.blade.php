@@ -13,7 +13,7 @@
                         <p>Amanah, Santun, Ramah, Ikhlas (ASRI)</p>
 
                         <div class="btn-box">
-                            <a href="#" class="btn btn-primary">Antrian Online <i class="flaticon-doctor-1"></i></a>
+                            <a href="#antrian-bpjs" class="btn btn-primary">Antrian Online <i class="flaticon-doctor-1"></i></a>
                             <a href="{{ route('jadwaldokter') }}" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a>
                         </div>
                     </div>
@@ -135,8 +135,8 @@
     <div class="container-fluid p-0">
         <div class="row m-0">
             <div class="col-lg-6 col-md-12 p-0">
-                <div class="about-image">
-                    <img src="{{ asset('assets/img/about-img1.jpg') }}" alt="image">
+                <div class="">
+                    <img src="{{ asset('assets/img/main-banner2.jpg') }}" alt="image">
                 </div>
             </div>
 
@@ -144,7 +144,7 @@
                 <div class="about-content">
                     <span>About Us</span>
                     <h2>Short Story About Fovia Clinic Since 1999</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 
                     <ul>
                         <li><i class="flaticon-check-mark"></i> Scientific Skills For getting a better result</li>
@@ -393,7 +393,7 @@
                     <div class="post-content">
                         <div class="post-meta">
                             <ul>
-                                <li>By: <a href="#">John Smith</a></li>
+                                <li>By: <a href="#">Yussuf Faisal</a></li>
                                 <li>June 19, 2021</li>
                             </ul>
                         </div>
@@ -413,7 +413,7 @@
                     <div class="post-content">
                         <div class="post-meta">
                             <ul>
-                                <li>By: <a href="#">Steven Hobb</a></li>
+                                <li>By: <a href="#">Yussuf Faisal</a></li>
                                 <li>June 10, 2021</li>
                             </ul>
                         </div>
@@ -433,7 +433,7 @@
                     <div class="post-content">
                         <div class="post-meta">
                             <ul>
-                                <li>By: <a href="#">Sarah Taylor</a></li>
+                                <li>By: <a href="#">Yussuf Faisal</a></li>
                                 <li>June 24, 2021</li>
                             </ul>
                         </div>
@@ -446,7 +446,7 @@
             
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="more-services-btn">
-                    <a href="#" class="btn btn-primary">More Services <i class="flaticon-right-chevron"></i></a>
+                    <a href="#" class="btn btn-primary">Artikel Lainnya <i class="flaticon-right-chevron"></i></a>
                 </div>
             </div>
         </div>
@@ -569,11 +569,11 @@
 <!-- End Doctor Area -->
 
 <!-- Start Appointment Area -->
-<section class="appointment-area ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>
+<section id="antrian-bpjs" class="appointment-area ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>
     <div class="container">
         <div class="appointment-content">
-            <span class="sub-title">Book Appointment</span>
-            <h2>We are here for you</h2>
+            <span class="sub-title">Antrian Online</span>
+            <h2>Periksa Antrian BPJS</h2>
 
             <form>
                 <div class="row">
@@ -582,38 +582,38 @@
                             <div class="icon">
                                 <i class="flaticon-user"></i>
                             </div>
-                            <label>Your Name</label>
-                            <input type="text" class="form-control" placeholder="Enter Your Name" id="name" name="name">
+                            <label>Rekam Medik</label>
+                            <input type="text" class="form-control" placeholder="Tuliskan No. RM" id="name" name="name">
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="form-group">
                             <div class="icon">
-                                <i class="flaticon-envelope"></i>
+                                <i class="fi fi-rr-id-badge"></i>
                             </div>
-                            <label>Your Email</label>
-                            <input type="email" class="form-control" placeholder="Enter Email Address" id="email" name="email">
+                            <label>NIK</label>
+                            <input type="number" class="form-control" placeholder="Tuliskan NIK" id="email" name="email">
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="form-group">
                             <div class="icon">
-                                <i class="flaticon-support"></i>
+                                <i class="fi fi-sr-stethoscope"></i>
                             </div>
-                            <label>Select Your Services</label>
+                            <label>Poliklinik</label>
 
                             <select>
-                                <option>Cardiology</option>
+                                {{-- <option>Cardiology</option>
                                 <option>Urologic Oncology</option>
                                 <option>Neurology</option>
                                 <option>Medicine</option>
                                 <option>Surgery</option>
                                 <option>Urology</option>
                                 <option>Radiology</option>
-                                <option>Neurosurgery</option>
-                                <option>Bariatric Surgery</option>
+                                <option>Neurosurgery</option> --}}
+                                <option>#</option>
                             </select>
                         </div>
                     </div>
@@ -621,16 +621,16 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="form-group">
                             <div class="icon">
-                                <i class="flaticon-phone-call"></i>
+                                <i class="fi fi-bs-hand-holding-heart"></i>
                             </div>
-                            <label>Your Phone</label>
-                            <input type="text" class="form-control" placeholder="Enter Your Phone" id="text" name="text">
+                            <label>BPJS</label>
+                            <input type="number" class="form-control" placeholder="Tuliskan No. BPJS" id="text" name="text">
                         </div>
                     </div>
 
                     <div class="col-lg-12 col-md-12">
                         <div class="submit-btn">
-                            <button class="btn btn-primary">Make Appointment <i class="flaticon-right-chevron"></i></button>
+                            <button class="btn btn-primary" disabled>Submit <i class="flaticon-right-chevron"></i></button>
                         </div>
                     </div>
                 </div>
@@ -920,7 +920,7 @@
                     <div class="post-content">
                         <div class="post-meta">
                             <ul>
-                                <li>By: <a href="#">John Smith</a></li>
+                                <li>By: <a href="#">Yussuf Faisal</a></li>
                                 <li>June 19, 2021</li>
                             </ul>
                         </div>
@@ -940,7 +940,7 @@
                     <div class="post-content">
                         <div class="post-meta">
                             <ul>
-                                <li>By: <a href="#">Steven Hobb</a></li>
+                                <li>By: <a href="#">Yussuf Faisal</a></li>
                                 <li>June 10, 2021</li>
                             </ul>
                         </div>
@@ -960,7 +960,7 @@
                     <div class="post-content">
                         <div class="post-meta">
                             <ul>
-                                <li>By: <a href="#">Sarah Taylor</a></li>
+                                <li>By: <a href="#">Yussuf Faisal</a></li>
                                 <li>June 24, 2021</li>
                             </ul>
                         </div>
@@ -973,7 +973,7 @@
             
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="more-services-btn">
-                    <a href="#" class="btn btn-primary">More Services <i class="flaticon-right-chevron"></i></a>
+                    <a href="#" class="btn btn-primary">Berita lainnya <i class="flaticon-right-chevron"></i></a>
                 </div>
             </div>
         </div>

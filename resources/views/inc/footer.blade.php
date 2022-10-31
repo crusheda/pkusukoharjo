@@ -29,7 +29,7 @@
                         <p>
                             Jl. Mayor Sunaryo No. 37 <br>
                             Sukoharjo, JT (57512) <br><br>
-                            <strong>Telp:</strong> <a class="text-white" href="tel:0271593979"> (0271) 593979</a><br>
+                            <strong>Telp:</strong> <a class="text-white" href="tel:0271593979"> 0271 593 979</a> (24 Jam)<br>
                             <strong>Email:</strong> <a class="text-white" href="mailto:pku.sukoharjo@gmail.com"> pku.sukoharjo@gmail.com</a><br>
                         </p>
                     </div>
@@ -37,7 +37,7 @@
                     <ul class="social">
                         <li><a href="https://www.facebook.com/rspkusukoharjo"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="https://twitter.com/rspkusukoharjo"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.tiktok.com/@rspkusukoharjo"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@rspkusukoharjo"><i class="fi fi-brands-tik-tok"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UC7KDgt-THy4y9tdso4YbDSw"><i class="fab fa-youtube"></i></a></li>
                         <li><a href="https://www.instagram.com/rspkusukoharjo"><i class="fab fa-instagram"></i></a></li>
                     </ul>
@@ -46,15 +46,15 @@
 
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget pl-5">
-                    <h3>Departments</h3>
+                    <h3>Menu</h3>
 
                     <ul class="departments-list">
-                        <li><a href="#">Surgery and Radiology</a></li>
-                        <li><a href="#">Departments</a></li>
-                        <li><a href="#">Family</a></li>
-                        <li><a href="#">Our Doctors</a></li>
-                        <li><a href="#">Woman's Health</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,12 +64,12 @@
                     <h3>Links</h3>
 
                     <ul class="links-list">
-                        <li><a href="#">Optician</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Pediatrics</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Dermatology</a></li>
-                        <li><a href="#">Doctors</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
+                        <li><a href="javascript:void(0);">#</a></li>
                     </ul>
                 </div>
             </div>

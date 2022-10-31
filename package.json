@@ -23,6 +23,7 @@
         "vue": "^2.5.17"
     },
     "dependencies": {
+        "@flaticon/flaticon-uicons": "^1.7.0",
         "gulp": "^4.0.2"
     }
 }

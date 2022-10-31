@@ -5,6 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portal Resmi Rumah Sakit PKU Muhammadiyah Sukoharjo" />
+    <meta name="keywords" content="rumah sakit, rspkuskh, pkuskh, pkusukoharjo, pku sukoharjo, rs pku, rs pku skh, rs pku sukoharjo, rawat jalan, rawat inap, rs bpjs, pku muhammadiyah sukoharjo, rs pku muhammadiyah sukoharjo, sistem rumah sakit">
+    <meta content="Yussuf Faisal" name="author" />
 
     <!-- Bootstrap Min CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -24,6 +27,13 @@
     <link rel="stylesheet" href="{{ asset('assets/css/odometer.min.css') }}">
     <!-- FlatIcon CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <!-- Mean Menu CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.css') }}">
     <!-- Style CSS -->
@@ -42,7 +52,7 @@
 <body>
 
     <!-- Preloader -->
-    {{-- <div class="preloader">
+    <div class="preloader">
         <div class="loader">
             <div class="loader-outter"></div>
             <div class="loader-inner"></div>
@@ -54,7 +64,7 @@
                 </svg>
             </div>
         </div>
-    </div> --}}
+    </div>
     <!-- End Preloader -->
 
     @include('inc.header')

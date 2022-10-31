@@ -15,10 +15,13 @@
                         <ul class="top-header-social">
                             <li><a href="https://www.facebook.com/rspkusukoharjo"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="https://twitter.com/rspkusukoharjo"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.tiktok.com/@rspkusukoharjo"><i class="fab fa-tiktok"></i></a></li>
+                            <li>
+                                <a href="https://www.tiktok.com/@rspkusukoharjo"><i class="fi fi-brands-tik-tok"></i></a>
+                            </li>
                             <li><a href="https://www.youtube.com/channel/UC7KDgt-THy4y9tdso4YbDSw"><i class="fab fa-youtube"></i></a></li>
                             <li><a href="https://www.instagram.com/rspkusukoharjo"><i class="fab fa-instagram"></i></a></li>
                         </ul>
+                        
 
                         {{-- <div class="lang-select">
                             <select>
@@ -58,65 +61,67 @@
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a href="{{ route('portal') }}" class="nav-link active">Beranda</a></li>
+                            <li class="nav-item"><a href="{{ route('portal') }}" class="nav-link {{ request()->routeIs('portal') ? 'active' : '' }}">Beranda</a></li>
 
-                            <li class="nav-item"><a href="#" class="nav-link">Department <i class="fas fa-plus"></i></a>
+                            {{-- <li class="nav-item"><a href="#" class="nav-link"># <i class="fas fa-plus"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="services-1.html" class="nav-link">Department 01</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="services-2.html" class="nav-link">Department 02</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="single-services.html" class="nav-link">Department Details</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a href="#" class="nav-link">Doctor <i class="fas fa-plus"></i></a>
+                            <li class="nav-item"><a href="#" class="nav-link"># <i class="fas fa-plus"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="doctor.html" class="nav-link">Doctor</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="doctor-details.html" class="nav-link">Doctor Details</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a href="#" class="nav-link">Shop <i class="fas fa-plus"></i></a>
+                            <li class="nav-item"><a href="#" class="nav-link"># <i class="fas fa-plus"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="single-product.html" class="nav-link">Single Products</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a href="#" class="nav-link">Blog <i class="fas fa-plus"></i></a>
+                            <li class="nav-item"><a href="#" class="nav-link"># <i class="fas fa-plus"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="blog-1.html" class="nav-link">Blog Grid</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="blog-2.html" class="nav-link">Blog Right Sidebar</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="single-blog.html" class="nav-link">Blog Details</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a href="#" class="nav-link">Pages <i class="fas fa-plus"></i></a>
+                            <li class="nav-item"><a href="#" class="nav-link"># <i class="fas fa-plus"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="appointment.html" class="nav-link">Appointment</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="timetable.html" class="nav-link">Time Table</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="partner.html" class="nav-link">Partner</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="error-404.html" class="nav-link">404 Error</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
 
-                                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
 
-                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
+
+                            <li class="nav-item"><a href="{{ route('kontak') }}" class="nav-link {{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a></li>
                         </ul>
 
                         <div class="others-options">
