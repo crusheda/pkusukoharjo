@@ -53,39 +53,17 @@
     <script>
         $(document).ready(function() {
             $.ajax({
-                url: "http://103.155.246.25:8000/api/jadwaldokter/",
+                url: "./jadwal/push",
                 type: 'GET',
                 dataType: 'json',
                 success: function(res) {
+                    console.log(res);
                     $("#tampil-tbody").empty();
                     if(res.length == 0){
                         $("#tampil-tbody").append(`<tr><td colspan="7"><center>Gagal memuat data</center></td></tr>`);
                     } else {
                         res.forEach(item => {
-                            content = "<tr id='data"+ item.id +"'>" 
-                                    + "<td style='text-align:left'><h3>" + item.NAMA + "</h3><span>" + item.SUBINSTALASI + " ("+item.REF_POLIBPJS+")</span></td>";
-                                    if (item.SENIN != null) { content += "<td>" + item.SENIN + "</td>" ; } else { content += "<td>-</td>"; }
-                                    if (item.SELASA != null) { content += "<td>" + item.SELASA + "</td>" ; } else { content += "<td>-</td>"; }
-                                    if (item.RABU != null) { content += "<td>" + item.RABU + "</td>" ; } else { content += "<td>-</td>"; }
-                                    if (item.KAMIS != null) { content += "<td>" + item.KAMIS + "</td>" ; } else { content += "<td>-</td>"; }
-                                    if (item.JUMAT != null) { content += "<td>" + item.JUMAT + "</td>" ; } else { content += "<td>-</td>"; }
-                                    if (item.SABTU != null) { content += "<td>" + item.SABTU + "</td>" ; } else { content += "<td>-</td>"; }
-                            $('#tampil-tbody').append(content);
-                        });
-                    }
-                }
-            });
-            $.ajax({
-                url: "http://192.168.1.3:8000/api/jadwaldokter/",
-                type: 'GET',
-                dataType: 'json',
-                success: function(res) {
-                    $("#tampil-tbody").empty();
-                    if(res.length == 0){
-                        $("#tampil-tbody").append(`<tr><td colspan="7"><center>Gagal memuat data</center></td></tr>`);
-                    } else {
-                        res.forEach(item => {
-                            content = "<tr id='data"+ item.id +"'>" 
+                            content = "<tr id='data"+ item.id +"'>"
                                     + "<td style='text-align:left'><h3>" + item.NAMA + "</h3><span>" + item.SUBINSTALASI + " ("+item.REF_POLIBPJS+")</span></td>";
                                     if (item.SENIN != null) { content += "<td>" + item.SENIN + "</td>" ; } else { content += "<td>-</td>"; }
                                     if (item.SELASA != null) { content += "<td>" + item.SELASA + "</td>" ; } else { content += "<td>-</td>"; }
