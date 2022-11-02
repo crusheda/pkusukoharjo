@@ -21,6 +21,8 @@ Route::get('/', 'portalController@index')->name('portal');
 
 // JADWAL DOKTER
 Route::get('/jadwal', function () { return view('pages.jadwal-dokter'); })->name('jadwaldokter');
+Route::get('/jadwal/cekapi', 'jadwalDokterController@index');
+Route::get('/jadwal/cekapi2', 'jadwalDokterController@index2');
 Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
 
 
