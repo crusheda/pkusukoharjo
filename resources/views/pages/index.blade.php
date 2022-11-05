@@ -3,7 +3,7 @@
 @section('content')
 <!-- Start Main Banner Area -->
 <div class="home-slides owl-carousel owl-theme">
-    <div class="main-banner" style="background-image: url(img/gedung-pku/bg-gedung.png)">
+    <div class="main-banner" style="background-image: url(img/gedung-pku/bg-gedung-small.png)">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
@@ -443,7 +443,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="more-services-btn">
                     <a href="#" class="btn btn-primary">Artikel Lainnya <i class="flaticon-right-chevron"></i></a>
@@ -667,7 +667,7 @@
                     <div class="item">
                         <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
                     </div>
@@ -970,7 +970,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="more-services-btn">
                     <a href="#" class="btn btn-primary">Berita lainnya <i class="flaticon-right-chevron"></i></a>
