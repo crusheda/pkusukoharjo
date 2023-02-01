@@ -1609,7 +1609,7 @@ Our Mission Area CSS
 .our-mission-image {
   width: 100%;
   height: 100%;
-  background-image: url(../img/mission-img1.jpg);
+  background-image: url(../img/pku-kotak.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4070,6 +4070,10 @@ Page Title Area CSS
 
 .page-title-bg5 {
   background-image: url(../img/page-title/5.jpg);
+}
+
+.page-title-bg6 {
+  background-image: url(../img/page-title/6.jpg);
 }
 
 .page-title-content {

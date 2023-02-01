@@ -1,10 +1,25 @@
-@extends('layouts.layout2')
+@extends('layouts.fovia')
 
 @section('content')
+    <section class="page-title-area page-title-bg6">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="page-title-content">
+                        <h2>Sejarah</h2>
+                        <ul>
+                            <li><a href="{{ route('portal') }}">Beranda</a></li>
+                            <li>Sejarah</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
   <main id="main" style="margin-top: 40px">
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    {{-- <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <ol>
@@ -14,7 +29,7 @@
         <h2>Sejarah Singkat</h2>
 
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section><!-- End Breadcrumbs --> --}}
 
     <!-- ======= Sejarah Section ======= -->
     <section id="sejarah" class="sejarah">
@@ -26,7 +41,7 @@
           </div>
           <div class="card-body" style="text-align: justify;text-justify: inter-word;">
             <p>
-              <ul style="line-height:2.5em;">
+              <ul style="line-height:3em;">
                 <li><strong>Tahun 1992</strong> mendapat wakaf tanah dari keluarga ibu Hj. Sunarto Batik Putri Pantes seluas 1100 m2</li>
                 <li><strong>Tahun 1993</strong> PDM Sukoharjo mendapat bantuan dari Hj. Khodijah Al Kubro ( Emirat Arab ) untuk membangun Rumah Bersalin PKU Muhammadiyah Sukoharjo</li>
                 <li><strong>Tahun 1995</strong> ( tgl 4 Desember 1995 ) diresmikan bangunan Rumah Bersalin PKU Muhammadiyah Sukoharjo oleh Bupati Sukoharjo ( Bapak Ir. Tedjo Suminto )</li>

@@ -21,7 +21,7 @@
                             <li><a href="https://www.youtube.com/channel/UC7KDgt-THy4y9tdso4YbDSw"><i class="fab fa-youtube"></i></a></li>
                             <li><a href="https://www.instagram.com/rspkusukoharjo"><i class="fab fa-instagram"></i></a></li>
                         </ul>
-                        
+
 
                         {{-- <div class="lang-select">
                             <select>
@@ -101,25 +101,25 @@
 
                                     <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
                                 </ul>
-                            </li>
-
-                            <li class="nav-item"><a href="#" class="nav-link"># <i class="fas fa-plus"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
-
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
-
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
-
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
-
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
-
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">#</a></li>
-                                </ul>
                             </li> --}}
 
                             <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
+
+                            <li class="nav-item"><a href="#" class="nav-link"> Tentang Kami<i class="fas fa-plus"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Profil</a></li>
+
+                                    <li class="nav-item"><a href="{{ route('sejarah') }}" class="nav-link">Sejarah</a></li>
+
+                                    <li class="nav-item"><a href="{{ route('visimisi') }}" class="nav-link">Visi Misi</a></li>
+
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Indikator Mutu</a></li>
+
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Struktur Organisasi</a></li>
+
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Mitra Kami</a></li>
+                                </ul>
+                            </li>
 
                             <li class="nav-item"><a href="{{ route('kontak') }}" class="nav-link {{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a></li>
                         </ul>

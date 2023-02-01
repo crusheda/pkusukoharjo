@@ -37,8 +37,8 @@ Route::get('/kontak', function () { return view('pages.kontak'); })->name('konta
 // Route::get('/jadwalpelayanan', 'jadwalPelayananController@index')->name('jadwalpelayanan');
 
 // Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
-// Route::get('/sejarah', function () { return view('pages.sejarah'); })->name('sejarah');
-// Route::get('/visimisi', function () { return view('pages.visimisi'); })->name('visimisi');
+Route::get('/sejarah', function () { return view('pages.sejarah'); })->name('sejarah');
+Route::get('/visimisi', function () { return view('pages.visimisi'); })->name('visimisi');
 // Route::get('/portfolio-details.html', function () { return view('pages.portfolio-details'); });
 
 // API PORTAL
