@@ -15,7 +15,8 @@ class jadwalDokterController extends Controller
     public function pushApi()
     {
         $client = new Client();
-        $res = $client->request('GET', 'http://103.155.246.25:8000/api/jadwaldokter/');
+        // $res = $client->request('GET', 'http://103.155.246.25:8000/api/jadwaldokter/');
+        $res = $client->request('GET', 'http://103.210.117.106:8000/api/jadwaldokter/');
         // $res = $client->request('GET', 'http://192.168.1.3:8000/api/jadwaldokter/');
         $data = json_decode($res->getBody());
 
