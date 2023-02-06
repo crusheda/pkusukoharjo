@@ -105,19 +105,10 @@
 
                             <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
 
-                            <li class="nav-item"><a href="#" class="nav-link"> Tentang Kami<i class="fas fa-plus"></i></a>
+                            <li class="nav-item"><a href="#" class="nav-link {{ request()->routeIs('profil') ? 'active' : '' }}"> Tentang</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Profil</a></li>
-
-                                    <li class="nav-item"><a href="{{ route('sejarah') }}" class="nav-link">Sejarah</a></li>
-
-                                    <li class="nav-item"><a href="{{ route('visimisi') }}" class="nav-link">Visi Misi</a></li>
-
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Indikator Mutu</a></li>
-
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Struktur Organisasi</a></li>
-
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Mitra Kami</a></li>
+                                    <li class="nav-item"><a href="{{ route('profil') }}" class="nav-link {{ request()->routeIs('profil') ? 'active' : '' }}">Profil</a></li>
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><strike>Indikator Mutu</strike></a></li>
                                 </ul>
                             </li>
 
@@ -127,7 +118,7 @@
                         <div class="others-options">
                             {{-- <a href="cart.html" class="cart-btn"><i class="flaticon-shopping-bag"></i></a> --}}
 
-                            <div class="option-item"><i class="search-btn fas fa-search"></i>
+                            {{-- <div class="option-item"><i class="search-btn fas fa-search"></i>
                                 <i class="search-close-btn fas fa-times"></i>
 
                                 <div class="search-overlay search-popup">
@@ -139,7 +130,7 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <a href="tel:0271593979" class="btn btn-primary" style="background-color: rgb(255, 92, 92)"><i class="fas fa-phone text-dark" style="background-color: white"></i>IGD 24 JAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                         </div>

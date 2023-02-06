@@ -13,8 +13,9 @@
                         <p>Amanah, Santun, Ramah, Ikhlas (ASRI)</p>
 
                         <div class="btn-box">
-                            <a href="#antrian-bpjs" class="btn btn-primary">Antrian Online <i class="flaticon-doctor-1"></i></a>
-                            <a href="{{ route('jadwaldokter') }}" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a>
+                            {{-- <a href="#antrian-bpjs" class="btn btn-primary">Antrian Online <i class="flaticon-doctor-1"></i></a>
+                            <a href="{{ route('jadwaldokter') }}" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
+                            <a href="{{ route('jadwaldokter') }}" class="btn btn-primary">Jadwal Dokter <i class="fas fa-calendar"></i></a>
                         </div>
                     </div>
                 </div>
@@ -74,8 +75,7 @@
 </div>
 <!-- End Main Banner Area -->
 
-<!-- Start Main Services Area -->
-<section class="main-services-area ptb-100">
+{{-- <section class="main-services-area ptb-100">
     <div class="container">
         <div class="section-title">
             <span>Main Features</span>
@@ -128,9 +128,7 @@
 
     <div class="shape2"><img src="{{ asset('assets/img/shape/2.png') }}" alt="image"></div>
 </section>
-<!-- End Main Services Area -->
 
-<!-- Start About Area -->
 <section class="about-area">
     <div class="container-fluid p-0">
         <div class="row m-0">
@@ -159,9 +157,7 @@
         </div>
     </div>
 </section>
-<!-- End About Area -->
 
-<!-- Start Our Mission Area -->
 <section class="our-mission-area ptb-100">
     <div class="container-fluid p-0">
         <div class="row m-0">
@@ -221,9 +217,7 @@
 
     <div class="shape3"><img src="{{ asset('assets/img/shape/3.png') }}" class="wow fadeInLeft" alt="image"></div>
 </section>
-<!-- End Our Mission Area -->
 
-<!-- Start Fun Facts Area -->
 <section class="fun-facts-area ptb-100">
     <div class="container">
         <div class="row">
@@ -281,9 +275,7 @@
         </div>
     </div>
 </section>
-<!-- End Fun Facts Area -->
 
-<!-- Start Services Area -->
 <section class="services-area ptb-100 bg-f4f9fd">
     <div class="container">
         <div class="section-title">
@@ -373,9 +365,7 @@
         </div>
     </div>
 </section>
-<!-- End Services Area -->
 
-<!-- Start Blog Area -->
 <section class="blog-area ptb-100">
     <div class="container">
         <div class="section-title">
@@ -452,10 +442,8 @@
         </div>
     </div>
 </section>
-<!-- End Blog Area -->
 
-<!-- Start Doctor Area -->
-{{-- <section class="doctor-area ptb-100 bg-fefefe">
+<section class="doctor-area ptb-100 bg-fefefe">
     <div class="container">
         <div class="section-title">
             <span>Doctors</span>
@@ -565,10 +553,8 @@
             </div>
         </div>
     </div>
-</section> --}}
-<!-- End Doctor Area -->
+</section>
 
-<!-- Start Appointment Area -->
 <section id="antrian-bpjs" class="appointment-area ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>
     <div class="container">
         <div class="appointment-content">
@@ -605,14 +591,6 @@
                             <label>Poliklinik</label>
 
                             <select>
-                                {{-- <option>Cardiology</option>
-                                <option>Urologic Oncology</option>
-                                <option>Neurology</option>
-                                <option>Medicine</option>
-                                <option>Surgery</option>
-                                <option>Urology</option>
-                                <option>Radiology</option>
-                                <option>Neurosurgery</option> --}}
                                 <option>#</option>
                             </select>
                         </div>
@@ -638,9 +616,7 @@
         </div>
     </div>
 </section>
-<!-- End Appointment Area -->
 
-<!-- Start Feedback Area -->
 <section class="feedback-area ptb-100">
     <div class="container">
         <div class="section-title">
@@ -764,9 +740,7 @@
         </div>
     </div>
 </section>
-<!-- End Feedback Area -->
 
-<!-- Start FAQ Area -->
 <section class="faq-area">
     <div class="container-fluid p-0">
         <div class="row m-0">
@@ -832,9 +806,7 @@
         </div>
     </div>
 </section>
-<!-- End FAQ Area -->
 
-<!-- Start Partner Area -->
 <section class="partner-area ptb-100 bg-f4f9fd">
     <div class="container">
         <div class="section-title">
@@ -899,9 +871,7 @@
         </div>
     </div>
 </section>
-<!-- End Partner Area -->
 
-<!-- Start Blog Area -->
 <section class="blog-area ptb-100">
     <div class="container">
         <div class="section-title">
@@ -978,7 +948,6 @@
             </div>
         </div>
     </div>
-</section>
-<!-- End Blog Area -->
+</section> --}}
 
 @endsection

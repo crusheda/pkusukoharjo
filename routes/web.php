@@ -19,6 +19,9 @@ Auth::routes();
 // PORTAL
 Route::get('/', 'portalController@index')->name('portal');
 
+// PROFIL
+Route::get('/profil', 'profilController@index')->name('profil');
+
 // JADWAL DOKTER
 // Route::get('/jadwal', function () { return view('pages.jadwal-dokter'); })->name('jadwaldokter');
 Route::get('/jadwal', 'jadwalDokterController@index')->name('jadwaldokter');
