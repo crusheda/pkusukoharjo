@@ -105,10 +105,28 @@
 
                             <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
 
-                            <li class="nav-item"><a href="#" class="nav-link {{ request()->routeIs('profil') ? 'active' : '' }}"> Tentang</a>
+                            <li class="nav-item"><a href="#" class="nav-link {{ request()->routeIs('profil') || request()->routeIs('imut') ? 'active' : '' }}"> Tentang</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="{{ route('profil') }}" class="nav-link {{ request()->routeIs('profil') ? 'active' : '' }}">Profil</a></li>
-                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><strike>Indikator Mutu</strike></a></li>
+                                    <li class="nav-item"><a href="{{ route('imut') }}" class="nav-link {{ request()->routeIs('imut') ? 'active' : '' }}">Indikator Mutu</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#" class="nav-link
+                                {{  request()->routeIs('unggulan') ||
+                                    request()->routeIs('gawatdarurat') ||
+                                    request()->routeIs('rawatjalan') ||
+                                    request()->routeIs('rawatinap') ||
+                                    request()->routeIs('rawatintensif') ||
+                                    request()->routeIs('penunjangmedis') ? 'active' : ''
+                                }}"> Pelayanan</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="{{ route('unggulan') }}" class="nav-link {{ request()->routeIs('unggulan') ? 'active' : '' }}">Unggulan</a></li>
+                                    <li class="nav-item"><a href="{{ route('gawatdarurat') }}" class="nav-link {{ request()->routeIs('gawatdarurat') ? 'active' : '' }}">Gawat Darurat</a></li>
+                                    <li class="nav-item"><a href="{{ route('rawatjalan') }}" class="nav-link {{ request()->routeIs('rawatjalan') ? 'active' : '' }}">Rawat Jalan</a></li>
+                                    <li class="nav-item"><a href="{{ route('rawatinap') }}" class="nav-link {{ request()->routeIs('rawatinap') ? 'active' : '' }}">Rawat Inap</a></li>
+                                    <li class="nav-item"><a href="{{ route('rawatintensif') }}" class="nav-link {{ request()->routeIs('rawatintensif') ? 'active' : '' }}">Rawat Intensif</a></li>
+                                    <li class="nav-item"><a href="{{ route('penunjangmedis') }}" class="nav-link {{ request()->routeIs('penunjangmedis') ? 'active' : '' }}">Penunjang Medis</a></li>
                                 </ul>
                             </li>
 

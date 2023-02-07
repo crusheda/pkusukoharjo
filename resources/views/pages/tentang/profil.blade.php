@@ -10,7 +10,7 @@
                         <h2>Profil Rumah Sakit</h2>
                         <ul>
                             <li><a href="{{ route('portal') }}">Beranda</a></li>
-                            <li>Profil</li>
+                            <li>Tentang</li>
                         </ul>
                     </div>
                 </div>
@@ -104,22 +104,149 @@
                             <h3>DAFTAR PERIZINAN</h3>
                             <div class="table-responsive">
                                 <table class="table table-bordered">
-                                    <thead>
+                                    <thead style="text-align: center;">
                                         <tr>
                                             <th>NO</th>
                                             <th>NAMA PERIJINAN</th>
                                             <th>NO. PERIJINAN</th>
-                                            <th>TANGGAL TERBIT</th>
+                                            <th>TGL TERBIT</th>
                                             <th>DINAS/BADAN</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody style="text-align: left;">
                                         <tr>
                                             <td>1</td>
                                             <td>Izin Lokasi</td>
                                             <td>590/7443/2011</td>
                                             <td>25/10/2021</td>
                                             <td>Bupati Sukoharjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Izin Mendirikan Bangunan(IMB)</td>
+                                            <td>503/160/II/2012</td>
+                                            <td>20/02/2012</td>
+                                            <td>Kantor Pelayanan Prizinan Terpadu Kab. Sukoharjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Izin Lingkungan</td>
+                                            <td>503/171/X/2016</td>
+                                            <td>03/10/2016</td>
+                                            <td>Badan Lingkungan Hidup Kab. Sukoharjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Izin Gangguan (HO)</td>
+                                            <td>503/IG/539/X/2016</td>
+                                            <td>02/10/2016</td>
+                                            <td>Badan Penanaman Modal dan Pelayanan Perizinan Kab. Skh</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Izin Mendirikan Rumah Sakit</td>
+                                            <td>445/9120/X/2011</td>
+                                            <td>18/01/2014</td>
+                                            <td>Dinas Kesehatan Kab. Sukoharjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Izin Operasional dan Penetapan Kelas RS</td>
+                                            <td>445/7936/VI/2016</td>
+                                            <td>14/06/2016</td>
+                                            <td>Dinas Kesehatan Kab. Sukoharjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Izin Penyimpanan Sementara Limbah B3</td>
+                                            <td>503/654.1/001/LB3/I/2018</td>
+                                            <td>09/01/2018</td>
+                                            <td>DPM PTSP Kab. Sukoharjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Izin Pembuangan Air Limbah / IPLC</td>
+                                            <td>503/654/I/IPLC/003/XI/2017</td>
+                                            <td>07/11/2017</td>
+                                            <td>DPM PTSP Kab. Sukoharjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Sertifikat Laik Operasi Instalasi Listrik</td>
+                                            <td>876/PRT/XII/2021</td>
+                                            <td>23/12/2021</td>
+                                            <td>Dinas Tenaga Kerja dan Transmigrasi Jateng </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Izin Pemanfaatan Tenaga Nuklir</td>
+                                            <td>061349.010.11.170619</td>
+                                            <td>17/06/2019</td>
+                                            <td>Badan Pengawas Tenaga Nuklir / BAPETAN</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Izin Lift</td>
+                                            <td>2674/E/II/2022</td>
+                                            <td>04/02/2022</td>
+                                            <td>Dinas Tenaga Kerja dan Transmigrasi Jateng</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Izin Operasi Genset
+                                                <ul>
+                                                    <li>Merk Perkins (No Seri : X14K475419)</li>
+                                                    <li>Merk Maxtron (No Seri : 201205038)</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Merk Perkins 878/PRT/I/2022</li>
+                                                    <li>Merk Maxtron 1248/PRT/I/2022</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>Merk Perkins : 23/12/2021</li>
+                                                    <li>Merk Maxtron : 03/01/2022</li>
+                                                </ul>
+                                            </td>
+                                            <td>Dinas Tenaga Kerja dan Transmigrasi Jateng</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Pemeriksaan dan Pengujian Instalasi Penyalur Petir</td>
+                                            <td>1470/IPP/I/2022</td>
+                                            <td>08/01/2022</td>
+                                            <td>Dinas Tenaga Kerja dan Transmigrasi Jateng</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Perjanjinan Pengangkutan dan Pengelolaan Limbah B3</td>
+                                            <td>009/PRJ/DIR/III.6.AU/PKU SKH/2022</td>
+                                            <td>02/02/2022</td>
+                                            <td>PT. Arah Environmental Indonesia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Sertifikat Laik Fungsi</td>
+                                            <td>045.2/7321/XII/2020</td>
+                                            <td>02/12/2020</td>
+                                            <td>Dinas Pekerjaan Umum dan Penataan Ruang Kab.Sukoharjo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>Air Bawah Tanah </td>
+                                            <td>503/10057/TAHUN 2017</td>
+                                            <td>13/10/2017</td>
+                                            <td>DPMPTSP</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>Izin Proteksi Alarm Fire</td>
+                                            <td>936/SPK/XII/2021</td>
+                                            <td>25/12/2021</td>
+                                            <td>Dinas Tenaga Kerja dan Transmigrasi Jateng</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -162,89 +289,14 @@
 
                     </aside>
                 </div>
-
-                {{-- <div class="col-lg-4 col-md-12">
-                    <aside class="widget-area" id="secondary">
-
-                        <section class="widget widget_fovia_posts_thumb">
-                            <h3 class="widget-title">Popular Posts</h3>
-
-                            <article class="item">
-                                <a href="#" class="thumb">
-                                    <span class="fullimage cover bg1" role="img"></span>
-                                </a>
-                                <div class="info">
-                                    <time datetime="2021-06-30">June 30, 2021</time>
-                                    <h4 class="title usmall"><a href="#">How to change yourself for the better</a></h4>
-                                </div>
-
-                                <div class="clear"></div>
-                            </article>
-
-                            <article class="item">
-                                <a href="#" class="thumb">
-                                    <span class="fullimage cover bg2" role="img"></span>
-                                </a>
-                                <div class="info">
-                                    <time datetime="2021-06-30">June 30, 2021</time>
-                                    <h4 class="title usmall"><a href="#">10 Tactics for marketing your company</a></h4>
-                                </div>
-
-                                <div class="clear"></div>
-                            </article>
-
-                            <article class="item">
-                                <a href="#" class="thumb">
-                                    <span class="fullimage cover bg3" role="img"></span>
-                                </a>
-                                <div class="info">
-                                    <time datetime="2021-06-30">June 30, 2021</time>
-                                    <h4 class="title usmall"><a href="#">Google web ranking changing much</a></h4>
-                                </div>
-
-                                <div class="clear"></div>
-                            </article>
-                        </section>
-
-                    </aside>
-                </div> --}}
             </div>
         </div>
     </section>
     <!-- End Main Section -->
-  </main>
 
-  <script>
-    $(document).ready( function () {
-        $.ajax(
-            {
-                url: "./jadwalpelayanan/api/data",
-                type: 'GET',
-                dataType: 'json', // added data type
-                success: function(res) {
-                    $("#tampil-tbody").empty();
-                    res.show.forEach(item => {
-                        $("#tampil-tbody").append(`
-                            <tr id="data${item.id}">
-                                <td>${item.nama}</td>
-                                <td>${item.poli}</td>
-                                <td>${item.ket}</td>
-                            </tr>
-                        `);
-                    });
-                    $('#table').DataTable(
-                        {
-                            paging: true,
-                            searching: true,
-                            dom: 'Bfrtip',
-                            order: [[ 1, "desc" ]],
-                            responsive: true,
-                            scrollX: true,
-                        }
-                    ).columns.adjust();
-                }
-            }
-        );
-    });
-  </script>
+<script>
+$(document).ready( function () {
+
+});
+</script>
 @endsection

@@ -19,8 +19,19 @@ Auth::routes();
 // PORTAL
 Route::get('/', 'portalController@index')->name('portal');
 
-// PROFIL
-Route::get('/profil', 'profilController@index')->name('profil');
+// TENTANG
+    // PROFIL
+    Route::get('/tentang/profil', 'tentangController@index')->name('profil');
+    Route::get('/tentang/indikatormutu', function () { return view('pages.tentang.imut'); })->name('imut');
+
+// PELAYANAN
+    // UNGGULAN
+    Route::get('/pelayanan/unggulan', 'pelayananController@indexUnggulan')->name('unggulan');
+    Route::get('/pelayanan/gawatdarurat', 'pelayananController@indexGawatDarurat')->name('gawatdarurat');
+    Route::get('/pelayanan/rawatjalan', 'pelayananController@indexRawatJalan')->name('rawatjalan');
+    Route::get('/pelayanan/rawatinap', 'pelayananController@indexRawatInap')->name('rawatinap');
+    Route::get('/pelayanan/rawatintensif', 'pelayananController@indexRawatIntensif')->name('rawatintensif');
+    Route::get('/pelayanan/penunjangmedis', 'pelayananController@indexPenunjangMedis')->name('penunjangmedis');
 
 // JADWAL DOKTER
 // Route::get('/jadwal', function () { return view('pages.jadwal-dokter'); })->name('jadwaldokter');

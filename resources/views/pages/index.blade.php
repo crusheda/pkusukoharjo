@@ -16,6 +16,7 @@
                             {{-- <a href="#antrian-bpjs" class="btn btn-primary">Antrian Online <i class="flaticon-doctor-1"></i></a>
                             <a href="{{ route('jadwaldokter') }}" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
                             <a href="{{ route('jadwaldokter') }}" class="btn btn-primary">Jadwal Dokter <i class="fas fa-calendar"></i></a>
+                            <a href="https://www.youtube.com/watch?v=rmNucGJuxNg?autoplay=1" allow="autoplay" class="btn btn-light popup-youtube">Profil Rumah Sakit <i class="fas fa-play"></i></a>
                         </div>
                     </div>
                 </div>
