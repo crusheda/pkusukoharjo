@@ -39,6 +39,15 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        return view('pages.admin.login');
+        $captcha = captcha_img();
+
+        return view('pages.admin.login')->with('list', $captcha);
+        // $form = '<form method="post" action="captcha-test">';
+        // $form .= '<input type="hidden" name="_token" value="' . csrf_token() . '">';
+        // $form .= '<p>' . captcha_img() . '</p>';
+        // $form .= '<p><input type="text" name="captcha"></p>';
+        // $form .= '<p><button type="submit" name="check">Check</button></p>';
+        // $form .= '</form>';
+
     }
 }

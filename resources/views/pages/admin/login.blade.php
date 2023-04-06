@@ -65,7 +65,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="input-group auth-pass-inputgroup">
                                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Masukkan Password Anda" aria-label="Password" aria-describedby="password-addon" name="password" required autocomplete="current-password">
                                                     <button class="btn btn-light shadow-none ms-0" type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
@@ -83,10 +83,16 @@
                                                         <label class="form-check-label" for="remember-check">
                                                             Remember me
                                                         </label>
-                                                    </div>  
+                                                    </div>
                                                 </div>
-                                                
+
                                             </div>
+                                            {{-- <form method="post" action="captcha-test"> --}}
+                                                {{-- {!! $list !!}
+                                                <p><input type="text" name="captcha"></p> --}}
+                                                {{-- <p><button type="submit" name="check">Check</button></p> --}}
+                                            {{-- </form> --}}
+                                            {{-- {{ Captcha::create(); }} --}}
                                             <div class="mb-3">
                                                 <button class="btn text-white w-100 waves-effect waves-light" style="background-color: #047D3E" type="submit">Masuk</button>
                                             </div>

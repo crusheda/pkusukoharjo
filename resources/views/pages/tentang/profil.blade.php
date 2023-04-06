@@ -282,8 +282,8 @@
 
                             <ul>
                                 <li><a href="javascript:void(0);">Struktur Organisasi <i class="far fa-file-pdf"></i></a></li>
-                                <li><a href="javascript:void(0);">Surat Izin Operasional <i class="far fa-file-alt"></i></a></li>
-                                <li><a href="javascript:void(0);">Sertifikat Akreditasi <i class="far fa-file-alt"></i></a></li>
+                                <li><a href="{{ asset('file/surat-izin-operasional.pdf') }}">Surat Izin Operasional <i class="far fa-file-alt"></i></a></li>
+                                <li><a href="{{ asset('file/sertifikat-akreditasi-paripurna.pdf') }}">Sertifikat Akreditasi <i class="far fa-file-alt"></i></a></li>
                             </ul>
                         </section>
 

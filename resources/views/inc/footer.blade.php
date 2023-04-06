@@ -77,7 +77,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <div class="logo">
-                        <center><a href="https://kars.or.id/"><img src="{{ asset('img/logo/kars.png') }}" alt="image"></a>
+                        <center><a href="https://larsi.id/"><img src="{{ asset('img/logo/larsi.png') }}" width="80%" alt="image"></a>
                         <a href="https://bpjs-kesehatan.go.id/"><img src="{{ asset('img/logo/bpjskesehatan.png') }}" alt="image"></a></center>
                     </div>
                 </div>

@@ -45,7 +45,7 @@
                     <tbody id="tampil-tbody"><tr><center><td colspan="7"><i class="fa fa-spinner fa-spin fa-fw"></i> Memproses data...</td></center></tr></tbody>
                 </table>
             </div>
-            <h6 class="mt-3">* Mohon maaf, jadwal sewaktu-waktu bisa berubah</h6>
+            <h6 class="mt-3">* Mohon maaf, jadwal sewaktu-waktu bisa berubah<br>* Konfirmasi jadwal pada Whatsapp (Informasi) : <a href="https://wa.me/6281227203899" target="_blank"><u>+6281227203899</u></a></h6>
         </div>
     </section>
     <!-- End Doctor Calendar Area -->

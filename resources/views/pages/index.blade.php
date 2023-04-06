@@ -15,8 +15,13 @@
                         <div class="btn-box">
                             {{-- <a href="#antrian-bpjs" class="btn btn-primary">Antrian Online <i class="flaticon-doctor-1"></i></a>
                             <a href="{{ route('jadwaldokter') }}" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
-                            <a href="{{ route('jadwaldokter') }}" class="btn btn-primary">Jadwal Dokter <i class="fas fa-calendar"></i></a>
-                            <a href="https://www.youtube.com/watch?v=rmNucGJuxNg?autoplay=1" allow="autoplay" class="btn btn-light popup-youtube">Profil Rumah Sakit <i class="fas fa-play"></i></a>
+                            {{-- <div class="btn-group">
+
+                            </div> --}}
+                            <a href="http://103.210.117.106:83/m" class="btn btn-primary">Daftar Online <i class="fas fa-calendar"></i></a>
+                            {{-- <a href="{{ route('jadwaldokter') }}" class="btn btn-label-info">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
+                            <a href="{{ route('jadwaldokter') }}" allow="autoplay" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a><br>
+                            {{-- <a href="https://www.youtube.com/watch?v=rmNucGJuxNg?autoplay=1" allow="autoplay" class="btn btn-light popup-youtube">Profil Rumah Sakit <i class="fas fa-play"></i></a><br> --}}
                         </div>
                     </div>
                 </div>
