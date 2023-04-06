@@ -47,11 +47,12 @@ class beritaController extends Controller
             'judul' => 'required',
             'nama' => 'required',
             'file' => 'nullable|mimes:jpg,png,jpeg,gif|max:10000',
+            'deskripsi' => 'required',
             ]);
 
         // tampung berkas yang sudah diunggah ke variabel baru
         // 'file' merupakan nama input yang ada pada form
-        $uploadedFile = $request->file('file');     
+        $uploadedFile = $request->file('file');
         // print_r($uploadedFile);
         // die();
         // simpan berkas yang diunggah ke sub-direktori 'public/files'

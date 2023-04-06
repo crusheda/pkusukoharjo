@@ -33,7 +33,7 @@
         </div>
         <!-- end page title -->
 
-        
+
         <div class="row">
             <div class="col-12">
                 <div class="card">
@@ -70,7 +70,7 @@
                                 </div> --}}
                                 <hr>
                                 <div class="col-md-12">
-                                    <center><label class="form-label">Deskripsi Artikel Berita</label></center>
+                                    <center><label class="form-label">Deskripsi Artikel Berita <strong style="color:red">(Wajib Diisi)</strong></label></center>
                                     <textarea class="textarea" name="deskripsi"></textarea>
                                     {{-- <textarea class="form-control" name="summernote" id="summernote"></textarea> --}}
                                 </div>

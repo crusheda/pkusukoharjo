@@ -18,9 +18,9 @@ class portalController extends Controller
     }
 
     // API
-    public function show()
+    public function showBerita()
     {
-        $berita = berita::orderBy('id', 'desc')->take(5)->get();
+        $berita = berita::orderBy('id', 'desc')->take(6)->get();
         // $beritaUtama = DB::table('berita')->where('id', \DB::raw("(select max(`id`) from berita)"))->get();
         // print_r($berita);
         // die();

@@ -876,7 +876,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="blog-area ptb-100">
     <div class="container">
@@ -886,74 +886,97 @@
             <p>Berikut ini merupakan berita terkini Rumah Sakit PKU Muhammadiyah Sukoharjo yang dapat anda lihat di bawah ini</p>
         </div>
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog-post">
-                    <div class="post-image">
-                        <a href="#"><img src="{{ asset('assets/img/blog/1.jpg') }}" alt="image"></a>
-                    </div>
+        <div class="row" id="berita">
+            {{-- <div></div> --}}
 
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <ul>
-                                <li>By: <a href="#">Yussuf Faisal</a></li>
-                                <li>June 19, 2021</li>
-                            </ul>
-                        </div>
-
-                        <h3><a href="#">250+ Medical Tips We Just Had to Share</a></h3>
-                        <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog-post">
-                    <div class="post-image">
-                        <a href="#"><img src="{{ asset('assets/img/blog/2.jpg') }}" alt="image"></a>
-                    </div>
-
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <ul>
-                                <li>By: <a href="#">Yussuf Faisal</a></li>
-                                <li>June 10, 2021</li>
-                            </ul>
-                        </div>
-
-                        <h3><a href="#">12 Ways You Can Cut Your Prescription Costs</a></h3>
-                        <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog-post">
-                    <div class="post-image">
-                        <a href="#"><img src="{{ asset('assets/img/blog/3.jpg') }}" alt="image"></a>
-                    </div>
-
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <ul>
-                                <li>By: <a href="#">Yussuf Faisal</a></li>
-                                <li>June 24, 2021</li>
-                            </ul>
-                        </div>
-
-                        <h3><a href="#">10 Tips to Live Better With Psoriatic Arthritis</a></h3>
-                        <p>Lorem ipsum dolor sit amet, constetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="more-services-btn">
-                    <a href="#" class="btn btn-primary">Berita lainnya <i class="flaticon-right-chevron"></i></a>
-                </div>
-            </div>
         </div>
     </div>
-</section> --}}
+</section>
 
+<script>
+    $(document).ready( function () {
+        $.ajax(
+            {
+                url: "/api/show/berita",
+                type: 'GET',
+                dataType: 'json', // added data type
+                success: function(res) {
+                    $("#berita").empty();
+                    console.log(res.berita.length);
+                    if(res.berita.length == 0){
+                        $("#berita").append(`
+                            <div class="col-md-12"><center>Berita tidak tersedia untuk saat ini</center></div>
+                        `);
+                    } else {
+                        for (let i = 0; i < res.berita.length; i++) {
+                            $("#berita").append(`
+                                <div class="col-md-4">
+                                    <div class="single-blog-post">
+                                        <div class="post-image">
+                                            <a href="artikel/berita/${res.berita[i].id}"><img src="storage/${(res.berita[i].filename).substring(7,1000)}" alt="image"></a>
+                                        </div>
+
+                                        <div class="post-content">
+                                            <div class="post-meta">
+                                                <ul>
+                                                    <li>By: <a href="#">${res.berita[i].nama}</a></li>
+                                                    <li>${res.berita[i].tgl}</li>
+                                                </ul>
+                                            </div>
+
+                                            <h3><a href="artikel/berita/${res.berita[0].id}">${res.berita[i].judul}</a></h3>
+                                            <p>${res.berita[i].deskripsi.substring(0,150)}...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            `);
+                        };
+                        $("#berita").append(`
+                            <div class="col-md-12">
+                                <div class="more-services-btn">
+                                    <a href="javascript:void(0);" class="btn btn-light" disabled>Berita lainnya <i class="flaticon-right-chevron"></i></a>
+                                </div>
+                            </div>
+                        `);
+                    }
+                        // for (let i = 1; i < res.berita.length; i++) {
+                        //     $("#berita").append(`
+                        //         <div class="col-lg-4 col-md-6">
+                        //             <div class="single-blog-post">
+                        //                 <div class="post-image">
+                        //                     <a href="artikel/berita/${res.berita[0].id}"><img src="storage/${(res.berita[0].filename).substring(7,1000)}" alt="image"></a>
+                        //                 </div>
+
+                        //                 <div class="post-content">
+                        //                     <div class="post-meta">
+                        //                         <ul>
+                        //                             <li>By: <a href="#">${res.berita[0].nama}</a></li>
+                        //                             <li>${res.berita[0].tgl}</li>
+                        //                         </ul>
+                        //                     </div>
+
+                        //                     <h3><a href="artikel/berita/${res.berita[0].id}">${res.berita[0].judul}</a></h3>
+                        //                     <p>${res.berita[0].deskripsi.substring(0,150)}...</p>
+                        //                 </div>
+                        //             </div>
+                        //         </div>
+                        //     `);
+                        // for (let i = 1; i < res.berita.length; i++) {
+                        //     console.log(i);
+                        //     $("#berita"+i).empty();
+                        //     $("#berita"+i).append(`
+                        //     <img src="storage/${(res.berita[i].filename).substring(7,1000)}" class="card-img-top" style="height: 140px">
+                        //     <div class="card-body d-flex flex-column">
+                        //         <a>${res.berita[i].judul}</a><br>
+                        //         <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;${res.berita[i].nama} &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;${res.berita[i].tgl}</sub>
+                        //         <a style="margin-top: 10px" href="artikel/berita/${res.berita[i].id}" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
+                        //     </div>
+                        //     `);
+                        // }
+
+                }
+            }
+        );
+    });
+</script>
 @endsection
