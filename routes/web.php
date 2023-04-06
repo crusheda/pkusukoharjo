@@ -13,7 +13,7 @@
 
 // Route::get('/', function () { return view('pages.index'); })->name('portal');
 
-Auth::routes();
+// Auth::routes();
 Auth::routes(['register' => false]);
 
 // PORTAL
