@@ -94,7 +94,7 @@
                                             {{-- </form> --}}
                                             {{-- {{ Captcha::create(); }} --}}
                                             <div class="mb-3">
-                                                <button class="btn text-white w-100 waves-effect waves-light" style="background-color: #047D3E" type="submit">Masuk</button>
+                                                <button class="btn text-white w-100 waves-effect waves-light" style="background-color: #047D3E" type="submit">Enjoy it!</button>
                                             </div>
                                         </form>
 
@@ -131,7 +131,7 @@
                                         </div> --}}
                                     </div>
                                     <div class="mt-4 mt-md-5 text-center">
-                                        <p class="mb-0">2022 © <script></script> Made with <i class="mdi mdi-heart text-danger"></i> by LakonWEB</p>
+                                        <p class="mb-0">2022 © <script></script> Made with <i class="mdi mdi-heart text-danger"></i> by Yussuf Faisal</p>
                                     </div>
                                 </div>
                             </div>
