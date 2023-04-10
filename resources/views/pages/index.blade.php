@@ -913,18 +913,18 @@
                                 <div class="col-md-4">
                                     <div class="single-blog-post">
                                         <div class="post-image">
-                                            <a href="artikel/berita/${res.berita[i].id}"><img src="storage/${(res.berita[i].filename).substring(7,1000)}" alt="image"></a>
+                                            <a href="artikel/berita/${res.berita[i].id}"><img src="/storage/${(res.berita[i].filename).substring(7,1000)}" alt="image"></a>
                                         </div>
 
                                         <div class="post-content">
                                             <div class="post-meta">
                                                 <ul>
-                                                    <li>By: <a href="#">${res.berita[i].nama}</a></li>
+                                                    <li>By: <a href="javascript:void(0)">${res.berita[i].nama}</a></li>
                                                     <li>${res.berita[i].tgl}</li>
                                                 </ul>
                                             </div>
 
-                                            <h3><a href="artikel/berita/${res.berita[0].id}">${res.berita[i].judul}</a></h3>
+                                            <h3><a href="/artikel/berita/${res.berita[0].id}">${res.berita[i].judul}</a></h3>
                                             <p>${res.berita[i].deskripsi.substring(0,150)}...</p>
                                         </div>
                                     </div>
@@ -934,7 +934,7 @@
                         $("#berita").append(`
                             <div class="col-md-12">
                                 <div class="more-services-btn">
-                                    <a href="javascript:void(0);" class="btn btn-light" disabled>Berita lainnya <i class="flaticon-right-chevron"></i></a>
+                                    <a href="/artikel/berita/semua" class="btn btn-light">Berita lainnya <i class="flaticon-right-chevron"></i></a>
                                 </div>
                             </div>
                         `);

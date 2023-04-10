@@ -22,26 +22,26 @@
                         <span data-key="t-apps">Posting</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li>
+                        {{-- <li>
                             <a href="{{ route('admin.jadwal.index') }}">
                                 <span data-key="t-calendar">Jadwal Pelayanan</span>
                             </a>
-                        </li>
-                        <li>
+                        </li> --}}
+                        {{-- <li>
                             <a href="#">
                                 <span data-key="t-calendar">Lowongan Pekerjaan</span>
                             </a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">
                                 <span data-key="t-email">Artikel</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="{{ route('admin.berita.index') }}" data-key="t-inbox">Berita Terkini</a></li>
-                                <li><a href="#" data-key="t-read-email">Info Kesehatan</a></li>
+                                {{-- <li><a href="#" data-key="t-read-email">Info Kesehatan</a></li> --}}
                             </ul>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="javascript: void(0);" class="has-arrow">
                                 <span data-key="t-email">PKRS</span>
                             </a>
@@ -49,7 +49,7 @@
                                 <li><a href="#" data-key="t-inbox">E-Poster</a></li>
                                 <li><a href="#" data-key="t-read-email">Mutiara Hikmah</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
 

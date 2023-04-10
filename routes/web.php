@@ -19,7 +19,10 @@ Auth::routes(['register' => false]);
 // PORTAL
 Route::get('/', 'portalController@index')->name('portal');
     // BERITA
-    Route::get('/api/show/berita', 'portalController@showBerita')->name('showberita');
+    Route::get('/artikel/berita/semua', 'portalController@semuaBerita')->name('semuaberita');
+    Route::get('/artikel/berita/{id}', 'portalController@detailBerita');
+    Route::get('/api/show/berita', 'portalController@showBerita');
+    Route::get('/api/show/berita/lainnya', 'portalController@showBeritaLainnya');
 
 // TENTANG
     // PROFIL
