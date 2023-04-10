@@ -78,7 +78,8 @@
                 <div class="single-footer-widget">
                     <div class="logo">
                         <center><a href="https://larsi.id/"><img src="{{ asset('img/logo/larsi.png') }}" width="80%" alt="image"></a>
-                        <a href="https://bpjs-kesehatan.go.id/"><img src="{{ asset('img/logo/bpjskesehatan.png') }}" alt="image"></a></center>
+                        <a href="https://bpjs-kesehatan.go.id/"><img src="{{ asset('img/logo/bpjskesehatan.png') }}" alt="image"></a>
+                        {{-- <a href="https://www.lapor.go.id/"><img src="{{ asset('img/logo/laporgoid.png') }}" width="80%" alt="image"></a></center> --}}
                     </div>
                 </div>
             </div>

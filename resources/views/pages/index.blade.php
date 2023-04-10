@@ -1,6 +1,33 @@
 @extends('layouts.fovia')
 
 @section('content')
+<style>
+    /* STYLE FOR IMAGE GALLERY */
+    .portfolio-menu{
+        text-align:center;
+    }
+    .portfolio-menu ul li{
+        display:inline-block;
+        margin:0;
+        list-style:none;
+        padding:10px 15px;
+        cursor:pointer;
+        -webkit-transition:all 05s ease;
+        -moz-transition:all 05s ease;
+        -ms-transition:all 05s ease;
+        -o-transition:all 05s ease;
+        transition:all .5s ease;
+    }
+
+    .portfolio-item{
+        width:100%;
+    }
+    .portfolio-item .item{
+        /*width:303px;*/
+        float:left;
+        margin-bottom:10px;
+    }
+</style>
 <!-- Start Main Banner Area -->
 <div class="home-slides owl-carousel owl-theme">
     <div class="main-banner" style="background-image: url(img/gedung-pku/bg-gedung-small.png)">
@@ -893,6 +920,37 @@
     </div>
 </section>
 
+<section class="partner-area ptb-100 bg-f4f9fd">
+    <div class="container">
+        <div class="section-title">
+            <span>E-Poster</span>
+            <h2>Poster Kesehatan</h2>
+            <p>Tetap sehat dan bahagia bersama kami</p>
+        </div>
+        <div class="portfolio-item row">
+            {{-- <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                <div class="single-doctor-box" style="padding: 10px">
+                    <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                <div class="single-doctor-box" style="padding: 10px">
+                    <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                    <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" alt="">
+                    </a>
+                </div>
+            </div> --}}
+        </div>
+        <div class="col-md-12">
+            <div class="more-services-btn">
+                <a href="#" class="btn btn-light">Selengkapnya <i class="flaticon-right-chevron"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script>
     $(document).ready( function () {
         $.ajax(
@@ -977,6 +1035,25 @@
                 }
             }
         );
+        $('.portfolio-menu ul li').click(function(){
+         	$('.portfolio-menu ul li').removeClass('active');
+         	$(this).addClass('active');
+
+         	var selector = $(this).attr('data-filter');
+         	$('.portfolio-item').isotope({
+         		filter:selector
+         	});
+         	return  false;
+         });
+         $(document).ready(function() {
+         var popup_btn = $('.popup-btn');
+         popup_btn.magnificPopup({
+         type : 'image',
+         gallery : {
+         	enabled : true
+         }
+         });
+         });
     });
 </script>
 @endsection

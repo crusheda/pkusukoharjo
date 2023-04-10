@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <!-- Image Gallery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 
     <title>Portal RS PKU Muhammadiyah Sukoharjo</title>
 
@@ -76,8 +78,8 @@
     <div class="go-top"><i class="fas fa-chevron-up"></i></div>
 
     <!-- jQuery Min JS -->
-    {{-- <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> --}}
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+    {{-- <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> --}}
     <!-- Popper Min JS -->
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <!-- Bootstrap Min JS -->
@@ -108,6 +110,9 @@
     <script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
     <!-- Main JS -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    <!-- Image Gallery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 </body>
 
 </html>
