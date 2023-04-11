@@ -45,7 +45,7 @@
                             {{-- <div class="btn-group">
 
                             </div> --}}
-                            <a href="http://103.210.117.106:83/m" class="btn btn-primary">Daftar Online <i class="fas fa-calendar"></i></a>
+                            <a href="http://103.210.117.106:83/m" class="btn btn-primary" target="_blank">Daftar Online <i class="fas fa-user"></i></a>
                             {{-- <a href="{{ route('jadwaldokter') }}" class="btn btn-label-info">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
                             <a href="{{ route('jadwaldokter') }}" allow="autoplay" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a><br>
                             {{-- <a href="https://www.youtube.com/watch?v=rmNucGJuxNg?autoplay=1" allow="autoplay" class="btn btn-light popup-youtube">Profil Rumah Sakit <i class="fas fa-play"></i></a><br> --}}
@@ -945,7 +945,7 @@
         </div>
         <div class="col-md-12">
             <div class="more-services-btn">
-                <a href="#" class="btn btn-light">Selengkapnya <i class="flaticon-right-chevron"></i></a>
+                <a href="javascript:void(0);" class="btn btn-light">Selengkapnya <i class="flaticon-right-chevron"></i></a>
             </div>
         </div>
     </div>

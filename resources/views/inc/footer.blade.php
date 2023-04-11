@@ -77,8 +77,8 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <div class="logo">
-                        <center><a href="https://larsi.id/"><img src="{{ asset('img/logo/larsi.png') }}" width="80%" alt="image"></a>
-                        <a href="https://bpjs-kesehatan.go.id/"><img src="{{ asset('img/logo/bpjskesehatan.png') }}" alt="image"></a>
+                        <center><a href="https://larsi.id/" target="_blank"><img src="{{ asset('img/logo/larsi.png') }}" width="80%" alt="image"></a>
+                        <a href="https://bpjs-kesehatan.go.id/" target="_blank"><img src="{{ asset('img/logo/bpjskesehatan.png') }}" alt="image"></a>
                         {{-- <a href="https://www.lapor.go.id/"><img src="{{ asset('img/logo/laporgoid.png') }}" width="80%" alt="image"></a></center> --}}
                     </div>
                 </div>
@@ -86,7 +86,7 @@
         </div>
 
         <div class="copyright-area">
-            <p>Design by <a href="https://envytheme.com/">Fovia</a>. Developed by <a href="https://www.instagram.com/hiyussuf/" target="_blank">Yussuf Faisal</a> <i class="far fa-copyright"></i> 2022</p>
+            <p>Theme by <a href="https://envytheme.com/">Fovia</a>. Design & Developed by <a href="https://www.instagram.com/hiyussuf/" target="_blank">Yussuf Faisal</a> <i class="far fa-copyright"></i> 2022</p>
         </div>
     </div>
 </section>
