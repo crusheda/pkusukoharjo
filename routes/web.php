@@ -64,6 +64,9 @@ Route::get('/kontak', function () { return view('pages.kontak'); })->name('konta
 //     return $form;
 // });
 
+// --------------------------------------------  API  --------------------------------------------
+Route::get('bpjs/bridging/antrean/poli', 'bpjs\antreanController@refPoli');
+Route::get('bpjs/bridging/antrean/poli/{poli}/{tgl}', 'bpjs\antreanController@cariJadwal');
 
 // --------------------------------------------  OLD  --------------------------------------------
 
