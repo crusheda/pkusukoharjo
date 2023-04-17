@@ -20,7 +20,7 @@
     <!-- Slick Min CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/slick.min.css') }}">
     <!-- Nice Select CSS -->
-    {{-- <link rel="stylesheet" href="{{ asset('assets/vendor/nice-select/css/nice-select.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('assets/vendor/nice-select/css/nice-select.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}"> --}}
     <!-- Magnific Popup Min CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
@@ -103,7 +103,7 @@
     <!-- Magnific Popup Min JS -->
     <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
     <!-- Nice Select Min JS -->
-    {{-- <script src="{{ asset('assets/vendor/nice-select/js/jquery.nice-select.js') }}"></script> --}}
+    <script src="{{ asset('assets/vendor/nice-select/js/jquery.nice-select.js') }}"></script>
     {{-- <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script> --}}
     <!-- WOW Min JS -->
     <script src="{{ asset('assets/js/wow.min.js') }}"></script>
