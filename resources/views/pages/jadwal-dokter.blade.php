@@ -48,7 +48,7 @@
                     <div class="col-lg-6 col-md-6 mb-3">
                         <div class="form-group">
                             <label>Poliklinik Spesialis</label>
-                            <select id="xpoli" class="form-control form-select">
+                            <select id="xpoli" class="form-select">
                                 <option value="" selected hidden>Pilih</option>
                                 <option value="ANA">Poli Anak</option>
                                 <option value="BED">Poli Bedah</option>
@@ -71,7 +71,7 @@
                     <div class="col-lg-6 col-md-6 mb-3">
                         <div class="form-group">
                             <label>Tanggal Pelayanan</label><br>
-                            <input type="date" class="form-control" id="xtgl" disabled>
+                            <input type="date" class="form-select" id="xtgl" disabled>
                         </div>
                     </div>
                     <div id="response"></div>
