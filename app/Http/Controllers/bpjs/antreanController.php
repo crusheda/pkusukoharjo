@@ -44,9 +44,31 @@ class antreanController extends Controller
 
     public function cariJadwal($poli, $tgl)
     {
-        print_r($poli);
-        print_r($tgl);
-        die();
+        // DEFINE SECRET VAR
+        $consid = '5140';
+        $secretkey = '8wRA8A44F6';
+        $userkey = '3531661b282c4997d496bf34de35871e';
+        $url = 'jadwaldokter/kodepoli/'.$poli.'/tanggal/'.$tgl;
+
+        // API to BPJS
+        $result = $this->antreanGet($url);
+
+        // DEFINE VAR INTO DECRYPTION PROGRESS
+        $string = $result->response;
+        $key = $consid.$secretkey.$this->bpjsTimestamp();
+
+        // RESULT DECRYPT WITH AES 256 (mode CBC) - SHA256 AND DECOMPRESSION WITH LZ-STRING
+        $getDecryption = $this->stringDecrypt($key, $string);
+
+        $data = [
+            // 'metacode' => $result->metaData->code,
+            // 'metamessage' => $result->metaData->message,
+            'response' => json_decode($getDecryption)
+        ];
+        // print_r(json_decode($getDecryption));
+        // die();
+
+        return response()->json($data, 200);
     }
 
     // TOOLS BPJS -------------------------------------------------------------------------------------------------------------------------------

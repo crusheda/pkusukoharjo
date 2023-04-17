@@ -20,7 +20,8 @@
     <!-- Slick Min CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/slick.min.css') }}">
     <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendor/nice-select/css/nice-select.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}"> --}}
     <!-- Magnific Popup Min CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
     <!-- Odometer Min CSS -->
@@ -42,6 +43,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <!-- Image Gallery CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <!-- Vendor CSS -->
+    {{-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> --}}
 
     <title>Portal RS PKU Muhammadiyah Sukoharjo</title>
 
@@ -99,7 +103,8 @@
     <!-- Magnific Popup Min JS -->
     <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
     <!-- Nice Select Min JS -->
-    <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/vendor/nice-select/js/jquery.nice-select.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script> --}}
     <!-- WOW Min JS -->
     <script src="{{ asset('assets/js/wow.min.js') }}"></script>
     <!-- AjaxChimp Min JS -->
@@ -113,6 +118,9 @@
     <!-- Image Gallery JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <!-- Vendor JS -->
+    {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> --}}
 </body>
 
 </html>

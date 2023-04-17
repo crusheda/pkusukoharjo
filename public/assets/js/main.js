@@ -27,7 +27,7 @@
             $('.navbar-area').removeClass("is-sticky");
         }
     });
-    
+
     // Home Slides
     $('.home-slides').owlCarousel({
         loop: true,
@@ -55,7 +55,7 @@
         $(".main-banner-content p").addClass("animated fadeInUp").css("opacity", "1");
         $(".main-banner-content .btn-box").addClass("animated fadeInUp").css("opacity", "1");
     });
-    
+
     // Video Popup JS
     $('.popup-youtube').magnificPopup({
         disableOn: 320,
@@ -67,7 +67,7 @@
     });
 
     // Nice Select JS
-    $('select').niceSelect();
+    // $('select').niceSelect(); GANTI KE SELECT2
 
     // Odometer JS
     $('.odometer').appear(function(e) {
@@ -77,7 +77,7 @@
             $(this).html(countNumber);
         });
     });
-    
+
     // Doctor Slides
     $('.doctor-slides').owlCarousel({
         loop: true,
@@ -116,7 +116,7 @@
             // Hide The Other Panels
             $('.accordion-content').not($(this).next()).slideUp('fast');
             // Removes Active Class From Other Titles
-            $('.accordion-title').not($(this)).removeClass('active');		
+            $('.accordion-title').not($(this)).removeClass('active');
         });
     });
 
@@ -173,7 +173,7 @@
     (function ($) {
         $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
         $('.tab ul.tabs li a').on('click', function (g) {
-            var tab = $(this).closest('.tab'), 
+            var tab = $(this).closest('.tab'),
             index = $(this).closest('li').index();
             tab.find('ul.tabs > li').removeClass('current');
             $(this).closest('li').addClass('current');
@@ -191,7 +191,7 @@
         btnDown = spinner.find('.minus-btn'),
         min = input.attr('min'),
         max = input.attr('max');
-        
+
         btnUp.on('click', function() {
             var oldValue = parseFloat(input.val());
             if (oldValue >= max) {
@@ -259,7 +259,7 @@
         url: "https://envytheme.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
         callback: callbackFunction
     });
-    
+
     // Go to Top
     $(function(){
         // Scroll Event
@@ -267,16 +267,16 @@
             var scrolled = $(window).scrollTop();
             if (scrolled > 600) $('.go-top').addClass('active');
             if (scrolled < 600) $('.go-top').removeClass('active');
-        });  
+        });
         // Click Event
         $('.go-top').on('click', function() {
             $("html, body").animate({ scrollTop: "0" },  500);
         });
     });
-	
+
 	// WOW JS
 	$(window).on ('load', function (){
-        if ($(".wow").length) { 
+        if ($(".wow").length) {
             var wow = new WOW({
             boxClass:     'wow',      // animated element css class (default is wow)
             animateClass: 'animated', // animation css class (default is animated)
@@ -287,7 +287,7 @@
           wow.init();
         }
 	});
-	
+
 	// Preloader
 	$(window).on('load', function() {
 		$('.preloader').addClass('preloader-deactivate');

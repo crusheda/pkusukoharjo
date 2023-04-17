@@ -48,15 +48,29 @@
                     <div class="col-lg-6 col-md-6 mb-3">
                         <div class="form-group">
                             <label>Poliklinik Spesialis</label>
-                            <select id="xpoli">
-                                <option value="" hidden>Pilih</option>
+                            <select id="xpoli" class="form-control form-select">
+                                <option value="" selected hidden>Pilih</option>
+                                <option value="ANA">ANA</option>
+                                <option value="ANT">ANT</option>
+                                <option value="BED">BED</option>
+                                <option value="GIG">GIG</option>
+                                <option value="INT">INT</option>
+                                <option value="IRM">IRM</option>
+                                <option value="JAN">JAN</option>
+                                <option value="JIW">JIW</option>
+                                <option value="KLT">KLT</option>
+                                <option value="MAT">MAT</option>
+                                <option value="OBG">OBG</option>
+                                <option value="ORT">ORT</option>
+                                <option value="PAR">PAR</option>
+                                <option value="SAR">SAR</option>
                             </select>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6 mb-3">
                         <div class="form-group">
-                            <label>Tanggal Pelayanan</label>
+                            <label>Tanggal Pelayanan</label><br>
                             <input type="date" class="form-control" id="xtgl">
                         </div>
                     </div>
@@ -69,100 +83,113 @@
                     </div>
                 </div>
             </div>
-            <div class="doctor-calendar-table table-responsive" hidden>
+            <div class="doctor-calendar-table table-responsive" id="tablejadwal" hidden>
                 <table class="table">
                     <thead>
                         <tr>
                             <th>No</th>
                             <th>Poliklinik Dokter Spesialis</th>
-                            <th>Senin</th>
-                            <th>Selasa</th>
-                            <th>Rabu</th>
-                            <th>Kamis</th>
-                            <th>Jum'at</th>
-                            <th>Sabtu</th>
-                            <th>Ahad</th>
+                            <th>Hari</th>
+                            <th>Waktu</th>
+                            <th>Kuota</th>
                         </tr>
                     </thead>
 
                     <tbody id="tampil-tbody"><tr><center><td colspan="9"><i class="fa fa-spinner fa-spin fa-fw"></i> Memproses data...</td></center></tr></tbody>
                 </table>
             </div>
-            <h6 class="mt-3">* Mohon maaf, jadwal sewaktu-waktu bisa berubah<br>* Konfirmasi jadwal pada Bagian Informasi RS : <a href="https://wa.me/6281227203899" target="_blank"><u>+6281227203899</u> (Whatsapp)</a></h6>
+            <h6 class="mt-3">* Mohon maaf, jadwal sewaktu-waktu bisa berubah<br>* Jadwal diambil dari Sistem Bridging dengan BPJS<br>* Silakan Konfirmasi jadwal pada Bagian Informasi RS : <a href="https://wa.me/6281227203899" target="_blank"><u>+6281227203899</u> (Whatsapp)</a></h6>
         </div>
     </section>
     <!-- End Doctor Calendar Area -->
 
     <script>
         $(document).ready(function() {
-            $.ajax({
-                url: "/bpjs/bridging/antrean/poli",
-                type: 'GET',
-                dataType: 'json',
-                success: function(res) {
-                    console.log(res.response);
-                    $("#xpoli").empty();
-                    if(res.length === null){
-                        alert('Gagal memuat data Poliklinik, silakan refresh halaman ini');
-                    } else {
-                        res.response.forEach(item => {
-                            if (
-                                item.kdsubspesialis === 'ANA' ||
-                                item.kdsubspesialis === 'ANT' ||
-                                item.kdsubspesialis === 'BED' ||
-                                item.kdsubspesialis === 'GIG' ||
-                                item.kdsubspesialis === 'INT' ||
-                                item.kdsubspesialis === 'IRM' ||
-                                item.kdsubspesialis === 'JAN' ||
-                                item.kdsubspesialis === 'JIW' ||
-                                item.kdsubspesialis === 'KLT' ||
-                                item.kdsubspesialis === 'MAT' ||
-                                item.kdsubspesialis === 'OBG' ||
-                                item.kdsubspesialis === 'ORT' ||
-                                item.kdsubspesialis === 'PAR' ||
-                                item.kdsubspesialis === 'SAR'
-                                ) {
-                                    $(".list").append(`
-                                        <li class="option" data-value="${item.kdpoli}">${item.nmsubspesialis}</li>
-                                    `);
-                            }
-                        });
-                    }
-                }
-            });
+            // $('#xpoli').select2({
+            //     placeholder: 'Pilih',
+            //     allowClear: true
+            // });
+            // $('#xtgl').flatpickr({
+            //     enableTime: false,
+            //     dateFormat: "Y-m-d",
+            //     minDate: "today",
+            // });
+            // $.ajax({
+            //     url: "/bpjs/bridging/antrean/poli",
+            //     type: 'GET',
+            //     dataType: 'json',
+            //     success: function(res) {
+            //         console.log(res.response);
+            //         $("#xpoli").empty();
+            //         if(res.length === null){
+            //             alert('Gagal memuat data Poliklinik, silakan refresh halaman ini');
+            //         } else {
+            //             res.response.forEach(item => {
+            //                 if (
+            //                     item.kdsubspesialis === 'ANA' ||
+            //                     item.kdsubspesialis === 'ANT' ||
+            //                     item.kdsubspesialis === 'BED' ||
+            //                     item.kdsubspesialis === 'GIG' ||
+            //                     item.kdsubspesialis === 'INT' ||
+            //                     item.kdsubspesialis === 'IRM' ||
+            //                     item.kdsubspesialis === 'JAN' ||
+            //                     item.kdsubspesialis === 'JIW' ||
+            //                     item.kdsubspesialis === 'KLT' ||
+            //                     item.kdsubspesialis === 'MAT' ||
+            //                     item.kdsubspesialis === 'OBG' ||
+            //                     item.kdsubspesialis === 'ORT' ||
+            //                     item.kdsubspesialis === 'PAR' ||
+            //                     item.kdsubspesialis === 'SAR'
+            //                     ) {
+            //                         $(".list").append(`
+            //                             <option value="${item.kdpoli}">${item.nmsubspesialis}</option>
+            //                         `);
+            //                         // <li class="option" data-value="${item.kdpoli}">${item.nmsubspesialis}</li>
+            //                 }
+            //             });
+            //         }
+            //     }
+            // });
         });
 
         // function-function
         function cariJadwal() {
-            var xpoli = $(".list").find('data-value');
+            var xpoli = $("#xpoli").val();
             var xtgl = $("#xtgl").val();
-            console.log(xpoli);
+            $("#tablejadwal").prop('hidden', false);
+            // console.log(xpoli);
 
             $.ajax({
                 url: "/bpjs/bridging/antrean/poli/"+xpoli+"/"+xtgl,
                 type: 'GET',
                 dataType: 'json',
                 success: function(res) {
-                    console.log(xpoli);
-                    // $("#tampil-tbody").empty();
-                    // if(res.length === 0){
-                    //     alert('Gagal memuat pencarian Poliklinik, silakan ulangi sekali lagi');
-                    // } else {
-                    //     var i = 1;
-                    //     res.forEach(item => {
-                    //         content = "<tr id='data"+ item.id +"' style='padding-top: 0px'><td>"+ i +"</td>"
-                    //                 + "<td style='text-align:left'><h3>" + item.NAMA + "</h3><span>" + item.SUBINSTALASI + " ("+item.REF_POLIBPJS+")</span></td>";
-                    //                 if (item.SENIN != null) { content += "<td>" + item.SENIN + "</td>" ; } else { content += "<td>-</td>"; }
-                    //                 if (item.SELASA != null) { content += "<td>" + item.SELASA + "</td>" ; } else { content += "<td>-</td>"; }
-                    //                 if (item.RABU != null) { content += "<td>" + item.RABU + "</td>" ; } else { content += "<td>-</td>"; }
-                    //                 if (item.KAMIS != null) { content += "<td>" + item.KAMIS + "</td>" ; } else { content += "<td>-</td>"; }
-                    //                 if (item.JUMAT != null) { content += "<td>" + item.JUMAT + "</td>" ; } else { content += "<td>-</td>"; }
-                    //                 if (item.SABTU != null) { content += "<td>" + item.SABTU + "</td>" ; } else { content += "<td>-</td>"; }
-                    //                 if (item.AHAD != null) { content += "<td>" + item.AHAD + "</td>" ; } else { content += "<td>-</td>"; }
-                    //         $('#tampil-tbody').append(content);
-                    //         i++;
-                    //     });
-                    // }
+                    $("#tampil-tbody").empty();
+                    console.log(res);
+                    if(res.response == null){
+                        $('#tampil-tbody').append("<tr style='padding-top: 0px'><td colspan='10'>Data gagal dimuat, silakan ulangi sekali lagi</td></tr>");
+                        alert('Gagal memuat pencarian Poliklinik, silakan ulangi sekali lagi');
+                    } else {
+                        // Swal.fire({
+                        //     position: 'top-end',
+                        //     icon: 'success',
+                        //     title: 'Your work has been saved',
+                        //     showConfirmButton: false,
+                        //     timer: 1500
+                        // })
+                        var i = 1;
+                        res.response.forEach(item => {
+                            console.log(item.jadwal);
+                            content = "<tr id='data"+ item.id +"' style='padding-top: 0px'>"
+                                    + "<td>"+ i +"</td>"
+                                    + "<td style='text-align:left'><h3>" + item.namadokter + "</h3><span>" + item.namasubspesialis + " ("+item.kodesubspesialis+")</span></td>"
+                                    + "<td>" + item.namahari + "</td>"
+                                    + "<td>" + item.jadwal + "</td>"
+                                    + "<td>" + item.kapasitaspasien + "Pasien Per Hari</td>";
+                            $('#tampil-tbody').append(content);
+                            i++;
+                        });
+                    }
                 }
             });
         }
