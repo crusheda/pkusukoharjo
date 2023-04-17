@@ -66,6 +66,9 @@
         fixedContentPos: false
     });
 
+    // Nice Select JS
+    $('select').niceSelect();
+
     // Odometer JS
     $('.odometer').appear(function(e) {
         var odo = $(".odometer");
