@@ -53,6 +53,8 @@ class antreanController extends Controller
         // API to BPJS
         $result = $this->antreanGet($url);
 
+        // print_r($result);
+        // die();
         // DEFINE VAR INTO DECRYPTION PROGRESS
         $string = $result->response;
         $key = $consid.$secretkey.$this->bpjsTimestamp();
@@ -65,8 +67,6 @@ class antreanController extends Controller
             // 'metamessage' => $result->metaData->message,
             'response' => json_decode($getDecryption)
         ];
-        // print_r(json_decode($getDecryption));
-        // die();
 
         return response()->json($data, 200);
     }
