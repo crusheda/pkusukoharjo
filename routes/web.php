@@ -21,8 +21,10 @@ Route::get('/', 'portalController@index')->name('portal');
     // BERITA
     Route::get('/artikel/berita/semua', 'portalController@semuaBerita')->name('semuaberita');
     Route::get('/artikel/berita/{id}', 'portalController@detailBerita');
-    Route::get('/api/show/berita', 'portalController@showBerita');
+    Route::get('/api/show/portal', 'portalController@showPortal');
     Route::get('/api/show/berita/lainnya', 'portalController@showBeritaLainnya');
+    // EPOSTER
+    // Route::get('/api/show/eposter', 'portalController@showBerita');
 
 // TENTANG
     // PROFIL
@@ -44,6 +46,34 @@ Route::get('/jadwal', 'jadwalDokterController@index')->name('jadwaldokter');
 Route::get('/jadwal/push', 'jadwalDokterController@pushApi');
 Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
 
+// --------------------------------------------  API  --------------------------------------------
+Route::get('bpjs/bridging/antrean/poli', 'bpjs\antreanController@refPoli');
+Route::get('bpjs/bridging/antrean/poli/{poli}/{tgl}', 'bpjs\antreanController@cariJadwal');
+
+// ----------------------------------------  ADMIN AREA  -----------------------------------------
+Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    // EPOSTER
+    Route::get('posting/eposter/api/data', 'posting\eposterController@apiData')->name('epsoter.api.data');
+    Route::get('posting/eposter/api/data/hapus/{id}', 'posting\eposterController@apiHapus')->name('epsoter.api.hapus');
+    Route::resource('posting/eposter', 'posting\eposterController');
+
+    // BERITA
+    Route::get('posting/berita/api/data', 'posting\beritaController@apiData')->name('berita.api.data');
+    Route::get('posting/berita/api/data/hapus/{id}', 'posting\beritaController@apiHapus')->name('berita.api.hapus');
+    Route::resource('posting/berita', 'posting\beritaController');
+
+    // JADWAL PELAYANAN
+    Route::get('posting/jadwal/api/data', 'posting\jadwalController@apiData')->name('jadwal.api.data');
+    Route::get('posting/jadwal/api/data/hapus/{id}', 'posting\jadwalController@apiHapus')->name('jadwal.api.hapus');
+    Route::resource('posting/jadwal', 'posting\jadwalController');
+});
+
+
+
+
+
 // Route::any('captcha-test', function() {
 //     if (request()->getMethod() == 'POST') {
 //         $rules = ['captcha' => 'required|captcha'];
@@ -64,10 +94,6 @@ Route::get('/kontak', function () { return view('pages.kontak'); })->name('konta
 //     return $form;
 // });
 
-// --------------------------------------------  API  --------------------------------------------
-Route::get('bpjs/bridging/antrean/poli', 'bpjs\antreanController@refPoli');
-Route::get('bpjs/bridging/antrean/poli/{poli}/{tgl}', 'bpjs\antreanController@cariJadwal');
-
 // --------------------------------------------  OLD  --------------------------------------------
 
 // BERITA
@@ -79,27 +105,10 @@ Route::get('bpjs/bridging/antrean/poli/{poli}/{tgl}', 'bpjs\antreanController@ca
 // Route::get('/jadwalpelayanan', 'jadwalPelayananController@index')->name('jadwalpelayanan');
 
 // Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
-Route::get('/sejarah', function () { return view('pages.sejarah'); })->name('sejarah');
-Route::get('/visimisi', function () { return view('pages.visimisi'); })->name('visimisi');
+// Route::get('/sejarah', function () { return view('pages.sejarah'); })->name('sejarah');
+// Route::get('/visimisi', function () { return view('pages.visimisi'); })->name('visimisi');
 // Route::get('/portfolio-details.html', function () { return view('pages.portfolio-details'); });
 
 // API PORTAL
 // Route::get('/api/show', 'portalController@show')->name('api.show');
 // Route::get('/artikel/berita/api/show', 'portalController@showArtikel')->name('api.showArtikel');
-
-// ----------------------------------------  ADMIN AREA  -----------------------------------------
-
-// ADMIN
-Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::get('/home', 'HomeController@index')->name('home');
-
-    // BERITA
-    Route::get('posting/berita/api/data', 'posting\beritaController@apiData')->name('berita.api.data');
-    Route::get('posting/berita/api/data/hapus/{id}', 'posting\beritaController@apiHapus')->name('berita.api.hapus');
-    Route::resource('posting/berita', 'posting\beritaController');
-
-    // JADWAL PELAYANAN
-    Route::get('posting/jadwal/api/data', 'posting\jadwalController@apiData')->name('jadwal.api.data');
-    Route::get('posting/jadwal/api/data/hapus/{id}', 'posting\jadwalController@apiHapus')->name('jadwal.api.hapus');
-    Route::resource('posting/jadwal', 'posting\jadwalController');
-});

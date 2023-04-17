@@ -38,6 +38,7 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="{{ route('admin.berita.index') }}" data-key="t-inbox">Berita Terkini</a></li>
+                                <li><a href="{{ route('admin.eposter.index') }}" data-key="t-inbox">Poster Kesehatan</a></li>
                                 {{-- <li><a href="#" data-key="t-read-email">Info Kesehatan</a></li> --}}
                             </ul>
                         </li>

@@ -18,7 +18,7 @@
       <link href="{{ asset('admin/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
 
       <!-- Responsive datatable examples -->
-      <link href="{{ asset('admin/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" /> 
+      <link href="{{ asset('admin/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
 
       <!-- preloader css -->
       <link rel="stylesheet" href="{{ asset('admin/css/preloader.min.css') }}" type="text/css" />
@@ -37,7 +37,7 @@
       <link href="{{ asset('admin/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
       <!-- App Css-->
       <link href="{{ asset('admin/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
-      
+
       <!-- JSS For Document Ajx -->
     <script src="{{ asset('admin/libs/jquery/jquery.min.js') }}"></script>
 
@@ -50,8 +50,8 @@
         <!-- Begin page -->
         <div id="layout-wrapper">
 
-            @include('inc.admin.navbar')            
-            @include('inc.admin.sidebar')  
+            @include('inc.admin.navbar')
+            @include('inc.admin.sidebar')
 
             <!-- ============================================================== -->
             <!-- Start right Content here -->
@@ -64,7 +64,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-6">
-                                2022 @ Lakon WEB.
+                                Copyright @ 2022.
                             </div>
                             <div class="col-sm-6">
                                 <div class="text-sm-end d-none d-sm-block">
@@ -80,7 +80,7 @@
         </div>
         <!-- END layout-wrapper -->
 
-        
+
         <!-- Right Sidebar -->
         <div class="right-bar">
             <div data-simplebar class="h-100">
@@ -254,7 +254,7 @@
         <!-- Plugins js-->
         <script src="{{ asset('admin/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js') }}"></script>
         <script src="{{ asset('admin/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js') }}"></script>
-        
+
         <!-- OTHER JS -->
         {{-- <script src="{{ asset('admin/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script> --}}
 

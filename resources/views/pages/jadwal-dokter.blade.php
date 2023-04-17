@@ -43,7 +43,7 @@
                 <h2>Tabel Waktu</h2>
                 <p>Pendaftaran ditutup <strong>30 menit</strong> sebelum poli dimulai, harap datang lebih awal.</p>
             </div>
-            <div class="mb-4">
+            <div class="mb-3">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 mb-3">
                         <div class="form-group">
@@ -74,7 +74,6 @@
                             <input type="date" class="form-select" id="xtgl" disabled>
                         </div>
                     </div>
-                    <div id="response"></div>
 
                     <div class="col-lg-12 col-md-12">
                         <div class="submit-btn">
@@ -83,6 +82,11 @@
                     </div>
                 </div>
             </div>
+            <h6 class="mb-3">
+                * Jadwal diambil dari <b>Sistem Bridging dengan BPJS</b><br>
+                {{-- * Mohon maaf, jadwal dokter hanya terbuka untuk H-1 sampai H+3 saja<br> --}}
+                * Silakan Konfirmasi jadwal pada Bagian Informasi RS : <a href="https://wa.me/6281227203899" target="_blank"><u>+6281227203899</u> (Whatsapp)</a>
+            </h6>
             <div class="doctor-calendar-table table-responsive" id="tablejadwal" hidden>
                 <table class="table">
                     <thead>
@@ -98,11 +102,6 @@
                     <tbody id="tampil-tbody"><tr><center><td colspan="9"><i class="fa fa-spinner fa-spin fa-fw"></i> Memproses data...</td></center></tr></tbody>
                 </table>
             </div>
-            <h6 class="mt-4">
-                * Jadwal diambil dari <b>Sistem Bridging dengan BPJS</b><br>
-                {{-- * Mohon maaf, jadwal dokter hanya terbuka untuk H-1 sampai H+3 saja<br> --}}
-                * Silakan Konfirmasi jadwal pada Bagian Informasi RS : <a href="https://wa.me/6281227203899" target="_blank"><u>+6281227203899</u> (Whatsapp)</a>
-            </h6>
         </div>
     </section>
     <!-- End Doctor Calendar Area -->

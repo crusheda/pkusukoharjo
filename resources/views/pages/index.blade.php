@@ -927,40 +927,24 @@
             <h2>Poster Kesehatan</h2>
             <p>Tetap sehat dan bahagia bersama kami</p>
         </div>
-        <div class="portfolio-item row">
-            {{-- <div class="item col-lg-3 col-md-4 col-6 col-sm">
-                <div class="single-doctor-box" style="padding: 10px">
-                    <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                <div class="single-doctor-box" style="padding: 10px">
-                    <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" alt="">
-                    </a>
-                </div>
-            </div> --}}
-        </div>
-        <div class="col-md-12">
-            <div class="more-services-btn">
-                <a href="javascript:void(0);" class="btn btn-light">Selengkapnya <i class="flaticon-right-chevron"></i></a>
-            </div>
-        </div>
+        <div class="portfolio-item row" id="eposter"></div>
     </div>
 </section>
 
 <script>
     $(document).ready( function () {
+        // AJAX BERITA
         $.ajax(
             {
-                url: "/api/show/berita",
+                url: "/api/show/portal",
                 type: 'GET',
                 dataType: 'json', // added data type
                 success: function(res) {
                     $("#berita").empty();
-                    console.log(res.berita.length);
+                    $("#eposter").empty();
+                    // console.log(res.berita.length);
+
+                    // SHOW BERITA
                     if(res.berita.length == 0){
                         $("#berita").append(`
                             <div class="col-md-12"><center>Berita tidak tersedia untuk saat ini</center></div>
@@ -997,41 +981,32 @@
                             </div>
                         `);
                     }
-                        // for (let i = 1; i < res.berita.length; i++) {
-                        //     $("#berita").append(`
-                        //         <div class="col-lg-4 col-md-6">
-                        //             <div class="single-blog-post">
-                        //                 <div class="post-image">
-                        //                     <a href="artikel/berita/${res.berita[0].id}"><img src="storage/${(res.berita[0].filename).substring(7,1000)}" alt="image"></a>
-                        //                 </div>
 
-                        //                 <div class="post-content">
-                        //                     <div class="post-meta">
-                        //                         <ul>
-                        //                             <li>By: <a href="#">${res.berita[0].nama}</a></li>
-                        //                             <li>${res.berita[0].tgl}</li>
-                        //                         </ul>
-                        //                     </div>
-
-                        //                     <h3><a href="artikel/berita/${res.berita[0].id}">${res.berita[0].judul}</a></h3>
-                        //                     <p>${res.berita[0].deskripsi.substring(0,150)}...</p>
-                        //                 </div>
-                        //             </div>
-                        //         </div>
-                        //     `);
-                        // for (let i = 1; i < res.berita.length; i++) {
-                        //     console.log(i);
-                        //     $("#berita"+i).empty();
-                        //     $("#berita"+i).append(`
-                        //     <img src="storage/${(res.berita[i].filename).substring(7,1000)}" class="card-img-top" style="height: 140px">
-                        //     <div class="card-body d-flex flex-column">
-                        //         <a>${res.berita[i].judul}</a><br>
-                        //         <sub><i class="fas fa-feather"></i>&nbsp;&nbsp;${res.berita[i].nama} &nbsp;&nbsp;&nbsp;<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;${res.berita[i].tgl}</sub>
-                        //         <a style="margin-top: 10px" href="artikel/berita/${res.berita[i].id}" class="btn btn-warning text-white btn-sm">Selengkapnya&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i></a>
-                        //     </div>
-                        //     `);
-                        // }
-
+                    // SHOW EPOSTER
+                    if(res.eposter.length == 0){
+                        $("#eposter").append(`
+                            <div class="col-md-12"><center>Eposter tidak tersedia untuk saat ini</center></div>
+                        `);
+                    } else {
+                        for (let i = 0; i < res.eposter.length; i++) {
+                            $("#eposter").append(`
+                                <div class="item gts col-lg-2 col-md-4 col-6 col-sm">
+                                    <div class="single-doctor-box" style="padding: 10px">
+                                        <a data-fancybox="gallery" class="primary-btn" href="/storage/${(res.eposter[i].filename).substring(7,1000)}">
+                                            <img class="img-fluid" src="/storage/${(res.eposter[i].filename).substring(7,1000)}" alt="${res.eposter[i].judul}">
+                                        </a>
+                                    </div>
+                                </div>
+                            `);
+                        };
+                        $("#eposter").append(`
+                            <div class="col-md-12">
+                                <div class="more-services-btn">
+                                    <a href="javascript:void(0);" class="btn btn-light">Selengkapnya <i class="flaticon-right-chevron"></i></a>
+                                </div>
+                            </div>
+                        `); // href="/artikel/eposter/semua"
+                    }
                 }
             }
         );
@@ -1046,13 +1021,13 @@
          	return  false;
          });
          $(document).ready(function() {
-         var popup_btn = $('.popup-btn');
-         popup_btn.magnificPopup({
-         type : 'image',
-         gallery : {
-         	enabled : true
-         }
-         });
+            var popup_btn = $('.popup-btn');
+            popup_btn.magnificPopup({
+                type : 'image',
+                gallery : {
+                    enabled : true
+                }
+            });
          });
     });
 </script>

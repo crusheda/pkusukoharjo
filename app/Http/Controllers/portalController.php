@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\posting\berita;
+use App\Models\posting\eposter;
 use Carbon\Carbon;
 use Storage;
 use Response;
@@ -40,15 +41,17 @@ class portalController extends Controller
     }
 
     // API
-    public function showBerita()
+    public function showPortal()
     {
         $berita = berita::orderBy('id', 'desc')->take(6)->get();
+        $eposter = eposter::orderBy('id', 'desc')->take(12)->get();
         // $beritaUtama = DB::table('berita')->where('id', \DB::raw("(select max(`id`) from berita)"))->get();
         // print_r($berita);
         // die();
 
         $data = [
             'berita' => $berita,
+            'eposter' => $eposter,
         ];
 
         return response()->json($data, 200);
