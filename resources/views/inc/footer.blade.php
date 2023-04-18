@@ -6,7 +6,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="newsletter-content">
                         <h2>Ikuti berita terkini kami</h2>
-                        <p>Berita terbaru Kami hanya untuk Anda...</p>
+                        <p>Berita terbaru Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
                     </div>
                 </div>
 

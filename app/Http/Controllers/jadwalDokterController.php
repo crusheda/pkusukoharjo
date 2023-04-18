@@ -9,7 +9,7 @@ class jadwalDokterController extends Controller
 {
     public function index()
     {
-        return view('pages.jadwal-dokter');
+        return view('pages.informasi.jadwal-dokter');
     }
 
     public function pushApi()

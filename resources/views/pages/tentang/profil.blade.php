@@ -40,7 +40,7 @@
                                     <li>Menyelenggarakan pelayanan kesehatan yang professional, bermutu dan paripurna</li>
                                     <li>Meningkatkan mutu pelayanan kesehatan secara berkesinambungan</li>
                                     <li>Menyelenggarakan sistem manajemen yang profesional</li>
-                                    <li>Mewujudkan SDM yang professional</li>
+                                    <li>Mewujudkan SDM yang professional dan sejahtera</li>
                                 </ul>
                             </p>
                             <h3>MOTTO</h3>

@@ -925,7 +925,7 @@
         <div class="section-title">
             <span>E-Poster</span>
             <h2>Poster Kesehatan</h2>
-            <p>Tetap sehat dan bahagia bersama kami</p>
+            <p>Tetap sehat dan bahagia bersama Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
         </div>
         <div class="portfolio-item row" id="eposter"></div>
     </div>
@@ -991,7 +991,7 @@
                         for (let i = 0; i < res.eposter.length; i++) {
                             $("#eposter").append(`
                                 <div class="item gts col-lg-2 col-md-4 col-6 col-sm">
-                                    <div class="single-doctor-box" style="padding: 10px">
+                                    <div class="single-doctor-box" style="padding: 5px">
                                         <a data-fancybox="gallery" class="primary-btn" href="/storage/${(res.eposter[i].filename).substring(7,1000)}">
                                             <img class="img-fluid" src="/storage/${(res.eposter[i].filename).substring(7,1000)}" alt="${res.eposter[i].judul}">
                                         </a>

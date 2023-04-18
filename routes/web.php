@@ -40,11 +40,19 @@ Route::get('/', 'portalController@index')->name('portal');
     Route::get('/pelayanan/rawatintensif', 'pelayananController@indexRawatIntensif')->name('rawatintensif');
     Route::get('/pelayanan/penunjangmedis', 'pelayananController@indexPenunjangMedis')->name('penunjangmedis');
 
-// JADWAL DOKTER
-// Route::get('/jadwal', function () { return view('pages.jadwal-dokter'); })->name('jadwaldokter');
-Route::get('/jadwal', 'jadwalDokterController@index')->name('jadwaldokter');
-Route::get('/jadwal/push', 'jadwalDokterController@pushApi');
-Route::get('/kontak', function () { return view('pages.kontak'); })->name('kontak');
+// INFORMASI
+    // JADWAL DOKTER
+    Route::get('/informasi/jadwal', 'jadwalDokterController@index')->name('jadwaldokter');
+    // Route::get('/jadwal', function () { return view('pages.jadwal-dokter'); })->name('jadwaldokter');
+    // Route::get('/informasi/jadwal/push', 'jadwalDokterController@pushApi');
+
+    // KETERSEDIAAN TEMPAT TIDUR
+    Route::get('/informasi/tt', 'ketersediaanTTController@index')->name('tt');
+    Route::get('/api/informasi/tt', 'ketersediaanTTController@pushApi')->name('api.tt');
+
+// KONTAK
+Route::get('kontak', function () { return view('pages.kontak'); })->name('kontak');
+
 
 // --------------------------------------------  API  --------------------------------------------
 Route::get('bpjs/bridging/antrean/poli', 'bpjs\antreanController@refPoli');

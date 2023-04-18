@@ -103,7 +103,14 @@
                                 </ul>
                             </li> --}}
 
-                            <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
+                            {{-- <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li> --}}
+
+                            <li class="nav-item"><a href="#" class="nav-link {{ request()->routeIs('jadwaldokter') || request()->routeIs('tt') ? 'active' : '' }}"> Informasi</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
+                                    <li class="nav-item"><a href="{{ route('tt') }}" class="nav-link {{ request()->routeIs('tt') ? 'active' : '' }}">Ketersediaan Tempat Tidur</a></li>
+                                </ul>
+                            </li>
 
                             <li class="nav-item"><a href="#" class="nav-link {{ request()->routeIs('profil') || request()->routeIs('imut') ? 'active' : '' }}"> Tentang</a>
                                 <ul class="dropdown-menu">
