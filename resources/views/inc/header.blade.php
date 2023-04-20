@@ -13,13 +13,13 @@
                 <div class="col-lg-4">
                     <div class="header-right-content">
                         <ul class="top-header-social">
-                            <li><a href="https://www.facebook.com/rspkusukoharjo"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/rspkusukoharjo"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/rspkusukoharjo" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/rspkusukoharjo" target="_blank"><i class="fab fa-twitter"></i></a></li>
                             <li>
-                                <a href="https://www.tiktok.com/@rspkusukoharjo"><i class="fi fi-brands-tik-tok"></i></a>
+                                <a href="https://www.tiktok.com/@rspkusukoharjo" target="_blank"><i class="fi fi-brands-tik-tok"></i></a>
                             </li>
-                            <li><a href="https://www.youtube.com/channel/UC7KDgt-THy4y9tdso4YbDSw"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="https://www.instagram.com/rspkusukoharjo"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC7KDgt-THy4y9tdso4YbDSw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/rspkusukoharjo" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         </ul>
 
 
@@ -105,17 +105,17 @@
 
                             {{-- <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li> --}}
 
-                            <li class="nav-item"><a href="#" class="nav-link {{ request()->routeIs('jadwaldokter') || request()->routeIs('tt') ? 'active' : '' }}"> Informasi</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
-                                    <li class="nav-item"><a href="{{ route('tt') }}" class="nav-link {{ request()->routeIs('tt') ? 'active' : '' }}">Ketersediaan Tempat Tidur</a></li>
-                                </ul>
-                            </li>
-
                             <li class="nav-item"><a href="#" class="nav-link {{ request()->routeIs('profil') || request()->routeIs('imut') ? 'active' : '' }}"> Tentang</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="{{ route('profil') }}" class="nav-link {{ request()->routeIs('profil') ? 'active' : '' }}">Profil</a></li>
                                     <li class="nav-item"><a href="{{ route('imut') }}" class="nav-link {{ request()->routeIs('imut') ? 'active' : '' }}">Indikator Mutu</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#" class="nav-link {{ request()->routeIs('jadwaldokter') || request()->routeIs('tt') ? 'active' : '' }}"> Informasi</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
+                                    <li class="nav-item"><a href="{{ route('tt') }}" class="nav-link {{ request()->routeIs('tt') ? 'active' : '' }}">Ketersediaan Tempat Tidur</a></li>
                                 </ul>
                             </li>
 

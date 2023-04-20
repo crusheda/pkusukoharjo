@@ -45,7 +45,7 @@
                             {{-- <div class="btn-group">
 
                             </div> --}}
-                            <a href="http://103.210.117.106:83/m" class="btn btn-primary" target="_blank">Daftar Online <i class="fas fa-user"></i></a>
+                            <a href="http://103.210.117.106:83/m" class="btn btn-primary" target="_blank">Reservasi Online <i class="fas fa-user"></i></a>
                             {{-- <a href="{{ route('jadwaldokter') }}" class="btn btn-label-info">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
                             <a href="{{ route('jadwaldokter') }}" allow="autoplay" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a><br>
                             {{-- <a href="https://www.youtube.com/watch?v=rmNucGJuxNg?autoplay=1" allow="autoplay" class="btn btn-light popup-youtube">Profil Rumah Sakit <i class="fas fa-play"></i></a><br> --}}
@@ -108,32 +108,22 @@
 </div>
 <!-- End Main Banner Area -->
 
-{{-- <section class="main-services-area ptb-100">
+<section class="main-services-area ptb-100">
     <div class="container">
         <div class="section-title">
-            <span>Main Features</span>
-            <h2>Our Main Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <span>Lebih Dekat</span>
+            <h2>Tentang Kami</h2>
+            <p>Rumah Sakit PKU Muhammadiyah Sukoharjo terus berbenah diri untuk mengembangkan kualitas Manajemen Rumah Sakit, melaksanakan tugas dan fungsi rumah sakit secara profesional.</p>
         </div>
 
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="main-services-box">
                     <div class="icon">
-                        <i class="flaticon-doctor"></i>
-                    </div>
-                    <h3><a href="#">Advanced Care</a></h3>
-                    <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed do eiusincidunt.</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="main-services-box">
-                    <div class="icon">
                         <i class="flaticon-dental-chair"></i>
                     </div>
-                    <h3><a href="#">Internal Medicine</a></h3>
-                    <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed do eiusincidunt.</p>
+                    <h3><a href="#">Fasilitas Lengkap</a></h3>
+                    <p>Kami mempunyai komitmen untuk pelayanan yang lengkap dan ramah pada setiap pengunjung dengan tetap mengutamakan kaidah islami.</p>
                 </div>
             </div>
 
@@ -142,8 +132,18 @@
                     <div class="icon">
                         <i class="flaticon-care"></i>
                     </div>
-                    <h3><a href="#">Otolaryngology</a></h3>
-                    <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed do eiusincidunt.</p>
+                    <h3><a href="#">Pelayanan Paripurna</a></h3>
+                    <p>Kami terus berinovasi dan mengembangkan diri untuk terus memberikan layanan yang paripurna bagi pasien.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="main-services-box">
+                    <div class="icon">
+                        <i class="flaticon-doctor"></i>
+                    </div>
+                    <h3><a href="#">Tenaga Medis Profesional</a></h3>
+                    <p>Kami mempunyai dokter dan tenaga medis yang profesional sehingga memberikan pelayanan kesehatan yang terbaik.</p>
                 </div>
             </div>
 
@@ -152,8 +152,8 @@
                     <div class="icon">
                         <i class="flaticon-brain"></i>
                     </div>
-                    <h3><a href="#">Ophthalmology</a></h3>
-                    <p>Lorem ipsum dolor sit amet consecte adipiscing elit sed do eiusincidunt.</p>
+                    <h3><a href="#">Teknologi Modern</a></h3>
+                    <p>Kami memberikan peralatan yang modern dan terbaru sehingga mampu meningkatkan diagnosa penyakit yang akurat dan penanganan yang tepat.</p>
                 </div>
             </div>
         </div>
@@ -167,31 +167,25 @@
         <div class="row m-0">
             <div class="col-lg-6 col-md-12 p-0">
                 <div class="">
-                    <img src="{{ asset('assets/img/main-banner2.jpg') }}" alt="image">
+                    <img src="{{ asset('/img/content/penunjang/ambulance1.png') }}" class="wow fadeInLeft" alt="image">
+                    {{-- <img src="{{ asset('assets/img/main-banner2.jpg') }}" alt="image"> --}}
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-12 p-0">
-                <div class="about-content">
-                    <span>About Us</span>
-                    <h2>Short Story About Fovia Clinic Since 1999</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <div class="about-content mb-5">
+                    <span>Siaga 24 Jam</span>
+                    <h2>Pelayanan Gawat Darurat</h2>
+                    <p>Rumah Sakit PKU Muhammadiyah Sukoharjo siap menghadapi kondisi apapun dalam waktu kapan saja. Rumah Sakit PKU Muhammadiyah Sukoharjo memiliki <strong>Tim Code Blue</strong> yang merupakan tim gawat darurat intra hospital dan merupakan pelayanan emergency yang diberikan Rumah Sakit PKU Muhammadiyah Sukoharjo.</p>
 
-                    <ul>
-                        <li><i class="flaticon-check-mark"></i> Scientific Skills For getting a better result</li>
-                        <li><i class="flaticon-check-mark"></i> Communication Skills to getting in touch</li>
-                        <li><i class="flaticon-check-mark"></i> A Career Overview opportunity Available</li>
-                        <li><i class="flaticon-check-mark"></i> A good Work Environment For work</li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">Learn More <i class="flaticon-right-chevron"></i></a>
+                    <a href="tel:0271593979" class="btn btn-primary" style="background-color: rgb(255, 92, 92)">Pelayanan IGD 24 Jam <i class="fas fa-phone text-dark" style="background-color: white"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="our-mission-area ptb-100">
+{{-- <section class="our-mission-area ptb-100">
     <div class="container-fluid p-0">
         <div class="row m-0">
             <div class="col-lg-6 col-md-12 p-0">
@@ -249,9 +243,9 @@
     </div>
 
     <div class="shape3"><img src="{{ asset('assets/img/shape/3.png') }}" class="wow fadeInLeft" alt="image"></div>
-</section>
+</section> --}}
 
-<section class="fun-facts-area ptb-100">
+{{-- <section class="fun-facts-area ptb-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-6">
@@ -838,72 +832,18 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="partner-area ptb-100 bg-f4f9fd">
     <div class="container">
         <div class="section-title">
-            <h2>Mitra Kami</h2>
-            <p>Daftar link kerjasama Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
+            <span>E-Poster</span>
+            <h2>Poster Kesehatan</h2>
+            <p>Tetap sehat dan bahagia bersama Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
         </div>
-
-        <div class="customers-partner-list">
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/1.png') }}" alt="image">
-                </a>
-            </div>
-
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/2.png') }}" alt="image">
-                </a>
-            </div>
-
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/3.png') }}" alt="image">
-                </a>
-            </div>
-
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/4.png') }}" alt="image">
-                </a>
-            </div>
-
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/5.png') }}" alt="image">
-                </a>
-            </div>
-
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/6.png') }}" alt="image">
-                </a>
-            </div>
-
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/7.png') }}" alt="image">
-                </a>
-            </div>
-
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/8.png') }}" alt="image">
-                </a>
-            </div>
-
-            <div class="partner-item">
-                <a href="#">
-                    <img src="{{ asset('assets/img/partner/9.png') }}" alt="image">
-                </a>
-            </div>
-        </div>
+        <div class="portfolio-item row" id="eposter"></div>
     </div>
-</section> --}}
+</section>
 
 <section class="blog-area ptb-100">
     <div class="container">
@@ -920,14 +860,209 @@
     </div>
 </section>
 
+<section class="feedback-area ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <span>Feedback</span>
+            <h2>Testimoni</h2>
+            <p>Penilaian orang tentang Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
+        </div>
+
+        <div class="feedback-slides">
+            <div class="client-thumbnails">
+                <div>
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img-fill"><img src="{{ asset('img/user.png') }}" alt="client"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-feedback">
+                <div>
+                    <div class="item">
+                        <div class="single-feedback">
+                            <h3>Muthi'ah Amra Rabbiha</h3>
+                            <span>6 Mei 2022</span>
+                            <p>Menjadi alternatif untuk pelayanan kesehatan bernuansa islami</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="single-feedback">
+                            <h3>Ninik Indriyani</h3>
+                            <span>22 Juni 2022</span>
+                            <p>gedung baru bersih, pelayanannya bagus, bisa memakai BPJS. semoga bermanfaat bagi warga Sukoharjo dan sekitarnya..</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="single-feedback">
+                            <h3>Ahmad H Machsuni</h3>
+                            <span>26 Juni 2022</span>
+                            <p>Rumah sakit islami yg bagus di pusat Kota Sukoharjo</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="single-feedback">
+                            <h3>Qoi Ruli</h3>
+                            <span>5 Juli 2022</span>
+                            <p>Mantaap tingkatkan, jaya pku muhammadiyah sukoharjo</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="single-feedback">
+                            <h3>Ahmad Rafiiq</h3>
+                            <span>13 Agustus 2022</span>
+                            <p>pelayanan cukup memuaskan, tersedia mesin atm, gedung bersih, dan antrian tertata</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="single-feedback">
+                            <h3>Ferdi Mustofa</h3>
+                            <span>2 September 2022</span>
+                            <p>Terimakasih saya dilayani dengan ramah, semoga bisa ditingkatkan dan dipertahankan</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="single-feedback">
+                            <h3>Muh Mirza K</h3>
+                            <span>10 September 2022</span>
+                            <p>Tindakannya cepat, anak saya langsung ditangani dan alurnya cepat dan tanggap. terima kasih rspkuskh</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="single-feedback">
+                            <h3>Lilis Setianingsih</h3>
+                            <span>21 Oktober 2022</span>
+                            <p>Pendaftaran profesional ramah santun tidak berbelit" Cepat dan mudah.. Alhamdulillah sangat puas untuk saya yang baru pertama kali periksa ke rumah sakit ini.. Termakasih pku semoga layanan seperti ini tersedia di seluruh rumah sakit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="prev-arrow slick-arrow">
+                    <i class='flaticon-left-arrow'></i>
+                </button>
+
+                <button class="next-arrow slick-arrow">
+                    <i class='flaticon-arrow-pointing-to-right'></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="partner-area ptb-100 bg-f4f9fd">
     <div class="container">
         <div class="section-title">
-            <span>E-Poster</span>
-            <h2>Poster Kesehatan</h2>
-            <p>Tetap sehat dan bahagia bersama Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
+            <h2>Mitra Kami</h2>
+            <p>Daftar link kerjasama Rumah Sakit PKU Muhammadiyah Sukoharjo</p>
         </div>
-        <div class="portfolio-item row" id="eposter"></div>
+
+        <div class="customers-partner-list">
+            <div class="partner-item">
+                <a href="https://bpjs-kesehatan.go.id/bpjs/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/bpjskes.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.bpjsketenagakerjaan.go.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/bpjsnaker.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.jasaraharja.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/jr.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://lazismu.org/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/lazismu.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://pmisukoharjo.org/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/pmi.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.alodokter.com/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/alodokter.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.arahenvironmental.com/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/arah.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.bankjateng.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/bjateng2.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.bankbsi.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/bsi.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.posindonesia.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/pos.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="javascript:void(0);">
+                    <img src="{{ asset('/img/content/mitra/suryamedika.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.telkom.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/telkom.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://www.yesimedia.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/turbonet.jpg') }}" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="https://mdmc.or.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/mdmc.jpg') }}" alt="image">
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
