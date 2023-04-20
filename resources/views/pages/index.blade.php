@@ -30,7 +30,7 @@
 </style>
 <!-- Start Main Banner Area -->
 <div class="home-slides owl-carousel owl-theme">
-    <div class="main-banner" style="background-image: url(img/gedung-pku/bg-gedung-small.png)">
+    <div class="main-banner" style="background-image: url(img/gedung-pku/bg-gedung-very-small.png)">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
