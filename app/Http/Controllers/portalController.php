@@ -20,13 +20,14 @@ class portalController extends Controller
 
     public function semuaBerita()
     {
-        $berita = berita::orderBy('id', 'desc')->get();
+        // $berita = berita::orderBy('id', 'desc')->get();
+        $berita = DB::table('berita')->orderBy('id', 'desc')->where('deleted_at',null)->paginate(9);
 
-        $data = [
-            'berita' => $berita,
-        ];
+        // $data = [
+        //     'berita' => $berita,
+        // ];
 
-        return view('pages.artikel.berita.berita-lainnya')->with('list', $data);
+        return view('pages.artikel.berita.berita-lainnya')->with('list', $berita);
     }
 
     public function detailBerita($id)
@@ -60,6 +61,7 @@ class portalController extends Controller
     public function showBeritaLainnya()
     {
         $berita = berita::orderBy('id', 'desc')->take(9)->get();
+        // $berita = DB::table('berita')->orderBy('id', 'desc')->where('deleted_at',null)->paginate(9);
         // $beritaUtama = DB::table('berita')->where('id', \DB::raw("(select max(`id`) from berita)"))->get();
         // print_r($berita);
         // die();
