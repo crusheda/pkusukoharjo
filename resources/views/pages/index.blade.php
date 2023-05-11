@@ -35,7 +35,8 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="main-banner-content">
-                        <span>Portal Resmi</span>
+                        <span>Portal Resmi</span><br>
+                        <span><h2 style="margin-top: -25px;margin-bottom:-5px;color:#d9a412">✯ ✯ ✯ ✯ ✯</h2></span>
                         <h1>Rumah Sakit PKU Muhammadiyah Sukoharjo</h1>
                         <p>Amanah, Santun, Ramah, Ikhlas (ASRI)</p>
 
