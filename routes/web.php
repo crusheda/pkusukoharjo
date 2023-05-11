@@ -24,6 +24,7 @@ Route::get('/', 'portalController@index')->name('portal');
     Route::get('/api/show/portal', 'portalController@showPortal');
     Route::get('/api/show/berita/lainnya', 'portalController@showBeritaLainnya');
     // EPOSTER
+    Route::get('/artikel/eposter/semua', 'portalController@semuaEposter')->name('semuaeposter');
     // Route::get('/api/show/eposter', 'portalController@showBerita');
 
 // TENTANG

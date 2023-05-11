@@ -21,13 +21,28 @@ class portalController extends Controller
     public function semuaBerita()
     {
         // $berita = berita::orderBy('id', 'desc')->get();
-        $berita = DB::table('berita')->orderBy('id', 'desc')->where('deleted_at',null)->paginate(9);
+        $data = DB::table('berita')->orderBy('id', 'desc')->where('deleted_at',null)->paginate(9);
 
         // $data = [
         //     'berita' => $berita,
         // ];
 
-        return view('pages.artikel.berita.berita-lainnya')->with('list', $berita);
+        return view('pages.artikel.berita.berita-lainnya')->with('list', $data);
+    }
+
+    public function semuaEposter()
+    {
+        $eposter = DB::table('eposter')->orderBy('id', 'desc')->where('deleted_at',null)->paginate(20);
+        $totalEposter = eposter::count();
+        // print_r($totalEposter);
+        // die();
+
+        $data = [
+            'eposter' => $eposter,
+            'totalEposter' => $totalEposter,
+        ];
+
+        return view('pages.artikel.eposter.eposter-lainnya')->with('list', $data);
     }
 
     public function detailBerita($id)

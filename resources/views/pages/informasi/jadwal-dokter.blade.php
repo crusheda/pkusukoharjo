@@ -134,24 +134,26 @@
                         $("#tampil-tbody").empty();
                         // console.log(res);
                         if(res.response == null){
-                            $('#tampil-tbody').append("<tr style='padding-top: 0px'><td colspan='10'>Data gagal dimuat, silakan ulangi sekali lagi</td></tr>");
+                            $("#tampil-tbody").append(`<tr><center><td colspan="9"><i class="fa fa-spinner fa-spin fa-fw"></i> Memproses data...</td></center></tr>`);
+                            cariJadwal();
+                            // $('#tampil-tbody').append("<tr style='padding-top: 0px'><td colspan='10'>Data gagal dimuat, silakan ulangi sekali lagi</td></tr>");
                             // NOTIFIKASI
-                            const Toast = Swal.mixin({
-                                toast: true,
-                                position: 'top-end',
-                                showConfirmButton: false,
-                                timer: 3000,
-                                timerProgressBar: true,
-                                didOpen: (toast) => {
-                                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                                }
-                            })
+                            // const Toast = Swal.mixin({
+                            //     toast: true,
+                            //     position: 'top-end',
+                            //     showConfirmButton: false,
+                            //     timer: 3000,
+                            //     timerProgressBar: true,
+                            //     didOpen: (toast) => {
+                            //         toast.addEventListener('mouseenter', Swal.stopTimer)
+                            //         toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            //     }
+                            // })
 
-                            Toast.fire({
-                                icon: 'error',
-                                title: 'Silakan tekan tombol Tampilkan sekali lagi'
-                            })
+                            // Toast.fire({
+                            //     icon: 'error',
+                            //     title: 'Silakan tekan tombol Tampilkan sekali lagi'
+                            // })
                         } else {
                             // SHOWING TABLE
                             var i = 1;

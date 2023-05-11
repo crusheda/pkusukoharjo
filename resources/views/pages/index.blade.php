@@ -835,7 +835,7 @@
 </section> --}}
 
 <section class="partner-area ptb-100 bg-f4f9fd">
-    <div class="container">
+    <div class="container" style="max-width:1500px">
         <div class="section-title">
             <span>E-Poster</span>
             <h2>Poster Kesehatan</h2>
@@ -1137,7 +1137,7 @@
                         $("#eposter").append(`
                             <div class="col-md-12">
                                 <div class="more-services-btn">
-                                    <a href="javascript:void(0);" class="btn btn-light">Selengkapnya <i class="flaticon-right-chevron"></i></a>
+                                    <a href="/artikel/eposter/semua" class="btn btn-light">Selengkapnya <i class="flaticon-right-chevron"></i></a>
                                 </div>
                             </div>
                         `); // href="/artikel/eposter/semua"
