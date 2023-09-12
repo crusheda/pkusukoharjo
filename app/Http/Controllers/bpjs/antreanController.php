@@ -16,22 +16,22 @@ class antreanController extends Controller
     function testerBpjs() {
         $consid = '5140';
         $secretkey = '8wRA8A44F6';
-        $userkey = '50af1f6620a1225ea124cbc2c7a9cff0';
+        $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2'; //  50af1f6620a1225ea124cbc2c7a9cff0
         $url = 'ref/poli';
 
         $client = new Client();
-        $res = $client->get('https://apijkn.bpjs-kesehatan.go.id/antreanrs/'.$url, [
+        $res = $client->get('https://apijkn-dev.bpjs-kesehatan.go.id/antreanrs_dev/'.$url, [
             'headers' => [
                 'X-cons-id' => $consid,
                 'X-Timestamp' => $this->bpjsTimestamp(),
                 'X-Signature' => $this->generateSignature(),
                 'user_key' => $userkey,
             ]
-        ]);
+        ]); // url_live : https://apijkn.bpjs-kesehatan.go.id/antreanrs/
 
         // RESULT API INTO DECODED JSON
         $result = json_decode($res->getBody());
-        // dd($result);
+        dd($result);
 
         // DEFINE VAR INTO DECRYPTION PROGRESS
         $string = $result->response;
