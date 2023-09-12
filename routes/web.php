@@ -56,7 +56,7 @@ Route::get('kontak', function () { return view('pages.kontak'); })->name('kontak
 
 
 // --------------------------------------------  API  --------------------------------------------
-Route::get('bpjs/bridging/refpoli', 'bpjs\antreanController@testerBpjs');
+Route::get('bpjs/bridging/test', 'bpjs\antreanController@testerBpjs');
 
 Route::get('bpjs/bridging/tester', 'bpjs\antreanController@sigtime');
 Route::get('bpjs/bridging/antrean/poli', 'bpjs\antreanController@refPoli');
