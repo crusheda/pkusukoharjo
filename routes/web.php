@@ -56,8 +56,14 @@ Route::get('kontak', function () { return view('pages.kontak'); })->name('kontak
 
 
 // --------------------------------------------  API  --------------------------------------------
+Route::get('bpjs/bridging/refpoli', 'bpjs\antreanController@testerBpjs');
+
+Route::get('bpjs/bridging/tester', 'bpjs\antreanController@sigtime');
 Route::get('bpjs/bridging/antrean/poli', 'bpjs\antreanController@refPoli');
+Route::get('bpjs/bridging/tester/poli', 'bpjs\antreanController@refPoliTest');
 Route::get('bpjs/bridging/antrean/poli/{poli}/{tgl}', 'bpjs\antreanController@cariJadwal');
+Route::get('bpjs/bridging/tester/jadwal/', 'bpjs\antreanController@cariJadwalTest');
+Route::get('bpjs/bridging/tester/decrypt/{string}', 'bpjs\antreanController@decrypt');
 
 // ----------------------------------------  ADMIN AREA  -----------------------------------------
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
