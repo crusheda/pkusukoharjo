@@ -58,7 +58,13 @@ Route::get('kontak', function () { return view('pages.kontak'); })->name('kontak
 // --------------------------------------------  API  --------------------------------------------
 Route::get('bpjs/bridging/test', 'bpjs\antreanController@testerBpjs');
 
-Route::get('bpjs/bridging/tester', 'bpjs\antreanController@sigtime');
+// GET DATA BPJS
+Route::get('bpjs/bridging/jadwal', 'bpjs\antreanController@jadwalBpjs');
+Route::get('bpjs/bridging/all', 'bpjs\antreanController@sigtime');
+Route::get('bpjs/bridging/kodebooking/{id}', 'bpjs\antreanController@kdbook');
+Route::get('bpjs/bridging/timestamp/{id}', 'bpjs\antreanController@getTimestamp');
+
+// BPJS TEST
 Route::get('bpjs/bridging/antrean/poli', 'bpjs\antreanController@refPoli');
 Route::get('bpjs/bridging/tester/poli', 'bpjs\antreanController@refPoliTest');
 Route::get('bpjs/bridging/antrean/poli/{poli}/{tgl}', 'bpjs\antreanController@cariJadwal');

@@ -16,7 +16,7 @@ class antreanController extends Controller
     function testerBpjs() {
         $consid = '26283';
         $secretkey = '3kX1E6C95A';
-        $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2'; //  50af1f6620a1225ea124cbc2c7a9cff0
+        $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2'; //  6e5c8afbf6be0a6d9c794edad8006ad2
         // $url = 'ref/poli';
         $url = 'jadwaldokter/kodepoli/INT/tanggal/2023-09-11';
 
@@ -47,6 +47,72 @@ class antreanController extends Controller
         return response()->json($data, 200);
     }
 
+    function jadwalBpjs() {
+        $consid = '26283';
+        $secretkey = '3kX1E6C95A';
+        $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2';
+
+        $client = new Client();
+        $res = $client->get('https://apijkn-dev.bpjs-kesehatan.go.id/antreanrs_dev/jadwaldokter/kodepoli/INT/tanggal/2023-10-04', [
+            'headers' => [
+                'X-cons-id' => $consid,
+                'X-Timestamp' => $this->bpjsTimestamp(),
+                'X-Signature' => $this->generateSignatureTester(),
+                'user_key' => $userkey,
+            ]
+        ]); // url_live : https://apijkn.bpjs-kesehatan.go.id/antreanrs/
+
+        // RESULT API INTO DECODED JSON
+        $result = json_decode($res->getBody());
+
+        // DEFINE VAR INTO DECRYPTION PROGRESS
+        $string = $result->response;
+        $key = $consid.$secretkey.$this->bpjsTimestamp();
+
+        // RESULT DECRYPT WITH AES 256 (mode CBC) - SHA256 AND DECOMPRESSION WITH LZ-STRING
+        $getDecryption = $this->stringDecrypt($key, $string);
+
+        $data = [
+            'response' => json_decode($getDecryption)
+        ];
+
+        return response()->json($data, 200);
+    }
+
+    function kdbook($kd) {
+        $consid = '26283';
+        $secretkey = '3kX1E6C95A';
+        $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2';
+
+        $client = new Client();
+        $res = $client->get('https://apijkn-dev.bpjs-kesehatan.go.id/antreanrs_dev/antrean/pendaftaran/kodebooking/'.$kd, [
+            'headers' => [
+                'X-cons-id' => $consid,
+                'X-Timestamp' => $this->bpjsTimestamp(),
+                'X-Signature' => $this->generateSignatureTester(),
+                'user_key' => $userkey,
+            ]
+        ]); // url_live : https://apijkn.bpjs-kesehatan.go.id/antreanrs/
+
+        // RESULT API INTO DECODED JSON
+        $result = json_decode($res->getBody());
+        // dd($result);
+
+        // DEFINE VAR INTO DECRYPTION PROGRESS
+        $string = $result->response;
+        $key = $consid.$secretkey.$this->bpjsTimestamp();
+
+        // RESULT DECRYPT WITH AES 256 (mode CBC) - SHA256 AND DECOMPRESSION WITH LZ-STRING
+        $getDecryption = $this->stringDecrypt($key, $string);
+
+        $data = [
+            'response' => json_decode($getDecryption)
+        ];
+
+        dd(json_decode($getDecryption)[0]);
+
+        return response()->json($data, 200);
+    }
 
     function sigtime() {
         $consid = '26283';
@@ -64,9 +130,14 @@ class antreanController extends Controller
         $encodedSignature = base64_encode($signature);
 
         $data = [
+            'consid' => $consid,
+            'secretkey' => $secretkey,
+            'userkey' => $userkey,
             'signature' => $encodedSignature,
             'timestamp' => $tStamp,
         ];
+
+        dd($data);
 
         return response()->json($data, 200);
     }
@@ -148,7 +219,7 @@ class antreanController extends Controller
         // DEFINE SECRET VAR
         $consid = '26283';
         $secretkey = '3kX1E6C95A';
-        $userkey = '50af1f6620a1225ea124cbc2c7a9cff0';
+        $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2';
         $url = 'jadwaldokter/kodepoli/INT/tanggal/2023-09-12';
 
         // API to BPJS
@@ -266,9 +337,12 @@ class antreanController extends Controller
 
 	public function generateSignature()
 	{
-        $consid = '5140';
-        $secretkey = '8wRA8A44F6';
-        $userkey = '3531661b282c4997d496bf34de35871e';
+        $consid = '26283';
+        $secretkey = '3kX1E6C95A';
+        $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2';
+        // $consid = '5140';
+        // $secretkey = '8wRA8A44F6';
+        // $userkey = '3531661b282c4997d496bf34de35871e';
 
         // Get Timestamp
         date_default_timezone_set('UTC');
@@ -288,6 +362,7 @@ class antreanController extends Controller
         $consid = '26283';
         $secretkey = '3kX1E6C95A';
         $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2';
+        // $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2';
 
         // Get Timestamp
         date_default_timezone_set('UTC');
@@ -308,6 +383,19 @@ class antreanController extends Controller
         date_default_timezone_set('UTC');
         $result = strval(time()-strtotime('1970-01-01 00:00:00'));
 		return $result;
+	}
+
+	public function getTimestamp($date)
+	{
+        // Computes the timestamp
+        Carbon::setLocale('id');
+        return $result = Carbon::parse($date / 1000)->format("d M Y, H:m:s");
+        // return date("d/m/Y H:i:s", $seconds);
+        // return Carbon::createFromFormat('Y-m-d H:i:s.v', $date);
+
+        // date_default_timezone_set('UTC');
+        // $result = strval(time($date)-strtotime('1970-01-01 00:00:00'));
+		// return $result;
 	}
 
 	public static function stringDecrypt($key, $string)
