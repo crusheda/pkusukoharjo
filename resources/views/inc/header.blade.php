@@ -116,7 +116,7 @@
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="https://simgos.rspkusukoharjo.com:1111/apps/RegOnline/" class="nav-link" target="_blank">Reservasi Online</a></li>
                                     <li class="nav-item"><a href="{{ route('jadwaldokter') }}" class="nav-link {{ request()->routeIs('jadwaldokter') ? 'active' : '' }}">Jadwal Dokter</a></li>
-                                    <li class="nav-item"><a href="{{ route('tt') }}" class="nav-link {{ request()->routeIs('tt') ? 'active' : '' }}">Ketersediaan Tempat Tidur</a></li>
+                                    {{-- <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Ketersediaan Tempat Tidur</a></li> --}}
                                 </ul>
                             </li>
 
