@@ -251,7 +251,7 @@ class antreanController extends Controller
         // DEFINE SECRET VAR
         $consid = '5140';
         $secretkey = '8wRA8A44F6';
-        $userkey = '3531661b282c4997d496bf34de35871e';
+        $userkey = '1bdfe14b566b2af6e153a9955b8b4cbe';
         $url = 'jadwaldokter/kodepoli/'.$poli.'/tanggal/'.$tgl;
 
         // API to BPJS
@@ -279,7 +279,7 @@ class antreanController extends Controller
     public function antreanGet($url)
     {
         $consid = '5140';
-        $userkey = '3531661b282c4997d496bf34de35871e';
+        $userkey = '1bdfe14b566b2af6e153a9955b8b4cbe'; // 3531661b282c4997d496bf34de35871e
 
         $client = new Client();
         $res = $client->get('https://apijkn.bpjs-kesehatan.go.id/antreanrs/'.$url, [
@@ -337,9 +337,9 @@ class antreanController extends Controller
 
 	public function generateSignature()
 	{
-        $consid = '26283';
-        $secretkey = '3kX1E6C95A';
-        $userkey = '6e5c8afbf6be0a6d9c794edad8006ad2';
+        $consid = '5140';
+        $secretkey = '8wRA8A44F6';
+        $userkey = '1bdfe14b566b2af6e153a9955b8b4cbe';
         // $consid = '5140';
         // $secretkey = '8wRA8A44F6';
         // $userkey = '3531661b282c4997d496bf34de35871e';

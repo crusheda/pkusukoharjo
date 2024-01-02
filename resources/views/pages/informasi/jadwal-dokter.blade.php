@@ -50,6 +50,7 @@
                             <label>Poliklinik Spesialis</label>
                             <select id="xpoli" class="form-select">
                                 <option value="" selected hidden>Pilih</option>
+                                <option value="IGD">Poli Umum</option>
                                 <option value="ANA">Poli Anak</option>
                                 <option value="BED">Poli Bedah</option>
                                 <option value="GIG">Poli Gigi</option>
@@ -59,10 +60,12 @@
                                 <option value="JIW">Poli Jiwa</option>
                                 <option value="KLT">Poli Kulit Dan Kelamin</option>
                                 <option value="MAT">Poli Mata</option>
+                                <option value="THT">Poli THT-KL</option>
                                 <option value="OBG">Poli Obstetri Dan Ginekologi (OBGYN)</option>
                                 <option value="ORT">Poli Orthopedi Dan Traumatology</option>
                                 <option value="PAR">Poli Paru</option>
                                 <option value="SAR">Poli Saraf</option>
+                                <option value="URO">Poli Urologi</option>
                                 <option value="ANT">Anestesi</option>
                             </select>
                         </div>
