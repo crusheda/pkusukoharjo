@@ -31,7 +31,7 @@
                             Sukoharjo, JT (57512) <br><br>
                             <strong>Telp:</strong> <a class="text-white" href="tel:0271593979"> 0271 593 979</a>&nbsp;<strong>(24 Jam)</strong><br>
                             <strong>Email:</strong> <a class="text-white" href="mailto:pku.sukoharjo@gmail.com"> pku.sukoharjo@gmail.com</a><br>
-                            <strong>Informasi:</strong> <a class="text-white" href="https://wa.me/6281227203899" target="_blank"> +62 812-2720-3899</a>&nbsp;<strong>(WA)</strong>
+                            <strong>Informasi:</strong> <a class="text-white" href="https://wa.me/6285150763480" target="_blank"> +62 851-5076-3480</a>&nbsp;<strong>(WA)</strong>
                         </p>
                     </div>
 

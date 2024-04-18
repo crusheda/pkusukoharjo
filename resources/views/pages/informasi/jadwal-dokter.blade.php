@@ -88,7 +88,7 @@
             <h6 class="mb-3">
                 * Jadwal diambil dari <b>Sistem Bridging dengan BPJS</b><br>
                 {{-- * Mohon maaf, jadwal dokter hanya terbuka untuk H-1 sampai H+3 saja<br> --}}
-                * Silakan Konfirmasi jadwal pada Bagian Informasi RS : <a href="https://wa.me/6281227203899" target="_blank"><u>+6281227203899</u> (Whatsapp)</a>
+                * Silakan Konfirmasi jadwal pada Bagian Informasi RS : <a href="https://wa.me/6285150763480" target="_blank"><u>+6285150763480</u> (Whatsapp)</a>
             </h6>
             <div class="doctor-calendar-table table-responsive" id="tablejadwal" hidden>
                 <table class="table">

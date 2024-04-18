@@ -60,7 +60,7 @@
                                 </div>
                                 <span>Telp</span>
                                 <a href="tel:0271593979">- <strong>IGD (24 Jam)</strong> : 0271-593-979</a>
-                                <a href="https://wa.me/6281227203899" target="_blank">- <strong>Informasi (Whatsapp)</strong> : +62 812-2720-3899</a>
+                                <a href="https://wa.me/6285150763480" target="_blank">- <strong>Informasi (Whatsapp)</strong> : +62 851-5076-3480</a>
                             </li>
                         </ul>
                     </div>
