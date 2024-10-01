@@ -48,8 +48,14 @@
                             </div> --}}
                             <a href="https://simgos.rspkusukoharjo.com:1111/apps/RegOnline/" class="btn btn-primary" target="_blank">Reservasi Online <i class="fas fa-user"></i></a>
                             {{-- <a href="{{ route('jadwaldokter') }}" class="btn btn-label-info">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
-                            <a href="{{ route('jadwaldokter') }}" allow="autoplay" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a><br>
-                            {{-- <a href="https://www.youtube.com/watch?v=rmNucGJuxNg?autoplay=1" allow="autoplay" class="btn btn-light popup-youtube">Profil Rumah Sakit <i class="fas fa-play"></i></a><br> --}}
+                            <a href="{{ route('jadwaldokter') }}" allow="autoplay" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a>
+                            <button type="button" class="btn btn-light" onclick="showRadio()">Radio <i class="fas fa-rss"></i></button>
+                            <div style="display: flex; align-items: center;display: none" class="mt-3" id="radio_show">
+                                <a style=”text-align:justify;” href="javascript:void(0)" class="me-3">Radio : </a>
+                                <audio class="" controls>
+                                    <source src="https://b3.stri.my.id:4320/radio" type="audio/mpeg">
+                                </audio>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1069,6 +1075,14 @@
 
 <script>
     $(document).ready( function () {
+        var popup_btn = $('.popup-btn');
+        popup_btn.magnificPopup({
+            type : 'image',
+            gallery : {
+                enabled : true
+            }
+        });
+
         // AJAX BERITA
         $.ajax(
             {
@@ -1147,24 +1161,22 @@
             }
         );
         $('.portfolio-menu ul li').click(function(){
-         	$('.portfolio-menu ul li').removeClass('active');
-         	$(this).addClass('active');
+            $('.portfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
 
-         	var selector = $(this).attr('data-filter');
-         	$('.portfolio-item').isotope({
-         		filter:selector
-         	});
-         	return  false;
-         });
-         $(document).ready(function() {
-            var popup_btn = $('.popup-btn');
-            popup_btn.magnificPopup({
-                type : 'image',
-                gallery : {
-                    enabled : true
-                }
+            var selector = $(this).attr('data-filter');
+            $('.portfolio-item').isotope({
+                filter:selector
             });
-         });
+            return  false;
+        });
     });
+
+    function showRadio() {
+        var el = document.getElementById("radio_show");
+        el.style.display = el.style.display === 'none' ? '' : 'none';
+        // $('#radio_show').prop('hidden',false);
+        alert('show');
+    }
 </script>
 @endsection
