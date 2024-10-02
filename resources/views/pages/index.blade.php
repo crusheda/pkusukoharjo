@@ -49,14 +49,12 @@
                             <a href="https://simgos.rspkusukoharjo.com:1111/apps/RegOnline/" class="btn btn-primary" target="_blank">Reservasi Online <i class="fas fa-user"></i></a>
                             {{-- <a href="{{ route('jadwaldokter') }}" class="btn btn-label-info">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
                             <a href="{{ route('jadwaldokter') }}" allow="autoplay" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a>
-                            <button type="button" class="btn btn-light" onclick="showRadio()">Radio <i class="fas fa-rss"></i></button>
-                            <div id="radio_show" hidden>
-                                <div style="display: flex; align-items: center" class="mt-3">
-                                    <a style=”text-align:justify;” href="javascript:void(0)" class="me-3">Radio : </a>
-                                    <audio class="">
-                                        <source src="https://b3.stri.my.id:4320/radio" type="audio/mpeg">
-                                    </audio>
-                                </div>
+                            {{-- <button type="button" class="btn btn-light" onclick="showRadio()">Radio <i class="fas fa-rss"></i></button> --}}
+                            <div style="display: flex; align-items: center" class="mt-4">
+                                <a style=”text-align:justify;” href="javascript:void(0)" class="me-3">Radio : </a>
+                                <audio class="" controls>
+                                    <source src="https://b3.stri.my.id:4320/radio" type="audio/mpeg">
+                                </audio>
                             </div>
                         </div>
                     </div>
@@ -1001,74 +999,74 @@
         </div>
 
         <div class="customers-partner-list">
-            <div class="partner-item">
+            <div class="partner-item img-mitra">
                 <a href="https://bpjs-kesehatan.go.id/bpjs/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/bpjskes.jpg') }}" alt="image">
+                    <img src="{{ asset('/img/content/mitra/bpjskes.jpg') }}" alt="image" style="height: 100px;">
                 </a>
             </div>
-            <div class="partner-item">
+            <div class="partner-item img-mitra">
                 <a href="https://www.bpjsketenagakerjaan.go.id/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/bpjsnaker.jpg') }}" alt="image">
+                    <img src="{{ asset('/img/content/mitra/bpjsnaker.jpg') }}" alt="image" style="height: 100px;">
                 </a>
             </div>
-            <div class="partner-item">
+            <div class="partner-item img-mitra">
                 <a href="https://www.jasaraharja.co.id/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/jr.jpg') }}" alt="image">
+                    <img src="{{ asset('/img/content/mitra/jr.jpg') }}" alt="image" style="height: 100px;">
                 </a>
             </div>
-            <div class="partner-item">
+            <div class="partner-item img-mitra">
                 <a href="https://lazismu.org/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/lazismu.jpg') }}" alt="image">
+                    <img src="{{ asset('/img/content/mitra/lazismu.jpg') }}" alt="image" style="height: 100px;">
                 </a>
             </div>
-            <div class="partner-item">
+            <div class="partner-item img-mitra">
                 <a href="https://pmisukoharjo.org/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/pmi.jpg') }}" alt="image">
+                    <img src="{{ asset('/img/content/mitra/pmi.jpg') }}" alt="image" style="height: 100px;">
                 </a>
             </div>
-            <div class="partner-item">
-                <a href="https://www.alodokter.com/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/alodokter.jpg') }}" alt="image">
+            <div class="partner-item img-mitra">
+                <a href="https://www.admedika.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/admedika.jpg') }}" alt="image" style="height: 100px;">
                 </a>
             </div>
-            <div class="partner-item">
-                <a href="https://www.arahenvironmental.com/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/arah.jpg') }}" alt="image">
-                </a>
-            </div>
-            <div class="partner-item">
-                <a href="https://www.bankjateng.co.id/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/bjateng2.jpg') }}" alt="image">
-                </a>
-            </div>
-            <div class="partner-item">
-                <a href="https://www.bankbsi.co.id/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/bsi.jpg') }}" alt="image">
-                </a>
-            </div>
-            <div class="partner-item">
-                <a href="https://www.posindonesia.co.id/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/pos.jpg') }}" alt="image">
-                </a>
-            </div>
-            <div class="partner-item">
-                <a href="javascript:void(0);">
-                    <img src="{{ asset('/img/content/mitra/suryamedika.jpg') }}" alt="image">
-                </a>
-            </div>
-            <div class="partner-item">
-                <a href="https://www.telkom.co.id/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/telkom.jpg') }}" alt="image">
-                </a>
-            </div>
-            <div class="partner-item">
-                <a href="https://www.yesimedia.co.id/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/turbonet.jpg') }}" alt="image">
-                </a>
-            </div>
-            <div class="partner-item">
+            <div class="partner-item img-mitra">
                 <a href="https://mdmc.or.id/" target="_blank">
-                    <img src="{{ asset('/img/content/mitra/mdmc.jpg') }}" alt="image">
+                    <img src="{{ asset('/img/content/mitra/mdmc.jpg') }}" alt="image" style="height: 100px;">
+                </a>
+            </div>
+            <div class="partner-item img-mitra">
+                <a href="https://www.iforte.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/iforte.jpg') }}" alt="image" style="height: 100px;">
+                </a>
+            </div>
+            <div class="partner-item img-mitra">
+                <a href="https://indihome.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/indihome.jpg') }}" alt="image" style="height: 100px;">
+                </a>
+            </div>
+            <div class="partner-item img-mitra">
+                <a href="https://www.telkom.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/telkom.jpg') }}" alt="image" style="height: 100px;">
+                </a>
+            </div>
+            <div class="partner-item img-mitra">
+                <a href="https://www.arahenvironmental.com/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/arah.jpg') }}" alt="image" style="height: 100px;">
+                </a>
+            </div>
+            <div class="partner-item img-mitra">
+                <a href="https://syariah.bankjateng.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/bjs.jpg') }}" alt="image" style="height: 100px;">
+                </a>
+            </div>
+            <div class="partner-item img-mitra">
+                <a href="https://www.posindonesia.co.id/" target="_blank">
+                    <img src="{{ asset('/img/content/mitra/pos.jpg') }}" alt="image" style="height: 100px;">
+                </a>
+            </div>
+            <div class="partner-item img-mitra">
+                <a href="javascript:void(0);">
+                    <img src="{{ asset('/img/content/mitra/suryamedika.jpg') }}" alt="image" style="height: 100px;">
                 </a>
             </div>
         </div>
@@ -1176,11 +1174,7 @@
     });
 
     function showRadio() {
-        // var el = document.getElementById("radio_show");
-        // el.style.display = el.style.display === 'none' ? '' : 'none';
-        var l = $('#radio_show').prop('hidden',false);
-        l;
-        console.log(l);
+        $('#radio_show').prop('hidden',false);
         alert('show');
     }
 </script>
