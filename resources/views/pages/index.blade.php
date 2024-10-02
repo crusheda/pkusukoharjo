@@ -50,11 +50,13 @@
                             {{-- <a href="{{ route('jadwaldokter') }}" class="btn btn-label-info">Jadwal Dokter <i class="fas fa-calendar"></i></a> --}}
                             <a href="{{ route('jadwaldokter') }}" allow="autoplay" class="btn btn-light">Jadwal Dokter <i class="fas fa-calendar"></i></a>
                             <button type="button" class="btn btn-light" onclick="showRadio()">Radio <i class="fas fa-rss"></i></button>
-                            <div style="display: flex; align-items: center;display: none" class="mt-3" id="radio_show">
-                                <a style=”text-align:justify;” href="javascript:void(0)" class="me-3">Radio : </a>
-                                <audio class="" controls>
-                                    <source src="https://b3.stri.my.id:4320/radio" type="audio/mpeg">
-                                </audio>
+                            <div id="radio_show" hidden>
+                                <div style="display: flex; align-items: center" class="mt-3">
+                                    <a style=”text-align:justify;” href="javascript:void(0)" class="me-3">Radio : </a>
+                                    <audio class="">
+                                        <source src="https://b3.stri.my.id:4320/radio" type="audio/mpeg">
+                                    </audio>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1073,6 +1075,7 @@
     </div>
 </section>
 
+{{-- <script src="{{ asset('assets/js/jquery.min.js') }}"></script> --}}
 <script>
     $(document).ready( function () {
         var popup_btn = $('.popup-btn');
@@ -1173,9 +1176,11 @@
     });
 
     function showRadio() {
-        var el = document.getElementById("radio_show");
-        el.style.display = el.style.display === 'none' ? '' : 'none';
-        // $('#radio_show').prop('hidden',false);
+        // var el = document.getElementById("radio_show");
+        // el.style.display = el.style.display === 'none' ? '' : 'none';
+        var l = $('#radio_show').prop('hidden',false);
+        l;
+        console.log(l);
         alert('show');
     }
 </script>
